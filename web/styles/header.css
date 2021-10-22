@@ -51,8 +51,39 @@
 	background-color: #27568c;
 }
 
-.sub-menu {
+
+.grid-menu {
+	width: 100%;
+	padding: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: auto;
+}
+
+.grid-menu li {
+	display: inline;
+	width: 33.32%;
+	float: left;
+}
+
+.grid-menu li::after {
+	display: none;
+}
+
+#sub-menu {
 	background-color: #b51f2d;
 	font-size: 14px;
+	min-height: 20px;
+	overflow: hidden;
+}
+
+#sub-menu a {
+}
+
+.sub-menu-div {
 	display: none;
+	height: auto;
+	overflow: auto;
 }
