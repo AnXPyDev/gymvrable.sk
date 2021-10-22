@@ -1,3 +1,3 @@
-function xd
-    print("bruh")
-end
+Template = require("template")
+
+local t = Template:new(arg[1])
