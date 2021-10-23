@@ -2,6 +2,7 @@ function log(value, max_depth, current_depth)
 	if type(value) ~= "table" then
 		io.write(value)
 		io.write("\n")
+		return
 	end
 
 	current_depth = current_depth or 0
@@ -10,6 +11,7 @@ function log(value, max_depth, current_depth)
 	end
 
 	io.write("{\n")
+
 
 	for k, v in pairs(value) do
 		io.write(string.rep(" ", (current_depth + 1) * 2))

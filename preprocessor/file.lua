@@ -9,10 +9,14 @@ function File:new(...)
 	return this
 end
 
-function File:construct(file_source)
-	local file = io.open(file_source)
-	self.content = file:read("*a")
-	file:close()
+function File:construct(file_source, is_string)
+	if is_string then
+		self.content = file_source
+	else
+		local file = io.open(file_source, "r")
+		self.content = file:read("*a")
+		file:close()
+	end
 end
 
 function File:scan(directive)
@@ -87,6 +91,27 @@ function File:parse_parameter(param_begin, param_end)
 	local identifier = self.content:sub(param_begin, param_middle - 1)
 	local value = self.content:sub(param_middle + 2, param_end - 1)
 	return identifier, value
+end
+
+function File:split_without_spans(spans)
+	local result = {}
+	
+	local last_span_end = -1
+
+	for i, v in ipairs(spans) do
+		table.insert(result, self.content:sub(last_span_end + 1, v[1] - 1))
+		last_span_end = v[2]
+	end
+
+	table.insert(result, self.content:sub(last_span_end + 1))
+
+	return result
+end
+
+function File:write(output_path)
+	local f = io.open(output_path, "w")
+	f:write(self.content)
+	f:close()
 end
 
 return File
