@@ -1,5 +1,6 @@
 local File = require("file")
 local util = require("util")
+local log = require("log")
 
 local Preprocessor = {}
 
@@ -72,9 +73,51 @@ function Preprocessor:eval_define_directives(directives, variable_store, file)
 	end
 end
 
-function Preprocessor:process(file_path, variable_store)
-	variable_store = variable_store or {}
-	local file = File:new(file_path)
+function Preprocessor:string_resolve(str, variable_store)
+	local search_begin = -1
+
+	while true do
+		local b, e = str:find("%%", search_begin + 1)
+		
+		if b == nil then
+			break
+		else
+			if str:sub(b + 1, b + 1) == "%" then
+				search_begin = b + 1
+			else
+
+			end
+		end
+	end
+end
+
+function Preprocessor:process(file_source, variable_store, config)
+	variable_store = variable_store and util.copy_table(variable_store) or {}
+
+	local file = nil
+
+	if type(file_source) == "table" then
+		file = File:new(table.unpack(file_source))
+	else
+		file = File:new(file_source) 
+	end
+
+	-- scan for globals
+
+	do
+		local globals = file:scan("prep%-global")
+		
+		for i, v in ipairs(globals) do
+			variable_store = util.crush_table(
+				variable_store,
+				table.pack(self:process({file.content:sub(v.content_begin, v.content_end), true}))[2]
+			)
+		end
+
+	end
+
+	-- scan for used templates
+
 
 	-- scan for substitute requests in file
 	do 
@@ -104,7 +147,7 @@ function Preprocessor:process(file_path, variable_store)
 
 
 
-	return file
+	return file, variable_store
 end
 
 return Preprocessor

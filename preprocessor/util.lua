@@ -29,4 +29,23 @@ function util.join_split_file(split_file)
 	return result
 end
 
+function util.copy_table(t1)
+	local result = {}
+
+	for k, v in pairs(t1) do
+		result[k] = v
+	end
+
+	return result
+end
+
+function util.crush_table(t1, t2)
+	local result = util.copy_table(t1)
+
+	for k, v in pairs(t2) do
+		result[k] = v
+	end
+	return result
+end
+
 return util

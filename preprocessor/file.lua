@@ -38,7 +38,6 @@ function File:scan(directive)
 end
 
 function File:parse_directive(directive, begin, endv)
-	print(directive, begin, endv)
 	local data = {
 		span_begin = begin,
 		span_end = nil,
@@ -79,7 +78,6 @@ function File:parse_directive(directive, begin, endv)
 			end
 		end
 	end
-	print(data)
 	return data
 end
 
