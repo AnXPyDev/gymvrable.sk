@@ -1,6 +1,6 @@
 function log(value, max_depth, current_depth)
 	if type(value) ~= "table" then
-		io.write(value)
+		io.write(tostring(value))
 		io.write("\n")
 		return
 	end
@@ -19,7 +19,7 @@ function log(value, max_depth, current_depth)
 		if type(v) == "table" then
 			log(v, max_depth, current_depth + 1)
 		else
-			io.write(v)
+			io.write(tostring(v))
 			io.write("\n")
 		end
 	end
