@@ -73,6 +73,16 @@ a:active {
 	}
 }
 
+#banner {
+	width: 100%;
+	/*height: 200px;*/
+	background-color: #aaaaaa;
+}
+
+#banner-img {
+	width: 100%;
+}
+
 #banner-script-enabled {
     display: none;
 }

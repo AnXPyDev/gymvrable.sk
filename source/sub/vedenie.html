@@ -1,0 +1,30 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/misc.css')
+
+define(`PAGE_TITLE',`Vedenie školy')
+
+define(`LEFT_CONTENT', `
+
+<style>
+    .paragraph {
+        line-height: 2;
+    }
+</style>
+
+<div class="full-width">
+    <h class="content-title">Vedenie školy</h>
+</div>
+
+
+<div class="paragraph">
+Riaditeľka gymnázia: <b>PaedDr. Beáta HAVETTOVÁ</b><br>
+
+Zástupkyňa riaditeľky školy: <b>PaedDr. Eliška MATUŠKOVÁ</b><br>
+
+<a href="/sub/kontakt.html"><i class="fa fa-link"></i> Kontakt</a>
+</div>
+')
+
+include(include/notices.html)
+include(include/base.html)
