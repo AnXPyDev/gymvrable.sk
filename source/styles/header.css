@@ -36,16 +36,10 @@
     text-decoration: underline;
 }
 
-#main-menu-bar {
-    display: none;
-    height: 0;
-    box-sizing: border-box;
-    position: absolute;
-    left:0vw;
+#top-main-menu-container {
     border: solid 1px var(--pm-clr-sh);
     background-color: var(--pm-clr-hl);
-    width: 0;
-    z-index: -1;
+    margin-bottom: 1px;
 }
 
 #main-menu {
@@ -87,16 +81,9 @@
 	overflow: hidden;
 }
 
-#sub-menu-bar {
-    display: none;
-    height: 0;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0vw;
+#top-sub-menu-container {
     border: solid 1px var(--sc-clr-sh);
     background-color: var(--sc-clr-hl);
-    width: 0;
-    z-index: -1;
 }
 
 #sub-menu a {

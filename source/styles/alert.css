@@ -5,7 +5,7 @@
     background-color:#ECF8FF;
     border:1px dashed #049AFC;
     font-size: 16px;
-    box-shadow: 0px 3px 7px #00000055;
+    box-shadow: 0px 0px 10px var(--sh-clr);
 }
 
 .alert-content {

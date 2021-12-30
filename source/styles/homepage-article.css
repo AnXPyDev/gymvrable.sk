@@ -1,7 +1,7 @@
 .hp-article {
 	padding: 0.7em;
     margin-bottom: 2em;
-    box-shadow: 0px 3px 7px var(--sh-clr);
+    box-shadow: 0 0 10px var(--sh-clr);
     background-color: var(--bg-clr-up);
 	border-radius: 5px;
     overflow: auto;

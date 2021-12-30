@@ -1,7 +1,7 @@
 .notice {
 	padding: 0px;
     margin-bottom: 2vw;
-    box-shadow: 0px 3px 7px var(--sh-clr);
+    box-shadow: 0px 0px 10px var(--sh-clr);
     background-color: var(--sc-clr);
 	border-radius: 5px;
     border-style: solid;

@@ -1,8 +1,10 @@
+#top-footer-container {
+    background: linear-gradient(0deg, var(--pm-clr) 0%, var(--pm-clr-sh) 100%);
+}
+
 #footer {
 	width: 100%;
 	float: left;
-	background: rgb(36,76,128);
-	background: linear-gradient(0deg, var(--pm-clr) 0%, var(--pm-clr-sh) 100%);
 }
 
 #footer-text {
