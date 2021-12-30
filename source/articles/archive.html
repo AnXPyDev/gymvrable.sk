@@ -1,0 +1,44 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/archive.css')
+
+define(PAGE_TITLE, `Archív - Gymnázium Vráble')
+
+define(ARCHIVE_MAKE_ARTICLE, `<li><a href="$2">$1</a></li>')
+define(ARCHIVE_MAKE_YEAR, `
+<div class="archive-year-wrapper">
+    <a class="archive-year-button"><h>$1</h></a>
+    <div class="archive-year-content">
+        <hr>
+        <ul>
+            $2
+        </ul>
+    </div>
+    <hr>
+</div>
+')
+
+define(LEFT_CONTENT, `
+<div class="archive-title-wrapper">
+    <h class="archive-title">Archív článkov</h>
+</div>
+
+ARCHIVE_MAKE_YEAR(`2021/2022', `
+    ARCHIVE_MAKE_ARTICLE(`Keď sa blížia vianoce...', `/articles/2022/ked_sa_blizia_vianoce/')
+    ARCHIVE_MAKE_ARTICLE(`Knihy dočítané, cena René udelená', `/articles/2022/cena_rene/')
+    ARCHIVE_MAKE_ARTICLE(`Ženy z transportov', `/articles/2022/zeny_z_transportov/')
+    ARCHIVE_MAKE_ARTICLE(`Krokusy sú už zasadené...', `/articles/2022/krokusy_su_zasadene/')
+    ARCHIVE_MAKE_ARTICLE(`Analýza zloženia odpadu v meste Vráble', `/articles/2022/analyza_odpadu/')
+    ARCHIVE_MAKE_ARTICLE(`Recitačná súťaž Viliama Záborského', `5.11.2021')
+    ARCHIVE_MAKE_ARTICLE(`Gaudeamus Bratislava 2021', `26.10.2021')
+    ARCHIVE_MAKE_ARTICLE(`Záložka do knihy spája slovenské školy', `26.10.2021')
+    ARCHIVE_MAKE_ARTICLE(`Biela pastelka', `/articles/2022/biela_pastelka/')
+    ARCHIVE_MAKE_ARTICLE(`Európska noc výskumníkov', `/articles/2022/europska_noc_vyskumnikov/')
+    ARCHIVE_MAKE_ARTICLE(`Nezabudnutí susedia', `/articles/2022/nezabudnuti_susedia/')
+')
+
+<script src="/scripts/archive.js"></script>
+')
+
+include(include/notices.html)
+include(include/base.html)

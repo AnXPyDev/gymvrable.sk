@@ -1,0 +1,58 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/gallery.css')
+
+
+define(`GALLERY_MAKE_THUMBNAIL',`
+    <div class="gallery-thumbnail-wrapper">
+        <img src="$1"></img>
+    </div>
+')
+
+define(`GALLERY_MAKE_IMAGE', `
+    <div class="gallery-image-wrapper">
+    <img src="$1"></img>
+    </div>
+')
+
+define(`PAGE_TITLE', `Galéria - ARTICLE_TITLE - Gymnázium Vráble')
+
+define(`LEFT_CONTENT', `
+    <h class="gallery-title">
+        ARTICLE_TITLE - Galéria
+    </h>
+    <div class="gallery-content">
+        ifdef(`GALLERY_THUMBNAILS', `GALLERY_THUMBNAILS', `esyscmd(./gallery-gen.sh thumb __WD)')
+    </div>
+    <div class="gallery-article-link-wrapper">
+        <a href="__WD`'index.html"><i class="fa fa-newspaper-o"></i> Späť na článok</a>
+    </div>
+
+    <div class="gallery-overlay" id="gallery-overlay">
+        <div class="gallery-image-container">
+            ifdef(`GALLERY_IMAGES', `GALLERY_IMAGES', `esyscmd(./gallery-gen.sh image __WD)')
+        </div>
+        <div class="gallery-controls">
+            <div class="gallery-button-wrapper">
+                <div id="gallery-button-prev" class="gallery-button">
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+            </div>
+            <div class="gallery-button-wrapper">
+                <div id="gallery-button-next" class="gallery-button">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="gallery-button-wrapper">
+                <div id="gallery-button-exit" class="gallery-button">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/gallery.js"></script>
+')
+
+include(include/notices.html)
+include(include/base.html)

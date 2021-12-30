@@ -1,0 +1,14 @@
+.alert {
+    margin-bottom: 2em;
+    padding: 1em;
+    color:#003366;
+    background-color:#ECF8FF;
+    border:1px dashed #049AFC;
+    font-size: 16px;
+    box-shadow: 0px 3px 7px #00000055;
+}
+
+.alert-content {
+    text-align: center;
+}
+

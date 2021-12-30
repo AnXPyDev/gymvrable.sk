@@ -1,0 +1,39 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/article.css')
+
+define(PAGE_TITLE, `ARTICLE_TITLE - Gymnázium Vráble')
+
+define(ARTICLE_MAKE_IMAGE, `
+<div class="article-image-wrapper">
+    <img src="$1"/>
+</div>
+')
+
+define(__INTERNAL_ARTICLE_GALLERY_INSERT, `
+    <div class="article-gallery-link-wrapper" id="article-gallery-link-wrapper-$1">
+        <a href="__WD`gallery.html'"><i class="fa fa-picture-o"></i> Galéria k článku</a>
+    </div>
+')
+
+define(LEFT_CONTENT, `
+    ifdef(`ARTICLE_IMAGE_CONTENT', `
+    <div class="article-content article-content-if-img">
+        ARTICLE_CONTENT
+        __INTERNAL_ARTICLE_GALLERY_INSERT(1)
+    </div>
+    <div class="article-image-content">
+        ARTICLE_IMAGE_CONTENT
+    </div>
+    __INTERNAL_ARTICLE_GALLERY_INSERT(2)
+    ',`
+    <div class= "article-content">
+        ARTICLE_CONTENT
+        __INTERNAL_ARTICLE_GALLERY_INSERT(3)
+    </div>
+    ')
+')
+
+
+include(include/notices.html)dnl
+include(include/base.html)dnl

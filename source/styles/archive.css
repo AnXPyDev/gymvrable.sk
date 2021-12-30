@@ -1,0 +1,13 @@
+.archive-title-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.archive-title {
+    font-size: 20px;
+}
+
+.archive-year-button {
+    cursor: pointer;
+}
+

@@ -1,0 +1,21 @@
+#footer {
+	width: 100%;
+	float: left;
+	background: rgb(36,76,128);
+	background: linear-gradient(0deg, var(--pm-clr) 0%, var(--pm-clr-sh) 100%);
+}
+
+#footer-text {
+    font-size: 14px;
+    text-align: center;
+    color: var(--pm-clr-tx);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+
+#footer-text h {
+    letter-spacing: 0.5em;
+    font-size: 16px;
+}

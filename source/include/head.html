@@ -1,0 +1,24 @@
+define(`__INTERNAL_HEAD_CSS_PROCESS', `ifdef(`REQUIRED_CSS', `<link rel="stylesheet" href="REQUIRED_CSS">
+popdef(`REQUIRED_CSS')dnl
+__INTERNAL_HEAD_CSS_PROCESS')')
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+
+	<title>
+        ifdef(`PAGE_TITLE', PAGE_TITLE, `Gymnázium vo Vrábľoch')
+    </title>
+
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/styles/core.css">
+    __INTERNAL_HEAD_CSS_PROCESS
+
+	ifdef(`HEAD_CONTENT', `HEAD_CONTENT')dnl
+</head>

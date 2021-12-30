@@ -1,0 +1,15 @@
+.full-width {
+    width: 100%;
+}
+
+.indented {
+    margin-left: 40px;
+}
+
+.paragraph {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

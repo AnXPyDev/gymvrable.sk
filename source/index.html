@@ -1,0 +1,134 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/alert.css')
+REQUIRE_CSS(`/styles/homepage-article.css')
+
+
+define(HOMEPAGE_MAKE_ARTICLE, `
+<div class="hp-article">
+    <div class="hp-article-header">
+        <a class="hp-article-title" href="$3">
+            $1
+        </a>
+        <h class="hp-article-date">
+            <i class="fa fa-calendar"></i>
+            $2
+        </h>
+    </div>
+    <hr class="hp-article-divider">
+    <div class="hp-article-inner">
+        <img src="$4"></img>
+        <p>$5</p>
+    </div>
+</div>
+')
+
+define(LEFT_CONTENT, `
+<div class="alert">
+    <div class="alert-content">
+        V školskom roku 2022/2023 otvárame 1 triedu s počtom žiakov 21<br>
+        v študijnom odbore 7902 J 74 gymnázium - bilingválne štúdium (slovensko-ruské)
+        <br><br>
+        <a href="https://www.gymvrable.sk/dokumenty/triedy-2022-2023.pdf"><i class="fa fa-file-text"></i> bližšie informácie</a>
+    </div>
+    <div class="alert-footer">
+        <div style="text-align:right;">
+            Vráble 20. 11. 2021
+        </div>
+    </div>
+</div>
+
+
+HOMEPAGE_MAKE_ARTICLE(
+`Keď sa blížia vianoce...',
+`8.12.2021',
+`/articles/2022/ked_sa_blizia_vianoce/',
+`/img/articles/2022/ked_sa_blizia_vianoce/thumb_001.jpg',
+`Žiacka školská rada vyhlásila súťaž o najkrajšie vyzdobenú triedu. Keďže k nám už zavítala zima a blížia sa Vianoce, témou bola vianočná výzdoba. Chceli sme si aj v škole vytvoriť tú čarovnú atmosféru Vianoc. Do súťaže sa zapojilo sedem tried a 1. 12. 2021 sa uskutočnilo vyhodnotenie...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Knihy dočítané, cena René udelená',
+`8.12.2021',
+`/articles/2022/cena_rene/',
+`/img/articles/2022/cena_rene/thumb_001.jpg',
+`Naši gymnazisti sú od samého začiatku (teda od roku 2017) zapojení do literárnej ceny René, ktorá má podporovať čítanie mladých, prejaviť u nich záujem o knihy a zoznámiť ich s umelecky hodnotnou súčasnou slovenskou literatúrou. Je to prvá literárna cena, ktorú udeľujú študenti vybraných gymnázií z celého Slovenska raz ročne za najlepšie pôvodné slovenské prozaické literárne dielo...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Ženy z transportov',
+`30.11.2021',
+`/articles/2022/zeny_z_transportov/',
+`/img/articles/2022/zeny_z_transportov/thumb_001.jpg',
+`Múzeum holokaustu v Seredi je súčasťou SNM-Múzea židovskej kultúry v Bratislave. Vzniklo v priestoroch bývalého pracovného a koncentračného tábora v Seredi. Aj to sme sa dozvedeli vo štvrtok, 25.11. 2021, na spoločenskovednom seminári. Workshop sa kvôli opatreniam tejto doby musel realizovať prostredníctvom online stretnutia cez aplikáciu ZOOM. No myslím si, že aj keď sme nemali možnosť vidieť expozíciu naživo, príbehy, ktoré sme počuli, nás dokázali chytiť za srdcia tak či tak. Počas druhej svetovej vojny boli zo Serede deportovaní slovenskí židia...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Krokusy sú už zasadené...',
+`17.11.2021',
+`/articles/2022/krokusy_su_zasadene/',
+`/img/articles/2022/krokusy_su_zasadene/thumb_001.jpg',
+`Naša škola sa zapojila do projektu - Projekt Šafran, ktorý vznikol najmä preto, aby sme nikdy nezabudli na deti, ktoré zahynuli počas holokaustu. Projekt Šafran je írska iniciatíva, ktorá v súčasnosti zahŕňa niekoľko európskych krajín. Nadácia Írska pre vzdelávanie o holokauste poskytuje cibuľky žltých krokusov/šafranov, ktoré žiaci vysádzajú na jeseň, aby si tak pripomenuli pamiatku jeden a pol milióna židovských detí, ktoré zahynuli počas holokaustu a tisícok ďalších detí, ktoré sa stali obeťami nacistických zverstiev...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Analýza zloženia odpadu v meste Vráble',
+`9.11.2021',
+`/articles/2022/analyza_odpadu/',
+`/img/articles/2022/analyza_odpadu/thumb_001.jpg',
+`Dňa 25.10.2021 sa 11 študentov z našej školy zúčastnilo analýzy zloženia komunálneho odpadu obyvateľov mesta Vráble. Na študentov ráno čakali 2 veľké kopy odpadu. Prvá bola z kontajnerov nachádzajúcich sa pred bytovými domami na sídlisku, druhá zo zberných nádob pochádzajúcich z rodinných domov...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Recitačná súťaž Viliama Záborského',
+`5.11.2021',
+`/articles/2022/recitacna_sutaz_vz/',
+`/img/articles/2022/recitacna_sutaz_vz/thumb_001.jpg',
+`28. ročník Recitačnej súťaže Viliama Záborského sa konal 27.10.2021 a jeho organizátorom bola ZŠ s MŠ Viliama Záborského. Novinkou v tomto ročníku bolo to, že súťaž sa konala, vzhľadom na súčasnú epidemiologickú situáciu, online...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Gaudeamus Bratislava 2021',
+`26.10.2021',
+`/articles/2022/gaudeamus_bratislava/',
+`/img/articles/2022/gaudeamus_bratislava/thumb_001.jpg',
+`Výber budúceho povolania je jedno z najdôležitejších životných rozhodnutí . Je úzko spojené s výberom školy, ktorá poskytuje vhodné vzdelanie pre konkrétnu oblasť ľudskej činnosti. Preto žiaci III.A triedy 14. októbra 2021 využili príležitosť získať informácie o ďalšom pomaturitnom štúdiu priamo od pracovníkov a študentov vysokých škôl propagujúcich svoje študijné programy na podujatí GAUDEAMUS Bratislava 2021 prednáškové a konzultačné dni...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Záložka do knihy spája slovenské školy',
+`26.10.2021',
+`/articles/2022/zalozka_do_knih/',
+`/img/articles/2022/zalozka_do_knih/thumb_001.jpg',
+`Do projektu Záložka do knihy spája slovenské školy sme sa zapojili aj v tomto školskom roku. Tento raz sme mali partnerskú školu zo stredného Slovenska a záložky sme pripravovali pre rovesníkov, ktorí študujú na Gymnáziu Veľká okružná v Žiline...'
+)
+
+
+HOMEPAGE_MAKE_ARTICLE(
+`Biela pastelka',
+`15.10.2021',
+`/articles/2022/biela_pastelka/',
+`/img/articles/2022/biela_pastelka/thumb_001.jpg',
+`Koniec októbra je vždy spojený so zbierkou Biela pastelka, do ktorej sa pravidelne zapájajú ako dobrovoľníci aj žiaci našej školy...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Európska noc výskumníkov',
+`4.10.2021',
+`/articles/2022/europska_noc_vyskumnikov/',
+`/img/articles/2022/europska_noc_vyskumnikov/thumb_001.jpg',
+`Festival vedy - Európska noc výskumníkov už niekoľko rokov podnecuje širokú verejnosť a najmä mladých ľudí k aktivite a zážitkovému vzdelávaniu. 24.9.2021 sa konala Noc výskumníkov na Slovensku, ktorá je súčasťou celoeurópskej iniciatívy a projektu EuropeanResearchers´Night...'
+)
+
+HOMEPAGE_MAKE_ARTICLE(
+`Nezabudnutí susedia',
+`20.09.2021',
+`/articles/2022/nezabudnuti_susedia/',
+`/img/articles/2022/nezabudnuti_susedia/thumb_001.jpg',
+`Deň obetí holokaustu a rasového násilia sme si pripomenuli 9.9.2021 vo veľkej zasadačke Mestského úradu vo Vrábľoch. Tento pamätný deň si uctili občania 63 miest po celom Slovensku. V úvode programu zaznel príhovor spisovateľa a historika Jozefa Trubíniho, po ktorom nasledovalo čítanie mien obetí holokaustu z Vrábeľ a blízkeho okolia. Česť čítať mená mala aj naša pani profesorka Ivana Hudaszek Semjanová...'
+)
+
+')
+
+include(include/notices.html)
+include(include/base.html)
