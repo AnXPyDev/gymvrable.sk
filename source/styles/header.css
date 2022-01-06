@@ -36,7 +36,7 @@
     text-decoration: underline;
 }
 
-#top-main-menu-container {
+#wide-main-menu-base {
     border: solid 1px var(--pm-clr-sh);
     background-color: var(--pm-clr-hl);
     margin-bottom: 1px;
@@ -81,7 +81,7 @@
 	overflow: hidden;
 }
 
-#top-sub-menu-container {
+#wide-sub-menu-base{
     border: solid 1px var(--sc-clr-sh);
     background-color: var(--sc-clr-hl);
 }

@@ -6,8 +6,8 @@ REQUIRE_CSS(`/styles/footer.css')
 include(include/head.html)
 
 <body>
-    <div id="top-banner-container" class="top-container">
-        <div id="center-banner-container" class="center-container">
+    <div id="wide-banner-base" class="wide-base">
+        <div id="center-banner-base" class="center-base">
             <div id="banner">
                 <img id="banner-script-enabled" class="banner-img">
                 <noscript>
@@ -20,8 +20,8 @@ include(include/head.html)
 
     include(include/header-menu.html)
 
-    <div id="top-content-container" class="top-container">
-        <div id="center-content-container" class="center-container">
+    <div id="wide-content-base" class="wide-base">
+        <div id="center-content-base" class="center-base">
             ifdef(`CENTER_CONTENT',`
             <div class="center-content content-div">
                 CENTER_CONTENT
@@ -45,8 +45,8 @@ include(include/head.html)
         </div>
     </div>
 
-    <div id="top-footer-container" class="top-container">
-        <div id="center-footer-container" class="center-container">
+    <div id="wide-footer-base" class="wide-base">
+        <div id="center-footer-base" class="center-base">
             <div id="footer">
                 <p id="footer-text">
                     <h>Gymnázium</h><br>

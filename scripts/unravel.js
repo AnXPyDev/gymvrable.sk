@@ -1,6 +1,6 @@
-for (let year of document.getElementsByClassName("archive-year-wrapper")) {
-    let button = year.getElementsByClassName("archive-year-button")[0];
-    let content = year.getElementsByClassName("archive-year-content")[0];
+for (let year of document.getElementsByClassName("unravel-item")) {
+    let button = year.getElementsByClassName("unravel-button")[0];
+    let content = year.getElementsByClassName("unravel-content")[0];
 
     content.style.display = "none";
 

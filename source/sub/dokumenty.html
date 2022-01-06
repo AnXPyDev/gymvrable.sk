@@ -1,0 +1,30 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/misc.css')
+
+define(`PAGE_TITLE',`Dokumenty')
+
+define(`LEFT_CONTENT', `
+<div class="full-width">
+    <h class="content-title">Dokumenty</h>
+</div>
+
+<style>
+    #file-list {
+        line-height: 1.5;
+        list-style-type: none;
+        padding-left: 1em;
+    }
+</style>
+
+<ul id="file-list">
+    <li><a href="https://www.gymvrable.sk/dokumenty/zriadovacia_listina.pdf"><i class="fa fa-file-text-o"></i> Zriaďovacia listina</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/skvp_2021_08_31.pdf"><i class="fa fa-file-text-o"></i> Školský vzdelávací program</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/organizacny_poriadok_skoly.pdf"><i class="fa fa-file-text-o"></i> Organizačný poriadok školy</a></li>
+    <li><a href="https://www.gymvrable.sk/skola/vnutorny_poriadok_skoly.php"><i class="fa fa-file-text-o"></i> Školský poriadok</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/spravy/sprava_o_vysledkoch_2019_20.pdf"><i class="fa fa-file-text-o"></i> Správa o výsledkoch a podmienkach výchovno-vzdelávacej činnosti školy za školský rok 2019/2020</a></li>
+</ul>
+')
+
+include(include/notices.html)
+include(include/base.html)

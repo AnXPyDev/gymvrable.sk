@@ -35,6 +35,10 @@
     text-decoration: none;
 }
 
+a:hover.notice-title {
+    color: var(--sc-clr-tx);
+}
+
 .notice-inner img {
     width: 100%;
     max-width: 50vw;

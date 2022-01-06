@@ -1,0 +1,28 @@
+.table-elm {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-elm td {
+    border: solid 1px var(--fg-clr);
+    height: 30px;
+    text-align: center;
+}
+
+
+
+.table-body td, td.table-body {
+    background-color: var(--bg-clr);
+    color: var(--fg-clr);
+}
+
+.table-header td, td.table-header {
+    background-color: var(--pm-clr);
+    color: var(--pm-clr-tx);
+}
+
+.table-footer td, td.table-footer {
+    background-color: var(--sc-clr);
+    color: var(--sc-clr-tx);
+}

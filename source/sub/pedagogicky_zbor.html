@@ -1,0 +1,197 @@
+include(include/helpers.m4)
+
+REQUIRE_CSS(`/styles/misc.css')
+REQUIRE_CSS(`/styles/table.css')
+
+define(`PAGE_TITLE',`Pedagogický zbor')
+
+define(`LEFT_CONTENT', `
+<div class="full-width">
+    <h class="content-title">Pedagogický zbor - pedagógovia vyučujúci na gymnáziu v súčasnosti</h>
+</div>
+
+<div class="divider"></div>
+
+<style>
+    .table-elm {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .table-elm td {
+        max-width: 20vw;
+    }
+</style>
+
+
+define(`TABLE_CONTENT', `
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Beáta HAVETTOVÁ')
+        TABLE_FUNCTION(`<ul><li>riaditeľka školy</li></ul>')
+        TABLE_SUBJECTS(`RUJ, NAS, ANJ')
+        TABLE_CONTACT(`havettova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Eliška MATUŠKOVÁ')
+        TABLE_FUNCTION(`<ul><li>supervízor</li></ul>')
+        TABLE_SUBJECTS(`RUJ, GEG, ANJ')
+        TABLE_CONTACT(`matuskova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Mária BAŠISTOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka V.D</li>
+            <li>koordinátorka environmentálnej výchovy</li>
+        </ul>')
+        TABLE_SUBJECTS(`MAT, BIO')
+        TABLE_CONTACT(`maria.basistova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PhDr. Monika BOGYÓOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka IV.D</li>
+            <li>gestor žiackej školskej rady</li>
+            <li>vedúca školskej knižnice</li>
+            <li>členka Rady školy</li>
+        </ul>')
+        TABLE_SUBJECTS(`SJL, DEJ')
+        TABLE_CONTACT(`monika.bogyoova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PhDr. Ivana HUDASZEK SEMJANOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>vedúca predmetovej komisie spoločenskovedných predmetov</li>
+            <li>členka Rady školy</li>
+        </ul>')
+        TABLE_SUBJECTS(`SJL, NAS')
+        TABLE_CONTACT(`ivana.hudaszek@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Eva HUDECOVÁ')
+        TABLE_FUNCTION(`')
+        TABLE_SUBJECTS(`ANJ')
+        TABLE_CONTACT(`eva.hudecova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Denisa OČOVAYOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>vedúca predmetovej komisie cudzích jazykov</li>
+        </ul>')
+        TABLE_SUBJECTS(`NEJ, RUJ')
+        TABLE_CONTACT(`denisa.ocovayova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Alla PAKHRITSINA, CSc.')
+        TABLE_FUNCTION(`')
+        TABLE_SUBJECTS(`RUJ')
+        TABLE_CONTACT(`alla.pakhritsina@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Boris RAGAS')
+        TABLE_FUNCTION(`<ul>
+            <li>triedny učiteľ IV.A</li>
+            <li>koordinátor účelových cvičení</li>
+            <li>kariérový poradca</li>
+        </ul>')
+        TABLE_SUBJECTS(`GEG, TŠV')
+        TABLE_CONTACT(`boris.ragas@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Martina RAGASOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka II.D</li>
+            <li>školský koordinátor prevencie drogových závislostí a ďalších sociálno–patologických javov</li>
+            <li>výchovná poradkyňa</li>
+        </ul>')
+        TABLE_SUBJECTS(`CHE, BIO')
+        TABLE_CONTACT(`martina.ragasova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Anna SEMENOVÁ')
+        TABLE_FUNCTION(`')
+        TABLE_SUBJECTS(`RUJ')
+        TABLE_CONTACT(`anna.semenova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`RNDr. Anna UHRÍKOVÁ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka III.A</li>
+            <li>vedúca predmetovej komisie prírodovedných predmetov</li>
+        </ul>')
+        TABLE_SUBJECTS(`MAT, FYZ')
+        TABLE_CONTACT(`anna.uhrikova@gymvrable.sk')
+    ')
+')
+
+define(`TABLE_TEACHER', `$1')
+
+define(`TABLE_NAME', `
+    <tr class="table-header">
+            <td colspan="2">$1</td>
+    </tr>
+')
+
+define(`TABLE_FUNCTION', `
+    <tr class="table-body">
+        <td class="table-header">funkcia</td>
+        <td>$1</td>
+    </tr>
+')
+
+define(`TABLE_SUBJECTS', `
+    <tr class="table-body">
+        <td class="table-header">vyučuje</td>
+        <td>$1</td>
+    </tr>
+')
+
+define(`TABLE_CONTACT', `
+    <tr class="table-body">
+        <td class="table-header">kontakt</td>
+        <td>$1</td>
+    </tr>
+')
+
+
+TABLE_NAME(`RNDr. Anna UHRÍKOVÁ')
+TABLE_FUNCTION(`<ul>
+    <li>triedna učiteľka III.A</li>
+    <li>vedúca predmetovej komisie prírodovedných predmetov</li>
+</ul>')
+TABLE_SUBJECTS(`MAT, FYZ')
+TABLE_CONTACT(`anna.uhrikova@gymvrable.sk')
+
+
+<table id="table-compact" class="table-elm">
+    <tbody>
+        TABLE_CONTENT
+    </tbody>
+</table>
+
+<div class="divider"></div>
+
+
+define(`TABLE_TEACHER', `
+<tr class="table-body">
+    $1
+</tr>
+')
+
+define(`TABLE_NAME', `<td>$1<td>')
+define(`TABLE_FUNCTION', `<td>$1<td>')
+define(`TABLE_SUBJECTS', `<td>$1<td>')
+define(`TABLE_CONTACT', `<td>$1<td>')
+
+<table id="table-full" class="table-elm">
+    <tbody>
+        <tr class="table-header">
+            <td>meno</td><td>funkcia</td><td>vyučuje</td><td>kontakt</td>
+        </tr>
+        TABLE_CONTENT
+    </tbody>
+</table>
+
+')
+
+include(include/notices.html)
+include(include/base.html)

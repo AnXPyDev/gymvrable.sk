@@ -39,10 +39,12 @@ a {
 
 h {
     color: inherit;
+    font-size: 18px;
 }
 
 p {
     font-family: var(--ff);
+    font-size: 16px;
 }
 
 .fa {
@@ -58,13 +60,13 @@ a:active {
     color: inherit;
 }
 
-.top-container {
+.wide-base {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.center-container {
+.center-base {
     max-width: 1200px;
     width: 100%;
 }
