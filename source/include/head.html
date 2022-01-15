@@ -1,8 +1,5 @@
-define(`__INTERNAL_HEAD_CSS_PROCESS', `ifdef(`REQUIRED_CSS', `<link rel="stylesheet" href="REQUIRED_CSS">
-popdef(`REQUIRED_CSS')dnl
-__INTERNAL_HEAD_CSS_PROCESS')')
-
-
+pushs(`RequiredCSSUnravel', `ifset(`RequiredCSS', `<link rel="stylesheet" href="RequiredCSS"> pop(`RequiredCSS')
+RequiredCSSUnravel')')dnl
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +7,7 @@ __INTERNAL_HEAD_CSS_PROCESS')')
 	<meta charset="utf-8"/>
 
 	<title>
-        ifdef(`PAGE_TITLE', PAGE_TITLE, `Gymnázium vo Vrábľoch')
+        ifset(`Page-Title', `Page-Title', `Gymnázium vo Vrábľoch')
     </title>
 
     <link rel="shortcut icon" href="/img/logo.png" type="image/png"/>
@@ -18,7 +15,7 @@ __INTERNAL_HEAD_CSS_PROCESS')')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/styles/core.css">
-    __INTERNAL_HEAD_CSS_PROCESS
+	RequiredCSSUnravel
 
-	ifdef(`HEAD_CONTENT', `HEAD_CONTENT')dnl
+	ifset(`HeadContent', `HeadContent')dnl
 </head>

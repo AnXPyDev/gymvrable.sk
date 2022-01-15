@@ -58,10 +58,10 @@ def get_deps(file_path):
         return deps_cache[file_path]
 
     f = open(file_path, "r")
-    includes = re.findall(r"include\(.*?\)", f.read())
+    includes = re.findall(r"include\(`?(.*?)'?\)", f.read())
     deps = []
     for i in includes:
-        dpath = source_dir + i[8:-1]
+        dpath = source_dir + i
         if dpath in deps: continue
         get_deps(dpath)
         deps.append(dpath)
@@ -78,19 +78,19 @@ def file_path_to_directory(file_path):
 def create_article_make_directive(FILE):
     out_dir = output_dir + FILE["out"]
     src_file = source_dir + FILE["src"]
-    m4_opts = FILE.get("m4_opts", "")
+    prep_opts = FILE.get("prep_opts", "")
 
     index_FILE = {
         "src": FILE["src"],
         "out": FILE["out"] + "index.html",
-        "m4_opts": m4_opts + " -D ARTICLE_INDEX_MODE",
+        "prep_opts": prep_opts + " -D Article-IndexMode",
         "c_deps": FILE.get("c_deps", []) + [source_dir + "include/article-index.html"]
     }
 
     gallery_FILE = {
         "src": FILE["src"],
         "out": FILE["out"] + "gallery.html",
-        "m4_opts": "-D ARTICLE_GALLERY_MODE " + m4_opts,
+        "prep_opts": "-D Article-GalleryMode " + prep_opts,
         "c_deps": FILE.get("c_deps", []) + [source_dir + "include/article-gallery.html"]
     }
 
@@ -109,13 +109,13 @@ def create_make_directive(FILE):
 
     if not out_dir in directories: directories.append(out_dir)
 
-    m4_opts = FILE.get("m4_opts", "")
+    prep_opts = FILE.get("prep_opts", "")
 
-    m4_defines = f"-D __WD='/{rel_out_dir}'"
+    prep_defines = f"-D __WD='/{rel_out_dir}'"
 
     deps = get_deps(src_file)
 
-    return f"{out_file}: {src_file} {out_dir} {' '.join(deps)} {' '.join(FILE.get('c_deps', []))}\n	m4 -I source/ {m4_defines} {m4_opts} {src_file} > {out_file}\n"
+    return f"{out_file}: {src_file} {out_dir} {' '.join(deps)} {' '.join(FILE.get('c_deps', []))}\n	prep -I source/ {prep_defines} {prep_opts} -i {src_file} -o {out_file}\n"
 
 def get_main_deps(FILE):
     if FILE.get("type", "none") == "article":

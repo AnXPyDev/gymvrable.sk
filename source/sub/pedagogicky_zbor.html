@@ -1,35 +1,14 @@
-include(include/helpers.m4)
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
 
-REQUIRE_CSS(`/styles/misc.css')
-REQUIRE_CSS(`/styles/table.css')
+pushs(`Page-Title',`Pedagogický zbor')
 
-define(`PAGE_TITLE',`Pedagogický zbor')
-
-define(`LEFT_CONTENT', `
-<div class="full-width">
-    <h class="content-title">Pedagogický zbor - pedagógovia vyučujúci na gymnáziu v súčasnosti</h>
-</div>
-
-<div class="divider"></div>
-
-<style>
-    .table-elm {
-        font-size: 12px;
-        text-align: left;
-    }
-
-    .table-elm td {
-        max-width: 20vw;
-    }
-</style>
-
-
-define(`TABLE_CONTENT', `
+pushs(`TABLE_CONTENT', `
     TABLE_TEACHER(`
-        TABLE_NAME(`PaedDr. Beáta HAVETTOVÁ')
-        TABLE_FUNCTION(`<ul><li>riaditeľka školy</li></ul>')
-        TABLE_SUBJECTS(`RUJ, NAS, ANJ')
-        TABLE_CONTACT(`havettova@gymvrable.sk')
+        TABLE_NAME(`PaedDr. Eliška MATUŠKOVÁ')
+        TABLE_FUNCTION(`<ul><li>supervízor</li></ul>')
+        TABLE_SUBJECTS(`RUJ, GEG, ANJ')
+        TABLE_CONTACT(`matuskova@gymvrable.sk')
     ')
     TABLE_TEACHER(`
         TABLE_NAME(`PaedDr. Eliška MATUŠKOVÁ')
@@ -123,75 +102,102 @@ define(`TABLE_CONTENT', `
     ')
 ')
 
-define(`TABLE_TEACHER', `$1')
+pushm(`TABLE_TEACHER', `arg', `arg')
 
-define(`TABLE_NAME', `
+pushm(`TABLE_NAME', `arg', `
     <tr class="table-header">
-            <td colspan="2">$1</td>
+	    <td></td>
+            <td colspan="1">arg</td>
     </tr>
 ')
 
-define(`TABLE_FUNCTION', `
+pushm(`TABLE_FUNCTION', `arg', `
     <tr class="table-body">
         <td class="table-header">funkcia</td>
-        <td>$1</td>
+        <td>arg</td>
     </tr>
 ')
 
-define(`TABLE_SUBJECTS', `
+pushm(`TABLE_SUBJECTS', `arg', `
     <tr class="table-body">
         <td class="table-header">vyučuje</td>
-        <td>$1</td>
+        <td>arg</td>
     </tr>
 ')
 
-define(`TABLE_CONTACT', `
+pushm(`TABLE_CONTACT', `arg', `
     <tr class="table-body">
         <td class="table-header">kontakt</td>
-        <td>$1</td>
+        <td>arg</td>
     </tr>
 ')
 
+pushs(`TABLE_CONTENT_1', `#TABLE_CONTENT')
 
-TABLE_NAME(`RNDr. Anna UHRÍKOVÁ')
-TABLE_FUNCTION(`<ul>
-    <li>triedna učiteľka III.A</li>
-    <li>vedúca predmetovej komisie prírodovedných predmetov</li>
-</ul>')
-TABLE_SUBJECTS(`MAT, FYZ')
-TABLE_CONTACT(`anna.uhrikova@gymvrable.sk')
-
-
-<table id="table-compact" class="table-elm">
-    <tbody>
-        TABLE_CONTENT
-    </tbody>
-</table>
-
-<div class="divider"></div>
-
-
-define(`TABLE_TEACHER', `
+pushm(`TABLE_TEACHER', `arg', `
 <tr class="table-body">
-    $1
+    arg
 </tr>
 ')
 
-define(`TABLE_NAME', `<td>$1<td>')
-define(`TABLE_FUNCTION', `<td>$1<td>')
-define(`TABLE_SUBJECTS', `<td>$1<td>')
-define(`TABLE_CONTACT', `<td>$1<td>')
+pushm(`TABLE_NAME', `arg', `<td>arg</td>')
+pushm(`TABLE_FUNCTION', `arg', `<td>arg</td>')
+pushm(`TABLE_SUBJECTS', `arg', `<td>arg</td>')
+pushm(`TABLE_CONTACT', `arg', `<td>arg</td>')
 
-<table id="table-full" class="table-elm">
+pushs(`TABLE_CONTENT_2', `#TABLE_CONTENT')
+
+pushs(`LeftContent', `
+<div class="full-width">
+    <h class="content-title">Pedagogický zbor - pedagógovia vyučujúci na gymnáziu v súčasnosti</h>
+</div>
+
+<div class="divider"></div>
+
+<style>
+   .table-elm {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .table-elm td {
+        max-width: 20vw;
+    }
+
+    #table-compact {
+	    display: none;
+    }
+
+	@media only screen and (max-width: 1200px) {
+		#table-compact {
+			display: block;
+		}
+		#table-full {
+			display: none;
+		}
+	}
+</style>
+
+<div id="table-compact">
+<table class="table-elm">
+    <tbody>
+        #TABLE_CONTENT_1
+    </tbody>
+</table>
+</div>
+
+<div id="table-full">
+<table class="table-elm">
     <tbody>
         <tr class="table-header">
             <td>meno</td><td>funkcia</td><td>vyučuje</td><td>kontakt</td>
         </tr>
-        TABLE_CONTENT
+        #TABLE_CONTENT_2
     </tbody>
 </table>
+</div>
 
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

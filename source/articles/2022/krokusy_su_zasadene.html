@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, ``Krokusy sú už zasadené...'')
+pushs(Article-Title, ``Krokusy sú už zasadené...'')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Krokusy sú už zasadené...</h>
 <p><i>
 Naša škola sa zapojila do projektu - <b>Projekt Šafran</b>, ktorý vznikol najmä preto, aby sme nikdy nezabudli na deti, ktoré zahynuli počas holokaustu.
@@ -33,8 +33,8 @@ PhDr. Monika Bogyóová
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

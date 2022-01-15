@@ -1,11 +1,11 @@
-include(include/helpers.m4)
+include(`include/helpers.m4')
 
-REQUIRE_CSS(`/styles/misc.css')
-REQUIRE_CSS(`/styles/table.css')
+pushs(`RequireCSS', `/styles/misc.css')
+pushs(`RequireCSS', `/styles/table.css')
 
-define(`PAGE_TITLE',`Základné informácie o škole')
+pushs(`Page-Title',`Základné informácie o škole')
 
-define(`LEFT_CONTENT', `
+pushs(`LeftContent', `
 <div class="full-width">
     <h class="content-title">Základné informácie o škole</h>
 </div>
@@ -106,5 +106,5 @@ V školskom roku 2020/2021 študuje na našej škole 135 žiakov. Z toho 84 žia
 
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

@@ -1,8 +1,7 @@
-include(include/helpers.m4)
+mute()
+pushs(`RequiredCSS', `/styles/notice.css')
 
-REQUIRE_CSS(`/styles/notice.css')
-
-define(RIGHT_CONTENT, `
+pushs(RightContent, `
 <div class="notice">
     <div class="notice-header">
         <div class="notice-title-wrapper">
@@ -100,3 +99,4 @@ define(RIGHT_CONTENT, `
     </div>
 </div>
 ')
+unmute()dnl

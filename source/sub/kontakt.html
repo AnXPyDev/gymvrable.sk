@@ -1,10 +1,10 @@
-include(include/helpers.m4)
+include(`include/helpers.m4')
 
-REQUIRE_CSS(`/styles/misc.css')
+pushs(`RequiredCSS', `/styles/misc.css')
 
-define(`PAGE_TITLE',`Kontakt')
+pushs(`Page-Title',`Kontakt')
 
-define(`LEFT_CONTENT', `
+pushs(`LeftContent', `
 
 <style>
     .paragraph {
@@ -57,5 +57,5 @@ Ekonomické oddelenie: <b>Gabriela MAJTÁNOVÁ</b><br>
 </div>
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

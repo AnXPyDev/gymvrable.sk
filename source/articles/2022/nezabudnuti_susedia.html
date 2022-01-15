@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, ``Nezabudnutí susedia'')
+pushs(Article-Title, ``Nezabudnutí susedia'')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Nezabudnutí susedia</h>
 <p><i>
 Deň obetí holokaustu a rasového násilia sme si pripomenuli 9.9.2021 vo veľkej zasadačke Mestského úradu vo Vrábľoch. Tento pamätný deň  si uctili občania  63 miest po celom Slovensku.
@@ -22,8 +22,8 @@ Nina Vargová, Emma Balogová
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

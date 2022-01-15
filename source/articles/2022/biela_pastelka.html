@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, ``Biela pastelka'')
+pushs(Article-Title, ``Biela pastelka'')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Biela pastelka</h>
 <p><i>
 Koniec októbra je vždy spojený so zbierkou Biela pastelka, do ktorej sa pravidelne zapájajú ako dobrovoľníci aj žiaci našej školy.
@@ -16,8 +16,8 @@ Martina Dobrovodská, III. A
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

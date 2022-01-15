@@ -1,24 +1,22 @@
-include(include/helpers.m4)
+pushs(`RequiredCSS', `/styles/archive.css')
 
-REQUIRE_CSS(`/styles/archive.css')
+pushs(`Page-Title', `Archív - Gymnázium Vráble')
 
-define(PAGE_TITLE, `Archív - Gymnázium Vráble')
-
-define(ARCHIVE_MAKE_ARTICLE, `<li><a href="$2">$1</a></li>')
-define(ARCHIVE_MAKE_YEAR, `
+pushm(`ARCHIVE_MAKE_ARTICLE', `--name', `--link', `<li><a href="--link">--name</a></li>')
+pushm(`ARCHIVE_MAKE_YEAR', `--year', `--content', `
 <div class="archive-year-wrapper unravel-item">
-    <a class="archive-year-button unravel-button"><h>$1</h></a>
+    <a class="archive-year-button unravel-button"><h>--year</h></a>
     <div class="archive-year-content unravel-content">
         <hr>
         <ul>
-            $2
+            --content
         </ul>
     </div>
     <hr>
 </div>
 ')
 
-define(LEFT_CONTENT, `
+pushs(LeftContent, `
 <div class="archive-title-wrapper">
     <h class="archive-title">Archív článkov</h>
 </div>
@@ -40,5 +38,5 @@ ARCHIVE_MAKE_YEAR(`2021/2022', `
 <script src="/scripts/unravel.js"></script>
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

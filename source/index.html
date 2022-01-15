@@ -1,29 +1,27 @@
-include(include/helpers.m4)
-
-REQUIRE_CSS(`/styles/alert.css')
-REQUIRE_CSS(`/styles/homepage-article.css')
+pushs(`RequiredCSS', `/styles/alert.css')
+pushs(`RequiredCSS', `/styles/homepage-article.css')
 
 
-define(HOMEPAGE_MAKE_ARTICLE, `
+pushm(HOMEPAGE_MAKE_ARTICLE, `--title', `--date', `--link', `--image', `--content', `
 <div class="hp-article">
     <div class="hp-article-header">
-        <a class="hp-article-title" href="$3">
-            $1
+        <a class="hp-article-title" href="--link">
+            --title
         </a>
         <h class="hp-article-date">
             <i class="fa fa-calendar"></i>
-            $2
+            --date
         </h>
     </div>
     <hr class="hp-article-divider">
     <div class="hp-article-inner">
-        <img src="$4"></img>
-        <p>$5</p>
+        <img src="--image"></img>
+        <p>--content</p>
     </div>
 </div>
 ')
 
-define(LEFT_CONTENT, `
+pushs(LeftContent, `
 <div class="alert">
     <div class="alert-content">
         V školskom roku 2022/2023 otvárame 1 triedu s počtom žiakov 21<br>
@@ -130,5 +128,5 @@ HOMEPAGE_MAKE_ARTICLE(
 
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

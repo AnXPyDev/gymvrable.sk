@@ -1,17 +1,10 @@
 #!/bin/sh
 
-M4CMD=GALLERY_MAKE_IMAGE
+M4CMD=Gallery-MakeImage
 GREP_INVERT=-v
 
-if [ "$1" == "thumb" ]; then
-    M4CMD=GALLERY_MAKE_THUMBNAIL
-    GREPINVERT=
-fi
-
-if [ -z "$2" ]; then
-    echo "No directory specified"
-    exit
-fi
+[ "$1" = "thumb" ] && M4CMD=Gallery-MakeThumbnail && GREPINVERT=
+[ -z "$2" ] && echo "No directory specified" && exit
 
 cd "img$2"
 

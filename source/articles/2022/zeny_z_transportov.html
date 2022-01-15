@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, ``Ženy z transportov'')
+pushs(Article-Title, ``Ženy z transportov'')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Ženy z transportov</h>
 <p><i>
 Múzeum holokaustu v Seredi je súčasťou SNM-Múzea židovskej kultúry v Bratislave. Vzniklo v priestoroch bývalého pracovného a koncentračného tábora v Seredi.
@@ -25,8 +25,8 @@ Sofia Zrubcová, II.A
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

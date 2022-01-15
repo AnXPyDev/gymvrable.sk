@@ -1,10 +1,8 @@
-include(include/helpers.m4)
+pushs(`RequiredCSS', `/styles/misc.css')
 
-REQUIRE_CSS(`/styles/misc.css')
+pushs(`Page-Title',`Dokumenty')
 
-define(`PAGE_TITLE',`Dokumenty')
-
-define(`LEFT_CONTENT', `
+pushs(`LeftContent', `
 <div class="full-width">
     <h class="content-title">Dokumenty</h>
 </div>
@@ -26,5 +24,5 @@ define(`LEFT_CONTENT', `
 </ul>
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

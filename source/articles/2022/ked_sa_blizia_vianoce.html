@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, `Keď sa blížia vianoce')
+pushs(Article-Title, `Keď sa blížia vianoce')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Keď sa blížia vianoce</h>
 <p><i>
 Žiacka školská rada vyhlásila súťaž o najkrajšie vyzdobenú triedu. Keďže k nám už zavítala zima a blížia sa Vianoce, témou bola vianočná výzdoba.
@@ -36,8 +36,8 @@ predsedníčka ŽŠR, II.D
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

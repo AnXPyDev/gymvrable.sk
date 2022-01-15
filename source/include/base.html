@@ -1,9 +1,10 @@
-include(include/helpers.m4)
+mute()
 
-REQUIRE_CSS(`/styles/header.css')
-REQUIRE_CSS(`/styles/footer.css')
+pushs(`RequiredCSS', `/styles/header.css')
+pushs(`RequiredCSS', `/styles/footer.css')
 
-include(include/head.html)
+unmute()dnl
+include(`include/head.html')
 
 <body>
     <div id="wide-banner-base" class="wide-base">
@@ -18,27 +19,27 @@ include(include/head.html)
         </div>
     </div>
 
-    include(include/header-menu.html)
+    include(`include/header-menu.html')
 
     <div id="wide-content-base" class="wide-base">
         <div id="center-content-base" class="center-base">
-            ifdef(`CENTER_CONTENT',`
+            ifset(`CenterContent',`
             <div class="center-content content-div">
-                CENTER_CONTENT
+                CenterContent
             </div>'
             )
 
-            ifdef(`RIGHT_CONTENT', `
+            ifset(`RightContent', `
                 <div class="left-content-if-right left-content content-div">
-                    ifdef(`LEFT_CONTENT', `LEFT_CONTENT')
+                    ifset(`LeftContent', `LeftContent')
                 </div>
                 <div class="right-content content-div">
-                    RIGHT_CONTENT
+                    RightContent
                 </div>
             ', `
-                ifdef(`LEFT_CONTENT', `
+                ifset(`LeftContent', `
                 <div class="left-content content-div">
-                    LEFT_CONTENT
+                    LeftContent
                 </div>
                 ')
             ')

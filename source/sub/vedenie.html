@@ -1,10 +1,10 @@
-include(include/helpers.m4)
+include(`include/helpers.m4')
 
-REQUIRE_CSS(`/styles/misc.css')
+pushs(`RequireCSS', `/styles/misc.css')
 
-define(`PAGE_TITLE',`Vedenie školy')
+pushs(`Page-Title',`Vedenie školy')
 
-define(`LEFT_CONTENT', `
+pushs(`LeftContent', `
 
 <style>
     .paragraph {
@@ -26,5 +26,5 @@ Zástupkyňa riaditeľky školy: <b>PaedDr. Eliška MATUŠKOVÁ</b><br>
 </div>
 ')
 
-include(include/notices.html)
-include(include/base.html)
+include(`include/notices.html')
+include(`include/base.html')

@@ -1,6 +1,6 @@
-define(ARTICLE_TITLE, ``Knihy dočítané, cena René udelená'')
+pushs(Article-Title, ``Knihy dočítané, cena René udelená'')
 
-define(ARTICLE_CONTENT,`
+pushs(Article-Content,`
 <h class="article-title">Knihy dočítané, cena René udelená</h>
 <p><i>
 Naši gymnazisti sú od samého začiatku (teda od roku 2017) zapojení do literárnej ceny René, ktorá má podporovať čítanie mladých, prejaviť u nich záujem o knihy a zoznámiť ich s umelecky hodnotnou súčasnou slovenskou literatúrou. Je to prvá literárna cena, ktorú udeľujú študenti vybraných gymnázií z celého Slovenska raz ročne za najlepšie pôvodné slovenské prozaické literárne dielo.
@@ -46,8 +46,8 @@ Bibiana Halásová
 </div>
 ')
 
-define(ARTICLE_IMAGE_CONTENT,`
-    ARTICLE_MAKE_IMAGE(/img`'__WD/001.jpg)
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/001.jpg)
 ')
 
-include(include/article.html)
+include(`include/article.html')

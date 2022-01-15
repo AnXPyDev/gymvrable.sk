@@ -1,28 +1,28 @@
-include(include/helpers.m4)
+mute()
 
-REQUIRE_CSS(`/styles/gallery.css')
+pushs(`RequiredCSS', `/styles/gallery.css')
 
 
-define(`GALLERY_MAKE_THUMBNAIL',`
+pushm(`Gallery-MakeThumbnail', `path', `
     <div class="gallery-thumbnail-wrapper">
-        <img src="$1"></img>
+        <img src="path"></img>
     </div>
 ')
 
-define(`GALLERY_MAKE_IMAGE', `
+pushm(`Gallery-MakeImage', `path', `
     <div class="gallery-image-wrapper">
-    <img src="$1"></img>
+    <img src="path"></img>
     </div>
 ')
 
-define(`PAGE_TITLE', `Galéria - ARTICLE_TITLE - Gymnázium Vráble')
+pushs(`Page-Title', `Galéria - Article-Title - Gymnázium Vráble')
 
-define(`LEFT_CONTENT', `
+pushs(`LeftContent', `
     <h class="gallery-title">
-        ARTICLE_TITLE - Galéria
+        Article-Title - Galéria
     </h>
     <div class="gallery-content">
-        ifdef(`GALLERY_THUMBNAILS', `GALLERY_THUMBNAILS', `esyscmd(./gallery-gen.sh thumb __WD)')
+        ifset(`Gallery-Thumbnails', `Gallery-Thumbnails', `sys(`./gallery-gen.sh thumb #__WD')')
     </div>
     <div class="gallery-article-link-wrapper">
         <a href="__WD`'index.html"><i class="fa fa-newspaper-o"></i> Späť na článok</a>
@@ -30,7 +30,7 @@ define(`LEFT_CONTENT', `
 
     <div class="gallery-overlay" id="gallery-overlay">
         <div class="gallery-image-container">
-            ifdef(`GALLERY_IMAGES', `GALLERY_IMAGES', `esyscmd(./gallery-gen.sh image __WD)')
+            ifset(`Gallery-Images', `Gallery-Images', `sys(`./gallery-gen.sh image #__WD')')
         </div>
         <div class="gallery-controls">
             <div class="gallery-button-wrapper">
@@ -53,6 +53,6 @@ define(`LEFT_CONTENT', `
 
     <script src="/scripts/gallery.js"></script>
 ')
-
-include(include/notices.html)
-include(include/base.html)
+unmute()dnl
+include(`include/notices.html')dnl
+include(`include/base.html')dnl
