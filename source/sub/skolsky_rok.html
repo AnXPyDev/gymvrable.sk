@@ -1,0 +1,83 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+
+pushs(`Page-Title',`Organizácia školského roka')
+
+pushs(`LeftContent', `
+
+<style>
+		.table-elm {
+				font-size: 14px;
+		}
+
+		.table-elm td {
+				padding: 10px;
+		}
+</style>
+
+<div class="full-width">
+    <h class="content-title">Organizácia školského roka 2021/2022</h>
+</div>
+
+<p>
+Školský rok sa začína 1. septembra 2021. Školské vyučovanie sa začína 2. septembra 2021(štvrtok). Školské vyučovanie v prvom polroku školského roka sa končí 31. januára 2022 (pondelok).
+</p>
+
+<p>
+Školské vyučovanie v druhom polroku školského roka sa začína 1. februára 2022 (utorok) a končí sa 30. júna 2022 (štvrtok).
+</p>
+
+<div class="divider"></div>
+
+<table class="table-elm">
+		<tbody>
+				<tr class="table-header-alt">
+						<td><b>Prázdniny</b></td>
+						<td><b>Posledný deň vyučovania pred začiatkom prázdnin</b></td>
+						<td><b>Termín prázdnin</b></td>
+						<td><b>Začiatok vyučovania po prázdninách</b></td>
+				</tr>
+				<tr class="table-body">
+						<td><b>Jesenné</b></td>
+						<td>27. október 2021 (streda)</td>
+						<td>28. október – 29. október 2021</td>
+						<td>2. november 2021 (utorok)</td>
+				</tr>
+				<tr class="table-body-alt">
+						<td><b>vianočné*</b></td>
+						<td>17. december 2021 (piatok)</td>
+						<td>20. december 2021 – 7. január 2022</td>
+						<td>10. január 2022 (pondelok)</td>
+				</tr>
+				<tr class="table-body">
+						<td><b>polročné</b></td>
+						<td>3. február 2022 (štvrtok)</td>
+						<td>4. február 2022 (piatok)</td>
+						<td>7. február 2022 (pondelok)</td>
+				</tr>
+				<tr class="table-body-alt">
+						<td><b>jarné (Bratislavský kraj, Nitriansky kraj, Trnavský kraj)</b></td>
+						<td>25. február 2022 (piatok)</td>
+						<td>28. február – 4. marec 2022</td>
+						<td>7. marec 2022 (pondelok)</td>
+				</tr>
+				<tr class="table-body">
+						<td><b>veľkonočné</b></td>
+						<td>13. apríl 2022 (streda)</td>
+						<td>14. apríl – 19. apríl 2022</td>
+						<td>20. apríl 2022 (streda)</td>
+				</tr>
+				<tr class="table-body-alt">
+						<td><b>letné</b></td>
+						<td>30. jún 2022 (štvrtok)</td>
+						<td>1. júl – 2. september 2022</td>
+						<td>5. september 2022 (pondelok)</td>
+				</tr>
+		</tbody>
+</table>
+<p>* Rozhodnutie ministra školstva s účinnosťou od 29. 11. 2021 (aj o zmene termínu vianočných prázdnin)</p>
+
+')
+
+include(`include/notices.html')
+include(`include/base.html')

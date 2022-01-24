@@ -1,0 +1,32 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(`Page-Title',`Verejné informácie')
+
+pushs(`LeftContent', `
+
+<style>
+		.subh {
+				font-size: 18px;
+		}
+</style>
+
+<div class="full-width">
+    <h class="content-title">Verejné informácie</h>
+</div>
+<hr>
+<br>
+
+<h class="subh">Sprístupňovanie informácií</h><br>
+<hr>
+<div class="indented">
+		<a href="https://www.gymvrable.sk/verejne_informacie/docs/spristupnovanie_informacii.pdf"><i class="fa fa-file-text"></i> Sprístupňovanie informácií</a><br>
+		<a href="https://www.gymvrable.sk/verejne_informacie/docs/smernica_o_slobodnom_pristupe_k_informaciam.pdf"><i class="fa fa-file-text"></i> Smernica o slobodnom prístupe k informáciám</a><br>
+</div>
+<br>
+
+<a class="subh" href="https://www.gymvrable.sk/verejne_informacie/index_zmluvy_objednavky_faktury.php"><i class="fa fa-link"></i> Zmluvy, objednávky a faktúry</a>
+
+')
+
+include(`include/notices.html')
+include(`include/base.html')

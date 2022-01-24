@@ -1,8 +1,7 @@
 .horizontal-menu {
 	width: 100%;
 	padding: 8px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin: 0;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -53,26 +52,6 @@
     bottom: 1px;
 }
 
-
-.grid-menu {
-	width: 100%;
-	padding: 8px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	box-sizing: border-box;
-	text-align: center;
-	overflow: auto;
-}
-
-.grid-menu li {
-	display: inline;
-	width: 33.32%;
-	float: left;
-}
-
-.grid-menu li::after {
-	display: none;
-}
 
 #sub-menu {
 	background-color: var(--sc-clr);

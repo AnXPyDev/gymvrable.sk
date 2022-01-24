@@ -1,147 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
-    --body-bg: #FFFFFF;
-    --body-sh-clr: #00000010;
-	--sh-clr: #00000050;
-    --bg-clr: #FFFFFF;
-    --bg-clr-up: #EDF0F2;
-    --fg-clr: #111111;
-    --pm-clr: #27568C;
-    --pm-clr-tx: #FFFFFF;
-    --pm-clr-sh: #2f4375;
-    --pm-clr-hl: #a3bbcd;
-    --sc-clr: #b51f2d;
-    --sc-clr-tx: #FFFFFF;
-    --sc-clr-sh: #b51f2d;
-    --sc-clr-hl: #e29ba2;
-    --ff: "Trebuchet MS", 'Tahoma', sans-serif;
+		--body-bg: #FFFFFF;
+		--body-sh-clr: #00000010;
+		--sh-clr: #00000050;
+		--bg-clr: #FFFFFF;
+		--bg-clr-up: #EDF0F2;
+		--fg-clr: #111111;
+		--pm-clr: #27568C;
+		--pm-clr-tx: #FFFFFF;
+		--pm-clr-sh: #2f4375;
+		--pm-clr-hl: #a3bbcd;
+		--sc-clr: #b51f2d;
+		--sc-clr-tx: #FFFFFF;
+		--sc-clr-sh: #b51f2d;
+		--sc-clr-hl: #e29ba2;
+		--ff: "Trebuchet MS", 'Tahoma', sans-serif;
 }
 
 * {
-    color: var(--fg-clr);
-	font-family: var(--ff);
+		color: var(--fg-clr);
+		font-family: var(--ff);
 }
 
 body {
-	background-color: var(--body-bg);
-	margin: 0;
-	padding: 0;
-    overflow-x: hidden;
-    max-width: 100%;
+		background-color: var(--body-bg);
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+		max-width: 100%;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    font-family: var(--ff);
-    cursor: pointer;
+		color: inherit;
+		text-decoration: none;
+		font-family: var(--ff);
+		cursor: pointer;
 }
 
 h {
-    color: inherit;
-    font-size: 18px;
+		color: inherit;
+		font-size: 18px;
 }
 
 p {
-    font-family: var(--ff);
-    font-size: 16px;
+		font-family: var(--ff);
+		font-size: 16px;
 }
 
 .fa {
-    color: inherit;
+		color: inherit;
 }
 
 a:hover {
-    color: inherit;
-    text-decoration: underline;
+		color: inherit;
+		text-decoration: underline;
 }
 
 a:active {
-    color: inherit;
+		color: inherit;
 }
 
 .wide-base {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 }
 
 .center-base {
-    max-width: 1200px;
-    width: 100%;
+		max-width: 1200px;
+		width: 100%;
 }
 
 #center-container {
-	overflow: auto;
-	margin: auto;
-	width: 1200px;
-	background-color: var(--bg-clr);
-	box-shadow: 0px 0px 15px var(--sh-clr);
+		overflow: auto;
+		margin: auto;
+		width: 1200px;
+		background-color: var(--bg-clr);
+		box-shadow: 0px 0px 15px var(--sh-clr);
 }
 
 #banner {
-	width: 100%;
-	/*height: 200px;*/
-	background-color: #aaaaaa;
+		width: 100%;
+		/*height: 200px;*/
+		background-color: #aaaaaa;
 }
 
 #banner-img {
-	width: 100%;
+		width: 100%;
 }
 
 #banner-script-enabled {
-    display: none;
+		display: none;
 }
 
 .banner-img {
-    width: 100%;
+		width: 100%;
 }
 
 .content-title {
-    font-size: 20px;
+		font-size: 20px;
 }
 
 .content-div {
-	padding-top: 2em;
-    padding-bottom: 2em;
-	box-sizing: border-box;
-	position: relative;
+		padding-top: 2em;
+		padding-bottom: 2em;
+		box-sizing: border-box;
+		position: relative;
 }
 
 .center-content {
-	width: 100%;
+		width: 100%;
 }
 
 .left-content {
-    padding-left: 1em;
-	width: 100%;
-	float: left;
+		padding-left: 1em;
+		width: 100%;
+		float: left;
 }
 
 .left-content-if-right {
-    width: 78%;
-    padding-right: 1em;
+		width: 78%;
+		padding-right: 1em;
 }
 
 .right-content {
-	width: 22%;
-	float: right;
-    padding-left: 1em;
-    padding-right: 1em;
+		width: 22%;
+		float: right;
+		padding-left: 1em;
+		padding-right: 1em;
 }
 
 @media only screen and (max-width: 1200px) {
-    .left-content {
-        width: 100%;
-        padding: 1em;
-    }
+		.left-content {
+				width: 100%;
+				padding: 1em;
+		}
 
-	.right-content {
-		width: 100%;
-        float:left;
-        padding: 1em;
-	}
+		.right-content {
+				width: 100%;
+				float:left;
+				padding: 1em;
+		}
 }
 
 

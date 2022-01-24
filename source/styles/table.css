@@ -17,9 +17,19 @@
     color: var(--fg-clr);
 }
 
+.table-body-alt td, td.table-body-alt {
+    background-color: var(--bg-clr-up);
+    color: var(--fg-clr);
+}
+
 .table-header td, td.table-header {
     background-color: var(--pm-clr);
     color: var(--pm-clr-tx);
+}
+
+.table-header-alt td, td.table-header-alt {
+    background-color: var(--pm-clr-hl);
+    color: var(--fg-clr);
 }
 
 .table-footer td, td.table-footer {
