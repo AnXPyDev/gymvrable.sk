@@ -52,6 +52,10 @@
     bottom: 1px;
 }
 
+#main-menu .fa-home {
+	font-size: 18px;
+}
+
 
 #sub-menu {
 	background-color: var(--sc-clr);

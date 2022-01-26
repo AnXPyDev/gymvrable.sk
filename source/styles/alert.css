@@ -6,9 +6,28 @@
     border:1px dashed #049AFC;
     font-size: 16px;
     box-shadow: 0px 0px 10px var(--sh-clr);
+    transition: box-shadow 0.1s ease-in-out;
 }
+
+.alert:hover {
+    box-shadow: 0px 0px 30px var(--sh-clr);
+}
+
 
 .alert-content {
     text-align: center;
+}
+
+.alert-date {
+	text-align: right;
+}
+
+.alert-align-left {
+	text-align: left;
+}
+
+.alert-narrow {
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 

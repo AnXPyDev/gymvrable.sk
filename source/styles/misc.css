@@ -6,6 +6,10 @@
     margin-left: 40px;
 }
 
+.center-text {
+	text-align: center;
+}
+
 .paragraph {
     display: block;
     margin-block-start: 1em;
@@ -15,7 +19,7 @@
 }
 
 .divider {
-    height: 50px;
+    height: 40px;
 }
 
 .content-half {
@@ -24,6 +28,36 @@
     display: inline-block;
 }
 
+.ul-para {
+	padding-left: 20px;
+}
+
+.ul-para li {
+	margin-bottom: 10px;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.green {
+	color: #00B050;
+}
+
+.ul-small-top-margin {
+	margin-top: 10px;
+}
+
+.ul-no-bullet {
+	list-style: none;
+}
+
+.file-list {
+	line-height: 1.5;
+	list-style-type: none;
+	padding-left: 1em;
+	margin-top: 10px;
+}
 
 .google-maps-iframe {
     box-sizing: border-box;

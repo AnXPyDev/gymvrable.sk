@@ -1,63 +1,38 @@
 mute()
+
 pushs(`RequiredCSS', `/styles/notice.css')
+pushs(`RequiredCSS', `/styles/links.css')
+
+pushm(MAKE_NOTICE_IMG, `--title', `--link', `--image', `
+<div class="notice">
+    <div class="notice-header">
+        <div class="notice-title-wrapper">
+            <a href="--link" class="notice-title">--title</a>
+        </div>
+    </div>
+    <div class="notice-inner">
+        <a href="--link">
+            <img src="--image"/>
+        </a>
+    </div>
+</div>
+')
 
 pushs(RightContent, `
-<div class="notice">
-    <div class="notice-header">
-        <div class="notice-title-wrapper">
-            <a href="https://viacakonick.gov.sk/pravidla-pomoci-nad-12-rokov/" class="notice-title">Národná linka na pomoc deťom v ohrození</a>
-        </div>
-    </div>
-    <div class="notice-inner">
-        <a href="https://viacakonick.gov.sk/pravidla-pomoci-nad-12-rokov/">
-            <img src="https://gymvrable.sk/img/linka_pomoc.png"/>
-        </a>
 
-    </div>
-</div>
-<div class="notice">
-    <div class="notice-header">
-        <div class="notice-title-wrapper">
-            <a href="https://gymvrable.sk/skola/prezentacia.php" class="notice-title">Prezentácia školy</a>
-        </div>
-    </div>
-    <div class="notice-inner">
-        <a href="https://gymvrable.sk/skola/prezentacia.php">
-            <img src="https://www.gymvrable.sk/img/2020/prezentacia_skoly.png"/>
-        </a>
-
-    </div>
+<div class="links">
+	<a href="https://gymvrable.edupage.org"><img src="/img/icons/edupage.png"></img></a>
+	<a href="https://facebook.com/gymvrable"><i class="fa fa-facebook-official"></i></a>
+	<a href="https://www.youtube.com/channel/UCBCDVfYBxowS3MURClB6R2A"><i class="fa fa-youtube-play"></i></a>
 </div>
 
-<div class="notice">
-    <div class="notice-header">
-        <div class="notice-title-wrapper">
-            <a href="https://gymvrable.sk/skola/2_perc.php" class="notice-title">2 percentá</a>
-        </div>
-    </div>
-    <div class="notice-inner">
-        <a href="https://gymvrable.sk/skola/2_perc.php">
-            <img src="https://www.gymvrable.sk/dokumenty/2_percenta/2_percenta.png"/>
-        </a>
+MAKE_NOTICE_IMG(`Prezentácia školy', `https://gymvrable.sk/skola/prezentacia.php', `https://www.gymvrable.sk/img/2020/prezentacia_skoly.png')
 
-    </div>
-</div>
+MAKE_NOTICE_IMG(`Národná linka na pomoc deťom v ohrození', `https://viacakonick.gov.sk/pravidla-pomoci-nad-12-rokov/', `https://gymvrable.sk/img/linka_pomoc.png')
 
+MAKE_NOTICE_IMG(`2 percentá', `https://gymvrable.sk/skola/2_perc.php', `https://www.gymvrable.sk/dokumenty/2_percenta/2_percenta.png')
 
-
-<div class="notice">
-    <div class="notice-header">
-        <div class="notice-title-wrapper">
-            <a href="https://gymvrable.sk/archiv/2020-2021/ruske_slovo_celoslov_kolo.php" class="notice-title">Ruské slovo</a>
-        </div>
-    </div>
-    <div class="notice-inner">
-        <a href="https://gymvrable.sk/archiv/2020-2021/ruske_slovo_celoslov_kolo.php">
-            <img src="https://www.gymvrable.sk/img/2021/ruske_slovo_logo.jpg"/>
-        </a>
-
-    </div>
-</div>
+MAKE_NOTICE_IMG(`Ruské slovo', `https://gymvrable.sk/archiv/2020-2021/ruske_slovo_celoslov_kolo.php', `https://www.gymvrable.sk/img/2021/ruske_slovo_logo.jpg')
 
 <div class="notice">
     <div class="notice-header">
@@ -89,7 +64,7 @@ pushs(RightContent, `
 <div class="notice">
     <div class="notice-header">
         <div class="notice-title-wrapper">
-            <h class="notice-title">Kontakt</h>
+            <a class="notice-title" href="/sub/kontakt.html">Kontakt</a>
         </div>
     </div>
     <div class="notice-inner">

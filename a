@@ -1,1 +1,0 @@
--I source/ -D __WD='/articles/2022/biela_pastelka/'  -D Article-IndexMode -i source/articles/2022/biela_pastelka.html -o build/articles/2022/biela_pastelka/index.html

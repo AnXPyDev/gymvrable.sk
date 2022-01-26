@@ -1,0 +1,176 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/selector.css')
+
+pushs(`Page-Title',`Bilingválne štúdium')
+
+pushs(`LeftContent', `
+<style>
+	.selector {
+		justify-content: center;
+	}
+	.selector-button-div {
+		width: 250px;
+		background-color: var(--sc-clr-hl);
+	}
+	
+	.selector-button-div:hover, .selector-button-div.selector-selected {
+		background-color: var(--sc-clr);
+		color: var(--sc-clr-tx);
+	}
+
+	.table-elm {
+		font-size: 14px;
+	}
+
+	.table-elm td {
+		padding: 10px;
+	}
+
+	.btitle {
+		color: #0066CC;
+		font-size: 18px;
+	}
+
+</style>
+
+<div class="full-width">
+    <h class="content-title">Bilingválne slovensko-RUSKÉ 5-ročné štúdium</h>
+</div>
+
+<div class="divider" style="height:20px;"></div>
+
+<div class="selector">
+	<div selector-id="info" class="selector-button-div selector-button">Všeobecné informácie</div>
+	<div selector-id="aktivity" class="selector-button-div selector-button">Podujatia a aktivity</div>
+	<div selector-id="pobyty" class="selector-button-div selector-button">Poznávacie pobyty</div>
+</div>
+<div class="divider" style="height: 1em"></div>
+<div class="selector">
+	<div selector-id="sutaze" class="selector-button-div selector-button">Úspechy a súťaže</div>
+	<a href="https://www.gymvrable.sk/dokumenty/prijimacky/2021/kriteria_5r.pdf"><div selector-id="kriteria" class="selector-button-div"><i class="fa fa-link"></i> Kritériá PP</div></a>
+	<a href="https://gymvrable.sk/bilingvalne_studium/docs/klasifikacia.pdf"><div selector-id="klasifikacia" class="selector-button-div"><i class="fa fa-link"></i> Klasifikácia</div></a>
+</div>
+
+<script>
+	for (let selector of Array.from(document.getElementsByClassName("selector"))) {
+		selector.style.display = "flex";
+	}
+</script>
+
+<div class="divider" style="height:10px;"></div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<p>
+Súčasná  doba otvára možnosti využitia ruského jazyka v rámci obchodovania, podnikateľských aktivít, trhu práce  a  cestovania, čo zvyšuje dopyt po odborníkoch ovládajúcich tento jazyk,  rozhodli sme sa preto ponúknuť záujemcom o gymnaziálne vzdelávanie  nielen kvalitné vedomosti a zručnosti v prírodovedných a spoločenskovedných predmetoch (podobne ako iné gymnáziá), ale aj <b>nadštandardné jazykové  vzdelanie v ruskom jazyku.</b> Naše <b>bilingválne slovensko-ruské gymnázium</b> je  jedinečná stredná školu svojho druhu v Nitrianskom kraji. 
+</p>
+
+<p>
+Na základe rozhodnutia Ministerstva školstva SR zo dňa 14. 05. 2014, ktorým bolo bilingválne gymnázium zaradené do siete stredných škôl, bol 1. septembra 2016 otvorený prvý ročník štúdia, v roku 2021 úspešne ukončili štúdium prvé absolventky. 
+</p>
+
+<div class="divider"></div>
+<div class="full-width center-text red" style="font-size: 20px">
+	V školskom roku 2022/23 prijmeme <b class="red">21 žiakov</b> do študijného odboru:<br><b class="red">7902 J 74 gymnázium - bilingválne (slovensko – ruské)</b>
+</div>
+<div class="divider"></div>
+
+<p>
+Do bilingválneho štúdia sú prijímaní <span class="green">žiaci 8. a 9. ročníka základnej školy po úspešnom vykonaní prijímacích talentových skúšok.</span> Nevyžadujeme predchádzajúcu znalosť ruského jazyka, žiaci začínajú svoje učenie sa od azbuky.
+</p>
+
+<p style="margin-bottom: 0.5em">
+<b>Učebný plán</b> tohto študijného odboru zachováva pozitíva učebného plánu 4-ročného gymnázia a <b>navyše ponúka</b> úspešné zvládnutie ruského jazyka na vysokej úrovni.
+</p>
+
+<ul class="ul-para" style="margin-top: 0;">
+	<li><b>V 1. ročníku</b> si žiak osvojí písomný prejav a získa komunikačné zručnosti na takej úrovni, aby v nasledujúcich ročníkoch zvládol štúdium vybraných predmetov v ruskom jazyku. Cieľom výučby je tiež upevnenie a prehĺbenie vedomostí a zručností z vyučovacích predmetov  SJL, MAT, ANJ, INF, nakoľko v tejto triede sa stretnú žiaci  z 8. a 9. ročníka ZŠ.</li>
+	<li><b>Vo vyšších ročníkoch</b> postupne pribúdajú predmety, ktoré žiaci študujú v ruštine  - dejepis, geografia, občianska náuka. V predmete Vybrané kapitoly z ruskej kultúry  žiak získa poznatky o reáliách Ruska, jeho histórii a kultúre.</li>
+	<li><b>V poslednom ročníku štúdia</b> si žiaci volia 2 predmety podľa svojho záujmu,  čím dostávajú väčšie možnosti svojej profilácie v nadväznosti na ich ďalšie štúdium na vysokej škole. Študujú to, čo ich zaujíma a čo považujú za potrebné pre svoje ďalšie smerovanie.</li>
+	<li><b>Maturitnú skúšku</b> v 5. ročníku žiak vykoná zo štyroch predmetov, a to zo slovenského jazyka a literatúry, z ruského jazyka na úrovni C 1 SERR, z dvoch voliteľných predmetov zo skupiny prírodovedných alebo spoločenskovedných predmetov. Maturovať môže aj z  anglického jazyka (bez povinnosti vykonať písomný externý maturitný test).</li>
+</ul>
+
+<p style="margin-bottom: 0.5em"><b>Počas štúdia plánujeme:</b></p>
+
+<ul style="margin-top: 0;">
+	<li>umožniť študentom študijné poznávacie  pobyty v rusky hovoriacej krajine</li>
+	<li>vyučovacie hodiny s ruským lektorom</li>
+	<li>zapojiť študentov do medzinárodných školských projektov a bohatého školského života.</li>
+</ul>
+
+<p style="margin-bottom: 0.5em"><b>Absolvent bilingválneho štúdia</b></p>
+
+<ul style="margin-top: 0;">
+	<li>má osvojené kvalitné vedomosti v prírodovedných a spoločenskovedných predmetoch, ktoré mu umožnia úspešne pokračovať v štúdiu na vysokej škole akéhokoľvek zamerania</li>
+	<li>na vysokej úrovni ovláda ruský jazyk (úroveň C1 SERR – skúsený používateľ jazyka), čo mu umožňuje používať ho ako prostriedok štúdia ďalších predmetov už počas gymnaziálneho štúdia, ako i pokračovať vo vzdelávaní na vysokých školách doma i v zahraničí, prípadne začleniť sa do pracovného procesu doma i v zahraničí, resp. u zahraničných  zamestnávateľov</li>
+	<li>na  úrovni  B2 SERR ovláda anglický jazyk „Ruština + angličtina otvára okno do sveta.“ (Ivan Bella, prvý slovenský kozmonaut)</li>
+</ul>
+
+<p style="margin-bottom: 0.5em"><b>Naša škola stojí na troch základných pilieroch:</b></p>
+
+<ul class="ul-para" style="margin-top: 0;">
+	<li><b>Zmysluplný školský vzdelávací program</b>, ktorý dáva žiakom nielen kvalitné vedomosti a zručnosti v prírodovedných a spoločenskovedných predmetoch, ale aj nadštandardné jazykové  vzdelanie v ruskom jazyku.  Dôraz kladieme aj na rozvoj mäkkých zručností žiakov (tvorivosť, kritické myslenie, schopnosť pracovať v teame, schopnosť prezentovať dosiahnuté výsledky), ktoré sú nevyhnutné pre úspešné uplatnenie sa v dynamicky sa vyvíjajúcom pracovnom trhu.</li>
+	<li>Základným poslaním školy  je nielen vzdelávať žiakov, ale vytvárať im <b>priestor na svoj osobnostný rozvoj</b>, preto proces učenia sa cudziemu jazyku chápeme ako integrálnu súčasť formovania osobnosti žiaka, veď <i>«Зачем учиться говорить, если нечего сказать?»</i> (Načo sa učiť rozprávať, ak nie je čo povedať?) Nevyčerpateľným zdrojom, studnicou, z ktorej na tejto ceste čerpáme,  je pre nás ruské umenie a kultúra, ako významná súčasť svetového kultúrneho dedičstva.</li>
+	<li><b>Prostredie a atmosféra</b>, v ktorej sa vzdelávanie uskutočňuje – založená na otvorenosti, na vzájomnej úcte a dôvere  medzi pedagógmi, žiakmi a rodičmi.<br>Vyučujeme <b>v esteticky upravených a  veľmi dobre vybavených učebných priestoroch</b> - takmer všetky triedy majú k dispozícii interaktívne tabule a v celej škole je pripojenie na internet, žiaci majú k dispozícii knižnicu, modernú telocvičňu, posilňovňu, postupne budujeme ruskú knižnicu.</li>
+</ul>
+
+<p>
+Príjemná a tvorivá atmosféra školy sa prejavuje aj v tom, že <b>škola žije bohatým školským životom.</b> Organizujeme množstvo zaujímavých podujatí: Medzinárodný deň školských knižníc, Týždeň vedy a techniky, študentské Imatrikulácie, literárno-umelecké vystúpenia žiakov počas Dní ruskej kultúry, rôzne environmentálne projekty (Deň vody, Deň Zeme ... ), kultúrne akadémie ako prezentáciu žiackej umeleckej tvorby (napr. vianočná akadémia, ), besedy so spisovateľmi, umelcami a významnými osobnosťami spoločenského života, návštevy divadelných predstavení a i.
+</p>
+
+<p>
+Naša škola je <b>organizátorom krajských kôl súťaží</b> pre žiakov SŠ v Nitrianskom kraji - Olympiáda ľudských práv, Olympiáda ruského jazyka, Ruské slovo - súťaž v prednese ruskej poézie a  prózy a v speve. Naši študenti dosahujú výborné výsledky aj v celoslovenských kolách týchto súťaží, úspešne sa zapájajú aj do medzinárodných súťaží organizovaných ruskými univerzitami. Žiaci sa aktívne zapájajú do predmetových súťaží a olympiád v prírodovedných a spoločenskovedných predmetoch.
+</p>
+
+<p>
+Máme <b>bohaté skúsenosti s medzinárodnou spoluprácou</b> - spolupráca so zahraničnými školami,  organizácia videokonferencií, účasť v medzinárodných projektoch občianskych združení, Organizujeme kultúrno-poznávacie zájazdy a školské exkurzie a výlety na Slovensku i v zahraničí.
+</p>
+
+<p>
+Neodmysliteľnou súčasťou života školy sú aj <b>športové podujatia</b>, školské turnaje a súťaže, ktoré organizujeme v modernej školskej telocvični a podľa záujmu žiakov aj lyžiarsky kurz a plavecký výcvik v rôznych lokalitách Slovenska.
+</p>
+
+<p>
+V rámci mimoškolskej činnosti môžu žiaci možnosť pracovať <b>v záujmových krúžkoch</b> športového, umeleckého, jazykového a i. zamerania. Každý rok pripravujeme novú ponuku krúžkov podľa záujmu a požiadaviek žiakov. K výnimočným aktivitám patrí tvorba školského časopisu „ťahák“, ktorý dlhodobo získava ocenenia v celoslovenskej súťaži stredoškolských časopisov Štúrovo pero, je držiteľom ocenenia Zlaté Štúrovo pero.
+</p>
+
+<p>
+Hoci pandemická situácia v súvislosti s ochorením Covid-19 nám mnohé aktivity  v súčasnosti neumožňuje  organizovať tak, ako sme boli zvyknutí, život školy sa nezastavil, naopak, učí nás byť vynaliezavými, hľadať nové formy a podoby spolupráce, prezentácie. A v prvom rade, byť zodpovednými za vlastnú prácu, vlastné výsledky. Aj to je príprava na život.
+</p>
+
+<p>
+Budeme radi, ak vás naša ponuka zaujme a stanete sa členom našej „školskej rodiny“.
+</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<div class="full-width"><h class="btitle">Podujatia a aktivity zorganizované v rámci bilingválnej formy štúdia</h></div>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+</div>
+
+
+<script src="/scripts/selector.js"></script>
+
+')
+
+include(`include/notices.html')
+include(`include/base.html')

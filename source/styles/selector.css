@@ -1,0 +1,25 @@
+.selector {
+	display: none;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+}
+
+.selector-button-div {
+	border-radius: 5px;
+	box-shadow: 0 0 10px var(--sh-clr);
+	transition: box-shadow 0.1s ease-in-out;
+	text-align: center;
+	padding: 1em;
+	background-color: var(--pm-clr-hl);
+	box-sizing: border-box;
+}
+
+.selector-button-div:hover, .selector-button-div.selector-selected {
+	cursor: pointer;
+	text-decoration: underline;
+	background-color: var(--pm-clr);
+	color: var(--pm-clr-tx);
+	box-shadow: 0 0 20px var(--sh-clr);
+}

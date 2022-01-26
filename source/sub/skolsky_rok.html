@@ -1,33 +1,56 @@
 pushs(`RequiredCSS', `/styles/misc.css')
 pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/selector.css')
 
 pushs(`Page-Title',`Organizácia školského roka')
 
 pushs(`LeftContent', `
-
 <style>
-		.table-elm {
-				font-size: 14px;
-		}
+	.table-elm {
+		font-size: 14px;
+	}
 
-		.table-elm td {
-				padding: 10px;
-		}
+	.table-elm td {
+		padding: 10px;
+	}
+
 </style>
 
 <div class="full-width">
     <h class="content-title">Organizácia školského roka 2021/2022</h>
 </div>
 
-<p>
-Školský rok sa začína 1. septembra 2021. Školské vyučovanie sa začína 2. septembra 2021(štvrtok). Školské vyučovanie v prvom polroku školského roka sa končí 31. januára 2022 (pondelok).
-</p>
+<div class="divider" style="height:20px;"></div>
 
-<p>
-Školské vyučovanie v druhom polroku školského roka sa začína 1. februára 2022 (utorok) a končí sa 30. júna 2022 (štvrtok).
-</p>
+<div class="selector" id="selector">
+	<div selector-id="prazdniny" class="selector-button-div selector-button">Termíny školských prázdnin</div>
+	<div selector-id="maturity" class="selector-button-div selector-button">Termíny maturitných skúšok</div>
+	<div selector-id="prijimacky" class="selector-button-div selector-button">Časový harmonogram prijímacieho konania</div>
+</div>
 
-<div class="divider"></div>
+<script>
+	let selector = document.getElementById("selector");
+	selector.style.display = "flex";
+</script>
+
+<div class="divider" style="height:10px;"></div>
+
+<div class="selector-content">
+
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<div class="full-width">
+    <h class="content-title">Termíny školských prázdnin v školskom roku 2021/2022</h>
+</div>
+
+<ul class="ul-para">
+	<li>Školský rok sa začína 1. septembra 2021. Školské vyučovanie sa začína 2. septembra 2021(štvrtok). Školské vyučovanie v prvom polroku školského roka sa končí 31. januára 2022 (pondelok).</li>
+	<li>Školské vyučovanie v druhom polroku školského roka sa začína 1. februára 2022 (utorok) a končí sa 30. júna 2022 (štvrtok).</li>
+</ul>
+
+<div class="divider" style="height: 20px"></div>
+
 
 <table class="table-elm">
 		<tbody>
@@ -76,6 +99,104 @@ pushs(`LeftContent', `
 		</tbody>
 </table>
 <p>* Rozhodnutie ministra školstva s účinnosťou od 29. 11. 2021 (aj o zmene termínu vianočných prázdnin)</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<div class="full-width">
+    <h class="content-title">Termíny písomných (EČ a PFIČ MS) a ústnych (UF IČ MS) maturitných skúšok v školskom roku 2021/2022</h>
+</div>
+
+<p>
+<b>Riadny termín externej časti a písomnej formy internej časti maturitnej skúšky</b> (ďalej EČ
+a PFIČ MS) sa uskutoční od 15. marca 2022 (utorok) do 18. marca 2022 (piatok) z jednotlivých predmetov nasledovne:
+<ul>
+	<li><b>15. 3. 2022</b> - slovenský jazyk a literatúra, maďarský jazyk a literatúra</li>
+	<li><b>16. 3. 2022</b> - cudzie jazyky</li>
+	<li><b>17. 3. 2022</b> - matematika</li>
+	<li><b>18. 3. 2022</b> - slovenský jazyk a slovenská literatúra, ukrajinský jazyk</li>
+</ul>
+</p>
+
+<p>
+<b>Náhradný termín</b> EČ a PFIČ MS sa uskutoční od  5. – 8. 4. 2022.
+</p>
+
+<p>
+<b>Opravný termín</b> EČ a PFIČ MS pre školský rok 2021/2022 sa uskutoční v termíne 5. – 8. septembra 2022. Dni konania opravného termínu pre jednotlivé predmety určí NÚCEM na základe počtu prihlásených žiakov a zverejní ich najneskôr 2. augusta 2021, resp. 2022.
+</p>
+
+<p>
+<b>Termíny internej časti MS</b> (ústne skúšky) určia jednotlivým stredným školám vo svojej
+pôsobnosti príslušné OŠ OÚ v čase od 23. mája 2022 do 10. júna 2022.
+</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<div class="full-width">
+    <h class="content-title">Časový  harmonogram prijímacieho konania pre školský rok 2022/2023</h>
+</div>
+
+<div class="divider" style="height:20px;"></div>
+
+<table class="table-elm">
+	<tr>
+		<td>do 28. februára 2022</td>
+		<td>Stredná škola zverejní <b>podmienky (kritériá) prijatia na štúdium</b> na študijné odbory, ktoré vyžadujú overenie špeciálnych schopností, zručností alebo talentu.</td>
+	</tr>
+	<tr>
+		<td>do 20. marca 2022</td>
+		<td>Uchádzač alebo zákonný zástupca neplnoletého uchádzača podáva <b>prihlášku na vzdelávanie riaditeľovi strednej školy.</b> </td>
+	</tr>
+	<tr>
+		<td><span class="red">I. termín - 4.5.2022<br>II. termín – 11. 5. 2022</span></td>
+		<td><b class="red">Prijímacie skúšky (talentové) – I. kolo</b><br>
+			7902 J 74 gymnázium – bilingválne štúdium</td>
+	</tr>
+	<tr>
+		<td rowspan="2"><b><span class="red">18. 5. 2022</span><br>od 0:00 do 23:59</b></td>
+		<td>Riaditeľ strednej školy zverejní na výveske školy a na webovom sídle školy <b class="red">zoznam uchádzačov podľa výsledkov prijímacieho konania</b> v termíne určenom a zverejnenom ministerstvom školstva.
+Zoznam obsahuje poradie uchádzačov s vopred prideleným číselným kódom zoradených podľa celkového počtu bodov získaných pri prijímacom konaní a informáciu, či uchádzač vykonal prijímaciu skúšku úspešne alebo neúspešne.</td>
+	</tr>
+	<tr>
+		<td><b>Riaditeľ SŠ rozhodne o prijatí/neprijatí žiaka</b> na základe výsledkov prijímacieho konania a doručení rozhodnutia zákonnému zástupcovi žiaka.</td>
+	</tr>
+	<tr>
+		<td>do 3 pracovných dní od zverejnenia výsledkov</td>
+		<td>Ak bol uchádzač prijatý na vzdelávanie v strednej škole, uchádzač alebo zákonný zástupca neplnoletého uchádzača <b>písomne potvrdí strednej škole prijatie na vzdelávanie</b>; ostatné rozhodnutia o prijatí, ktoré sa vzťahujú na školy a odbory vzdelávania uvedené v prihláške na vzdelávanie, strácajú platnosť.</td>
+	</tr>
+	<tr>
+		<td>do 6. júna 2022</td>
+		<td>Riaditeľ strednej školy po prerokovaní v pedagogickej rade školy rozhodne o tom, či sa na škole vykonajú <b>prijímacie skúšky v ďalšom termíne</b> na nenaplnený počet miest pre žiakov, ktorých možno prijať do tried prvého ročníka.</td>
+	</tr>
+	<tr>
+		<td>do 13. júna 2022</td>
+		<td>Uchádzač alebo zákonný zástupca žiaka  doručí <b>prihlášku žiaka na štúdium -  pre prijímacie skúšky  v ďalšom termíne.</b></td>
+	</tr>
+	<tr>
+		<td><span class="red">21. júna 2022</span></td>
+		<td><b class="red">Prijímacie skúšky (talentové) –II. kolo</b><br>(len v prípade nenaplnených miest)</td>
+	</tr>
+	<tr>
+		<td>do 24. júna 2022</td>
+		<td><b>Riaditeľ SŠ rozhodne o prijatí/neprijatí žiaka</b> na základe výsledkov prijímacieho konania a doručí rozhodnutia uchádzačovi alebo zákonnému zástupcovi žiaka.</td>
+	</tr>
+	<tr>
+		<td>do 30. júna 2022</td>
+		<td>Ak bol uchádzač prijatý na vzdelávanie v strednej škole, uchádzač alebo zákonný zástupca neplnoletého uchádzača <b>písomne potvrdí strednej škole prijatie na vzdelávanie.</b></td>
+	</tr>
+</table>
+
+</div>
+
+<script src="/scripts/selector.js"></script>
 
 ')
 

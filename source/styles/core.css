@@ -4,8 +4,10 @@
 		--body-bg: #FFFFFF;
 		--body-sh-clr: #00000010;
 		--sh-clr: #00000050;
+		--sh-clr-hl: #00000030;
 		--bg-clr: #FFFFFF;
 		--bg-clr-up: #EDF0F2;
+		--bg-clr-hup: #F4F6F7;
 		--fg-clr: #111111;
 		--pm-clr: #27568C;
 		--pm-clr-tx: #FFFFFF;
@@ -22,6 +24,11 @@
 		color: var(--fg-clr);
 		font-family: var(--ff);
 }
+
+html {
+	overflow-x: hidden;
+}
+
 
 body {
 		background-color: var(--body-bg);

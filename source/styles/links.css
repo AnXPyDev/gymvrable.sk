@@ -1,0 +1,32 @@
+.links {
+	display: flex;
+	height: 60px;
+	padding: 10px;
+	margin-bottom: 1vw;
+	box-sizing: border-box;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 43px;
+
+}
+
+.links a:hover {
+	text-decoration: none;	
+}
+
+.links .fa {
+	display: block;
+}
+
+.links .fa-facebook-official {
+	color: #4267B2;
+}
+
+.links .fa-youtube-play {
+	color: #FF0000;
+}
+
+.links img {
+	display: block;
+	height: 40px;
+}

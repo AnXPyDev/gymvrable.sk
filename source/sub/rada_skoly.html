@@ -1,0 +1,59 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+
+pushm(`TABLE_PERSON', `--name', `--for', `--function', `
+	<tr>
+		<td>--name</td>
+		<td>--for</td>
+		<td>--function</td>
+	</tr>
+')
+
+pushs(`Page-Title',`Rada školy')
+
+pushs(`LeftContent', `
+<div class="full-width">
+    <h class="content-title">Rada školy pri Gymnáziu vo Vrábľoch</h>
+</div>
+
+<style>
+	#ul-info {
+		padding-left: 25px;
+	}
+	#ul-info li {
+		margin-bottom: 15px;
+	}
+</style>
+
+<ul id="ul-info">
+	<li>Rada školy je iniciatívny a poradný samosprávny orgán, ktorý vyjadruje a presadzuje záujmy miestnej samosprávy, záujmy rodičov a pedagógov v oblasti výchovy a vzdelávania. Posudzuje činnosť školy z pohľadu školskej problematiky a z hľadiska jej poslania ako vzdelávacej ustanovizne.</li>
+	<li>Rada školy plní funkciu verejnej kontroly práce vedúcich pracovníkov školy a ďalších orgánov a ustanovizní, ktoré sa podieľajú na utváraní podmienok na výchovu a vzdelávanie v regióne školy.</li>
+</ul>
+
+<div class="divider" style="height: 20px"></div>
+
+<h>Zoznam členov Rady školy</h>
+<div class="divider" style="height: 20px"></div>
+
+<table class="table-elm">
+	<tr class="table-header">
+		<td>meno</td>
+		<td>reprezentuje</td>
+		<td>funkcia</td>
+	</tr>
+	TABLE_PERSON(`Mgr. Viera Luleiová', `za rodičov', `predseda Rady školy')
+	TABLE_PERSON(`PhDr. Ivana Hudaszek Semjanová', `za pedagogických zamestnancov', `')
+	TABLE_PERSON(`PhDr. Monika Bogyóová', `za pedagogických zamestnancov', `')
+	TABLE_PERSON(`Gabriela Majtánová', `za nepedagogických zamestnancov', `tajomník Rady školy')
+	TABLE_PERSON(`MVDr. Stanislav Strieška', `za zriaďovateľa školy - Nitriansky samosprávny kraj', `')
+	TABLE_PERSON(`Helena Kyseľová', `za zriaďovateľa školy - Nitriansky samosprávny kraj', `')
+	TABLE_PERSON(`Mgr. Branislav Bányi', `za zriaďovateľa školy - Nitriansky samosprávny kraj', `')
+	TABLE_PERSON(`Ing. Michal Hudec', `za zriaďovateľa školy - Nitriansky samosprávny kraj', `')
+	TABLE_PERSON(`Katarína Zrubcová', `za rodičov', `')
+	TABLE_PERSON(`Rudolf Kolienek', `za rodičov', `')
+	TABLE_PERSON(`Samuel Chlpík', `za žiakov', `')
+</table>
+')
+
+include(`include/notices.html')
+include(`include/base.html')

@@ -8,9 +8,8 @@
     border: solid 1px var(--fg-clr);
     height: 30px;
     text-align: center;
+    padding: 10px;
 }
-
-
 
 .table-body td, td.table-body {
     background-color: var(--bg-clr);

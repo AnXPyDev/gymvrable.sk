@@ -1,0 +1,284 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+
+pushs(`Page-Title',`Vedenie a zamestnanci')
+
+pushs(`TABLE_CONTENT', `
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Beáta Havettová')
+        TABLE_SUBJECTS(`RUJ, NAS, ANJ')
+        TABLE_FUNCTION(`<ul><li>riaditeľka školy</li></ul>')
+        TABLE_CONTACT(`havettova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Eliška Matušková')
+        TABLE_SUBJECTS(`RUJ, GEG, ANJ')
+	TABLE_FUNCTION(`<ul>
+		<li>supervízor</li>
+		<li>školská koordinátorka maturitných skúšok</li>
+		<li>uvádzajúca učiteľka</li>
+	</ul>')
+        TABLE_CONTACT(`matuskova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Mária Bašistová')
+        TABLE_SUBJECTS(`MAT, BIO')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka V.D</li>
+            <li>digitálna koordinátorka</li>
+            <li>koordinátorka environmentálnej výchovy</li>
+        </ul>')
+        TABLE_CONTACT(`maria.basistova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PhDr. Monika Bogyóová')
+        TABLE_SUBJECTS(`SJL, DEJ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka IV.D</li>
+            <li>gestorka žiackej školskej rady</li>
+            <li>vedúca školskej knižnice</li>
+            <li>členka rady školy</li>
+        </ul>')
+        TABLE_CONTACT(`monika.bogyoova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PhDr. Ivana Hudaszek Semjanová')
+        TABLE_SUBJECTS(`SJL, NAS')
+        TABLE_FUNCTION(`<ul>
+		<li>triedna učiteľka II.A</li>
+		<li>vedúca predmetovej komisie spoločenskovedných predmetov</li>
+		<li>členka rady školy</li>
+		<li>gestorka školského časopisu</li>
+        </ul>')
+        TABLE_CONTACT(`ivana.hudaszek@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Eva Hudecová')
+        TABLE_SUBJECTS(`ANJ')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`eva.hudecova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Patrícia Kóšová')
+        TABLE_SUBJECTS(`ANJ')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`patricia.kosova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Ing. Roland Máté')
+        TABLE_SUBJECTS(`INF')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Denisa Očovayová')
+        TABLE_SUBJECTS(`NEJ, RUJ')
+        TABLE_FUNCTION(`<ul>
+		<li>triedna učiteľka I.D</li>
+		<li>vedúca predmetovej komisie cudzích jazykov</li>
+        </ul>')
+        TABLE_CONTACT(`denisa.ocovayova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Petra Poláková, PhD.')
+        TABLE_SUBJECTS(`ANJ')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`petra.polakova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Alla Pakhritsina, CSc.')
+        TABLE_SUBJECTS(`RUJ')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`alla.pakhritsina@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Boris Ragas')
+        TABLE_SUBJECTS(`GEG, TŠV')
+        TABLE_FUNCTION(`<ul>
+            <li>triedny učiteľ IV.A</li>
+            <li>kariérový poradca</li>
+            <li>koordinátor účelových cvičení „Ochrana života a zdravia“</li>
+        </ul>')
+        TABLE_CONTACT(`boris.ragas@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`PaedDr. Martina Ragasová')
+        TABLE_SUBJECTS(`BIO, CHE')
+        TABLE_FUNCTION(`<ul>
+		<li>triedna učiteľka II.D</li>
+		<li>výchovná poradkyňa</li>
+		<li>školská koordinátorka prevencie drogových závislostí a ďalších sociálno-patologických javov</li>
+        </ul>')
+        TABLE_CONTACT(`martina.ragasova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`RNDr. Anna Uhríková')
+        TABLE_SUBJECTS(`MAT, FYZ')
+        TABLE_FUNCTION(`<ul>
+            <li>triedna učiteľka III.A</li>
+            <li>vedúca predmetovej komisie prírodovedných predmetov</li>
+        </ul>')
+        TABLE_CONTACT(`anna.uhrikova@gymvrable.sk')
+    ')
+    TABLE_TEACHER(`
+        TABLE_NAME(`Mgr. Anton Štefánek')
+        TABLE_SUBJECTS(`NBV')
+        TABLE_FUNCTION(`')
+        TABLE_CONTACT(`')
+    ')
+')
+
+pushm(`TABLE_TEACHER', `arg', `arg')
+
+pushm(`TABLE_NAME', `arg', `
+    <tr class="table-header">
+	    <td></td>
+            <td colspan="1">arg</td>
+    </tr>
+')
+
+pushm(`TABLE_FUNCTION', `arg', `
+	ifneq(arg, `', `
+    <tr class="table-body">
+        <td class="table-header">funkcia</td>
+        <td>arg</td>
+    </tr>')
+')
+
+pushm(`TABLE_SUBJECTS', `arg', `
+	ifneq(arg, `', `
+    <tr class="table-body">
+        <td class="table-header">vyučuje</td>
+        <td>arg</td>
+    </tr>')
+')
+
+pushm(`TABLE_CONTACT', `arg', `
+	ifneq(arg, `', `
+    <tr class="table-body">
+        <td class="table-header">kontakt</td>
+        <td>arg</td>
+    </tr>')
+')
+
+pushs(`TABLE_CONTENT_1', `#TABLE_CONTENT')
+
+pushm(`TABLE_TEACHER', `arg', `
+<tr class="table-body">
+    arg
+</tr>
+')
+
+pushm(`TABLE_NAME', `arg', `<td>arg</td>')
+pushm(`TABLE_FUNCTION', `arg', `<td>arg</td>')
+pushm(`TABLE_SUBJECTS', `arg', `<td>arg</td>')
+pushm(`TABLE_CONTACT', `arg', `<td>arg</td>')
+
+pushs(`TABLE_CONTENT_2', `#TABLE_CONTENT')
+
+pushs(`LeftContent', `
+<div class="full-width">
+    <h class="content-title">Vedenie školy</h>
+</div>
+
+<hr>
+
+<style>
+    .paragraph {
+        line-height: 2;
+    }
+
+    .indented {
+        line-height: 1.5;
+    }
+</style>
+
+<div class="paragraph">
+Riaditeľka školy: <b>PaedDr. Beáta HAVETTOVÁ</b><br>
+<div class="indented">
+    <i class="fa fa-envelope"></i> havettova@gymvrable.sk<br>
+    <i class="fa fa-phone"></i> 037/783 21 30<br>
+</div>
+</div>
+
+<br><br>
+
+<div class="full-width">
+    <h class="content-title">Pedagogický zbor v školskom roku 2021/2022</h>
+</div>
+
+<hr>
+
+<style>
+   .table-elm {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .table-elm td {
+		padding: 0;
+        max-width: 20vw;
+    }
+
+	.table-elm ul {
+		text-align: left;
+		padding-left: 30px;
+	}
+
+    #table-compact {
+	    display: none;
+    }
+
+	@media only screen and (max-width: 1200px) {
+		#table-compact {
+			display: block;
+		}
+		#table-full {
+			display: none;
+		}
+	}
+</style>
+
+<div id="table-compact">
+<table class="table-elm">
+    <tbody>
+        #TABLE_CONTENT_1
+    </tbody>
+</table>
+</div>
+
+<div id="table-full">
+<table class="table-elm">
+    <tbody>
+        <tr class="table-header">
+            <td>meno</td><td>funkcia</td><td>vyučuje</td><td>kontakt</td>
+        </tr>
+        #TABLE_CONTENT_2
+    </tbody>
+</table>
+</div>
+
+<div class="divider"></div>
+
+<div class="full-width">
+    <h class="content-title">Nepedagogickí zamestnanci školy</h>
+</div>
+
+<hr>
+
+<p>
+<b>Sekretariát školy</b><br>
+Bc. Helena Levická
+</p>
+
+<p>
+<b>Technicko – hospodársky úsek</b><br>
+Gabriela Majtánová – hospodárka školy, ekonómka<br>
+Peter Hamar – školník<br>
+Monika Borbélyová – upratovačka<br>
+Valéria Šišoláková - upratovačka<br>
+</p>
+')
+
+include(`include/notices.html')
+include(`include/base.html')

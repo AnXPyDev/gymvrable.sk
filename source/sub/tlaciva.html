@@ -1,0 +1,39 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(`Page-Title',`Tlačivá pre študentov')
+
+pushs(`LeftContent', `
+<div class="full-width">
+    <h class="content-title">Tlačivá pre študentov</h>
+</div>
+
+<div class="divider" style="height: 10px;"></div>
+
+<p>
+Žiadame žiakov, aby si so sebou priniesli už <b>vyplnené tlačivo</b>, ktoré im v škole <b>iba potvrdíme.</b>
+</p>
+
+<hr>
+
+<style>
+    #file-list {
+        line-height: 1.5;
+        list-style-type: none;
+        padding-left: 1em;
+    }
+</style>
+
+<ul id="file-list">
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/potvrdenie_o_navsteve_skoly_2021-2022.docx"><i class="fa fa-file-text-o"></i> Potvrdenie o návšteve školy v školskom roku 2021/2022</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/potvrdenie_o_navsteve_skoly.docx"><i class="fa fa-file-text-o"></i> Potvrdenie o návšteve školy - stručné</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/potvrdenie_o_navsteve_skoly_pridavok_na_dieta_a_danovy_bonus.docx"><i class="fa fa-file-text-o"></i> Potvrdenie o návšteve strednej alebo vysokej školy na účely prídavku na dieťa</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/zssr_registracny_formular.pdf"><i class="fa fa-file-text-o"></i> Registračný formulár na registráciu do zákazníckeho konta ZSSK z dôvodu nároku na bezplatnú prepravu</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/oslobodenie_ziadost.pdf"><i class="fa fa-file-text-o"></i> Žiadosť o oslobodenie od telesnej výchovy</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/oslobodenie_lekar.pdf"><i class="fa fa-file-text-o"></i> Odporučenie na oslobodenie od telesnej výchovy od lekára</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/ziadost_o_uvolnenie_z_vyucovania.pdf"><i class="fa fa-file-text-o"></i> Žiadosť o uvoľnenie z vyučovania</a></li>
+    <li><a href="https://www.gymvrable.sk/dokumenty/tlaciva/ziadost_o_vydanie_odpisu_vysvedcenia.pdf"><i class="fa fa-file-text-o"></i> Žiadosť o vydanie odpisu vysvedčenia</a></li>
+</ul>
+')
+
+include(`include/notices.html')
+include(`include/base.html')
