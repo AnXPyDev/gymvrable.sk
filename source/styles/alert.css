@@ -9,6 +9,12 @@
     transition: box-shadow 0.1s ease-in-out;
 }
 
+.alert-red {
+    color:#660000;
+    background-color:#ffecec;
+    border:1px dashed #fc0404;
+}
+
 .alert:hover {
     box-shadow: 0px 0px 30px var(--sh-clr);
 }
