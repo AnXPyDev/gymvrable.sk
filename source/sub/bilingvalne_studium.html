@@ -1,5 +1,6 @@
 pushs(`RequiredCSS', `/styles/misc.css')
 pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/iit.css')
 pushs(`RequiredCSS', `/styles/selector.css')
 
 pushs(`Page-Title',`Bilingválne štúdium')
@@ -32,6 +33,16 @@ pushs(`LeftContent', `
 		font-size: 18px;
 	}
 
+	@media only screen and (max-width: 1200px) {
+		#poster img {
+			max-height: 30em;
+		}
+
+		.akt-iit-image {
+			max-height: 20em;
+		}
+	}
+
 </style>
 
 <div class="full-width">
@@ -41,13 +52,13 @@ pushs(`LeftContent', `
 <div class="divider" style="height:20px;"></div>
 
 <div class="selector">
-	<div selector-id="info" class="selector-button-div selector-button">Všeobecné informácie</div>
-	<div selector-id="aktivity" class="selector-button-div selector-button">Podujatia a aktivity</div>
-	<div selector-id="pobyty" class="selector-button-div selector-button">Poznávacie pobyty</div>
+	<a><div selector-id="info" class="selector-button-div selector-button">Všeobecné informácie</div></a>
+	<a><div selector-id="aktivity" class="selector-button-div selector-button">Podujatia a aktivity</div></a>
+	<a><div selector-id="pobyty" class="selector-button-div selector-button">Poznávacie pobyty</div></a>
 </div>
 <div class="divider" style="height: 1em"></div>
 <div class="selector">
-	<div selector-id="sutaze" class="selector-button-div selector-button">Úspechy a súťaže</div>
+	<a><div selector-id="sutaze" class="selector-button-div selector-button">Úspechy a súťaže</div></a>
 	<a href="https://www.gymvrable.sk/dokumenty/prijimacky/2021/kriteria_5r.pdf"><div selector-id="kriteria" class="selector-button-div"><i class="fa fa-link"></i> Kritériá PP</div></a>
 	<a href="https://gymvrable.sk/bilingvalne_studium/docs/klasifikacia.pdf"><div selector-id="klasifikacia" class="selector-button-div"><i class="fa fa-link"></i> Klasifikácia</div></a>
 </div>
@@ -64,6 +75,8 @@ pushs(`LeftContent', `
 <hr>
 <div class="divider" style="height:10px;"></div>
 
+<div class="iit-text">
+
 <p>
 Súčasná  doba otvára možnosti využitia ruského jazyka v rámci obchodovania, podnikateľských aktivít, trhu práce  a  cestovania, čo zvyšuje dopyt po odborníkoch ovládajúcich tento jazyk,  rozhodli sme sa preto ponúknuť záujemcom o gymnaziálne vzdelávanie  nielen kvalitné vedomosti a zručnosti v prírodovedných a spoločenskovedných predmetoch (podobne ako iné gymnáziá), ale aj <b>nadštandardné jazykové  vzdelanie v ruskom jazyku.</b> Naše <b>bilingválne slovensko-ruské gymnázium</b> je  jedinečná stredná školu svojho druhu v Nitrianskom kraji. 
 </p>
@@ -71,9 +84,16 @@ Súčasná  doba otvára možnosti využitia ruského jazyka v rámci obchodova
 <p>
 Na základe rozhodnutia Ministerstva školstva SR zo dňa 14. 05. 2014, ktorým bolo bilingválne gymnázium zaradené do siete stredných škôl, bol 1. septembra 2016 otvorený prvý ročník štúdia, v roku 2021 úspešne ukončili štúdium prvé absolventky. 
 </p>
+</div>
 
-<div class="divider"></div>
-<div class="full-width center-text red" style="font-size: 20px">
+
+<div id="poster" class="iit-img right first">
+	<img src="https://gymvrable.sk/img/infografika_bil_slo-rus_studium.png"></img>
+</div>
+
+<hr style="width: 100%; display: inline-block;">
+<div class="divider" style="display: inline-block; height: 2em;"></div>
+<div class="full-width center-text red" style="display: inline-block; font-size: 20px">
 	V školskom roku 2022/23 prijmeme <b class="red">21 žiakov</b> do študijného odboru:<br><b class="red">7902 J 74 gymnázium - bilingválne (slovensko – ruské)</b>
 </div>
 <div class="divider"></div>
@@ -153,17 +173,247 @@ Budeme radi, ak vás naša ponuka zaujme a stanete sa členom našej „školsk
 
 <div class="full-width"><h class="btitle">Podujatia a aktivity zorganizované v rámci bilingválnej formy štúdia</h></div>
 
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/vystupenie_1d.php"><i class="fa fa-link"></i> Prehliadka Moskvy trochu inak</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/bulgakov_stalin.php"><i class="fa fa-link"></i> Bulgakov a Stalin: Tvorca a vodca</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/kozmonauti.php"><i class="fa fa-link"></i> Vesmír spája - Moskva - Bratislava - Paríž</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/palacinky_res.php"><i class="fa fa-link"></i> Najviac mňam palacinka - výsledky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/ruj_konferencia.php"><i class="fa fa-link"></i> Trajektórie rusko-slovenskej vedecko-pedagogickej spolupráce - Medzinárodná konferencia</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/alexander_blok.php"><i class="fa fa-link"></i> Pred 140 rokmi sa narodil významný ruský básnik Alexander Blok</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/nezabudame.php"><i class="fa fa-link"></i> Nezabúdame</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olymp_ruj_skolske_kolo.php"><i class="fa fa-link"></i> Školské kolo olympiády v RUJ</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/europsky_den_jazykov.php"><i class="fa fa-link"></i> Európsky deň jazykov trochu inak</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/ruske_slovo.php"><i class="fa fa-link"></i> Ruské slovo - celoslovenské kolo 2020</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/ruske_slovo_ck.php"><i class="fa fa-link"></i> Ruské slovo - celoslovenské kolo 2019</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/ruske_slovo.php"><i class="fa fa-link"></i> Ruské slovo - školské kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/popularizacia_ruj.php"><i class="fa fa-link"></i> Popularizácia ruského jazyka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/mosfilm.php"><i class="fa fa-link"></i> Festival ruských filmov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/prezentacia_voronezskej_agrarnej_univerzity.php"><i class="fa fa-link"></i> Prezentácia Voronežskej štátnej agrárnej univerzity</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/otvorena_hodina_ruj.php"><i class="fa fa-link"></i> Otvorená hodina ruskej literatúry a kultúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/beseda_s_bieloruskymi_spisovatelmi.php"><i class="fa fa-link"></i> Beseda s bieloruskými spisovateľmi</a></li>
+</ul>
+
+<div class="divider" style="height: 1em"></div>
+
+<div class="full-width"><h class="btitle">Iné aktivity</h></div>
+
+<p>Pravidelne organizujeme pre našich žiakov, aj pre žiakov zo ZŠ vo Vrábľoch a širokého okolia.</p>
+
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">26.9. Európsky deň cudzích jazykov</h></div>
+
+<p>Každoročne organizujeme pri tejto príležitosti zaujímavé podujatie nielen z pohľadu výučby cudzích jazykov, ale chceme tiež ukázať naozaj pestrú škálu aktivít, ktoré sú určené nielen žiakom ale aj širokej verejnosti v našom meste. Každý jazyk vyučovaný v našej škole sa prezentuje tým, že sa žiaci snažia predstaviť rôzne oblasti kultúry danej krajiny. Ruskú časť vždy dopĺňa aj bohatý kultúrny program- hra na flautách, scénický tanec a najväčší úspech mávajú upravené rozprávky s prvkami moderného tanca. Celé podujatie má spravidla veľký úspech u širokej verejnosti a prispieva k propagácii školy v rámci mesta.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/001.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Exkurzie doma aj v zahraničí</h></div>
+
+<p>Exkurzia Brodzany – Oponice, Exkurzia do Moskvy, Exkurzia do Bratislavy- Ruské centrum vedy a kultúry.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/002.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Voronež</h></div>
+
+<p>Každoročne sa žiaci prvých ročníkov bilingválnej sekcie v lete majú možnosť zúčastniť jazykového tábora vo Voroneži po dobu troch týždňov.</p>
+
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Besedy s ruskými spisovateľmi</h></div>
+
+<p>Besedy s ruskými spisovateľmi, ktoré organizujeme niekoľkokrát do roka. Tieto prispievajú k rozvoju čitateľskej gramotnosti, zároveň rozširujú žiakom vedomosti zo súčasnej ruskej literatúry.</p>
+
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Olympiády v RUJ</h></div>
+
+<p>Školské kolo olympiády v RUJ, ktoré spravidla organizujeme v dvoch kategóriách B3, B4. Žiaci v olympiáde dosahujú vynikajúce výsledky. Posledné tri roky sme obsadili popredné miesta aj v celoslovenskom kole. Máme tiež žiakov, ktorý sa zúčastňujú aj medzinárodných kôl súťaží, ktoré organizujú univerzity v Ruskej federácii.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/003.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Deň otvorených dverí</h></div>
+
+<p>Je zameraný na propagáciu školy rôznymi formami. Za predmet RUJ si pre záujemcov pripravujeme informačný kútik o štúdiu, prezentáciu ruskej kulturológie hravou formou a tiež priblíženie letného jazykového tábora vo Voroneži. Súčasťou ruskej časti bývajú aj nástenky a výstavy prispôsobené aktuálnym pamätným dňom.</p>
+
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Dni ruskej kultúry - Maslenica</h></div>
+
+<p>Každoročne organizujeme v období fašiangov kultúrno - zábavné dopoludnie pre žiakov ZŠ vo Vrábľoch a v okolí ale aj pre žiakov nášho gymnázia. Toto podujatie sa vždy nesie v duchu slovanských tradícií týkajúcich sa fašiangov. Snažíme sa programom priblížiť návštevníkom zvyky, tance, piesne a kulinárske špeciality typické pre toto obdobie. Veľmi obľúbeným záverom býva opäť divadelno-tanečné predstavenie inšpirované ruskými ľudovými rozprávkami. Aj takto môžeme napomôcť zbližovanie kultúr a zároveň dávame možnosť študentom oboch študijných foriem spojiť sily a vytvoriť niečo zaujímavé, zábavné ale aj náučné.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/004.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Kultúrno - umelecké pásmo pre rodičov žiakov z bilingvy</h></div>
+
+<p>Vždy pred koncom školského roka si žiaci prvého ročníka bilingválnej triedy pripravujú umelecké pásmo s recitáciou diel ruských autorov na vybranú tému pre svojich rodičov a blízkych príbuzných. Takouto zaujímavou formou zavŕšia vlastne jazykovú prípravu v prvom ročníku, rodičia majú možnosť vidieť svoje deti v inojazyčnej pozícii a zároveň to stmeľuje kolektív ešte pred absolvovaním jazykového tábora, do ktorého majú možnosť ísť v lete.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/005.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
+<div class="full-width"><h class="btitle">Rozlúčka so štvrtákmi</h></div>
+
+<p>Aj takto sa dá pripraviť rozlúčka so štvrtákmi.</p>
+
+<div class="iit-img full akt-iit-img">
+	<img src="https://gymvrable.sk/bilingvalne_studium/img/006.png"></img>
+</div>
+<div class="divider" style="height: 1em;"></div>
+
 </div>
 
 <div class="selector-content">
 <hr>
 <div class="divider" style="height:10px;"></div>
 
+<div class="full-width"><h class="btitle">Poznávacie pohyby a exkurzie v Rusku</h></div>
+
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/voronez_2019.php"><i class="fa fa-link"></i> Letný tábor 2019 vo Voroneži</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/vrabelski_gymnazisti_v_moskve.php"><i class="fa fa-link"></i> Vrábeľskí gymnazisti v Moskve</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/voronez_letny_tabor_2018.php"><i class="fa fa-link"></i> Letný tábor 2018 vo Voroneži</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/voronez.php"><i class="fa fa-link"></i> Letný tábor 2017 vo Voroneži</a></li>
+</ul>
+
 </div>
 
 <div class="selector-content">
 <hr>
 <div class="divider" style="height:10px;"></div>
+
+
+<div class="full-width"><h class="btitle">Naše úspechy v ruskom jazyku</h></div>
+
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/ucebnica_geg_v_rj.php"><i class="fa fa-link"></i> Nová učebnica geografie v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olym_ruj_sr.php"><i class="fa fa-link"></i> Úspech na celoslovenskom kole Olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olymp_ruj_medinarodna.php"><i class="fa fa-link"></i> Medzinárodná online olympiáda v ruskom jazyku na Petrohradskej štátnej univerzite</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olym_ruj_kk.php"><i class="fa fa-link"></i> Krajské kolo Olympiády v Ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/ruske_slovo_celoslov_kolo.php"><i class="fa fa-link"></i> Celoslovenské kolo súťaže RUSKÉ SLOVO 2021</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olymp_ruj_sr.php"><i class="fa fa-link"></i> Získali sme 3. miesto na celoslovenskom kole Olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olympiada_ruj_krajske_kolo.php"><i class="fa fa-link"></i> Víťazstvá na krajskom kole olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/uspech_v_celoslovenskom_kole_olympiady_ruj.php"><i class="fa fa-link"></i> Získali sme 2. a 3. miesto v celoslovenskom kole Olympiády v ruskom jazyku!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olymp_ruj_kraj_kolo.php"><i class="fa fa-link"></i> Postup do celoštátneho kola Olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/spolocne_dejiny_rus_svk.php"><i class="fa fa-link"></i> Slávnostné ocenenie našich žiakov na Veľvyslanectve Ruskej Federácie</a></li>
+</ul>
+
+<hr>
+
+<div class="divider" style="height: 1em"></div>
+
+<div class="full-width"><h  class="btitle" style="font-size: 20px">SÚŤAŽE</h></div>
+
+<div class="divider" style="height: 1em"></div>
+
+<div class="full-width"><h class="btitle">Olympiáda z RUJ 2019/2020</h></div>
+
+<div class="divider" style="height: 0.5em"></div>
+
+<h><i>Školské kolo</i></h>
+
+<p>
+<b>Kategória B3</b><br>
+1.miesto Paula Balta z III.D<br>
+2.miesto Denis Poveschenko z I.A<br>
+</p>
+
+<p>
+<b>Kategória B4</b><br>
+1. miesto Daniela Duncová zo IV. D<br>
+2. miesto Alžbeta Kováčiková z III. D<br>
+3. miesto Katarína Turanová z III.D<br>
+</p>
+
+<p>
+Paula Balta dostala diplom I. stupoa v online olympiáde ruského jazyka ako cudzieho, zorganizovanej Ministerstvom školstva RF a Petrohradkou štátnou univerzitou 3.-25. decembra 2019.
+</p>
+
+<div class="divider" style="height: 1em"></div>
+
+<div class="full-width"><h class="btitle">Olympiáda z RUJ 2018/2019</h></div>
+
+<div class="divider" style="height: 0.5em"></div>
+
+<h><i>Školské kolo</i></h>
+
+<p>
+<b>Kategória B2</b><br>
+1.miesto Bibiana Halásová - I.D<br>
+2.miesto Natália Polyáková - I.D<br>
+3.miesto Juraj Gúlik - I.D<br>
+</p>
+
+<p>
+<b>Kategória B3</b><br>
+1.miesto Paula Balta - II.D<br>
+</p>
+
+<p>
+<b>Kategória B4</b><br>
+1.miesto Daniela Duncová - III.D<br>
+2.miesto Alžbeta Kováčiková - II.D<br>
+3.miesto Viktória Tormová - III.D<br>
+</p>
+
+<h><i>Krajské kolo</i></h>
+
+<p>
+<b>Kategória B3</b><br>
+1.miesto Paula Balta z II.D<br>
+</p>
+
+<p>
+<b>Kategória B4</b><br>
+1.miesto Daniela Duncová z III.D<br>
+</p>
+
+<h>celoslovenské kolo</h>
+
+<p>
+<b>Kategória B4</b><br>
+3.miesto Daniela Duncová III.D<br>
+</p>
+
+
+<div class="full-width"><h class="btitle">Ruské slovo - školský rok 2018/2019</h></div>
+
+<p>
+POÉZIA - ruskojazyk. prostredie - 1. miesto: Paula Balta - II.D<br>
+POÉZIA - 1. miesto: Daniela Kmeťová - II.D<br>
+PRÓZA - 1.miesto: Natália Polyáková - I.D<br>
+PRÓZA - 1. miesto: Daniela Duncová - III.D<br>
+SÓLOVÝ SPEV - 1. miesto: Veronika Repáňová - III.D<br>
+</p>
+
+<h><i>Krajské kolo</i></h>
+
+<p>
+POÉZIA - ruskojazyk. prostredie - 1. miesto: Paula Balta - II.D<br>
+POÉZIA - 3. miesto: Daniela Kmeťová - II.D<br>
+PRÓZA - 1. miesto: Daniela Duncová - III.D<br>
+SÓLOVÝ SPEV - 1. miesto: Veronika Repáňová - III.D<br>
+</p>
+
+<h><i>Celoslovenské kolo</i></h>
+
+<p>
+POÉZIA: 2. miesto III. kategória ruské prostredie: Paula Balta - II.D<br>
+SÓLOVÝ SPEV: 1. miesto III. kategória: Veronika Repáňová - III.D<br>
+</p>
+
 
 </div>
 

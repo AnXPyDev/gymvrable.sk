@@ -1,0 +1,59 @@
+/* iit - image in text */
+
+.iit-text {
+	display: inline-block;
+	width: 65%;
+	box-sizing: border-box;
+}
+
+.iit-text.full {
+	width: 100%;
+}
+
+.iit-img {
+	width: 35%;
+	margin: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1em;
+	padding: 1em;
+}
+.iit-img.full {
+	width: 100%;
+}
+.iit-img img {
+	object-fit: contain;
+	border: 3px solid white;
+	box-shadow: 0 0 10px var(--sh-clr);
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.iit-img.right {
+	padding-left: 2em;
+	float: right;
+}
+.iit-img.first {
+	padding-top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+	.iit-img {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.iit-img.right {
+		padding-left: 1em;
+	}
+	.iit-img.first {
+		padding-top: 1em;
+	}
+	.iit-img img {
+		max-height: 15em;
+	}
+	.iit-text {
+		width: 100%;
+	}
+}

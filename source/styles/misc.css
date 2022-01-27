@@ -19,7 +19,8 @@
 }
 
 .divider {
-    height: 40px;
+	width: 100%;
+    height: 3em;
 }
 
 .content-half {
