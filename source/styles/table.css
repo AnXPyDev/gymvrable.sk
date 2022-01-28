@@ -8,7 +8,7 @@
     border: solid 1px var(--fg-clr);
     height: 30px;
     text-align: center;
-    padding: 10px;
+    padding: 0.5em;
 }
 
 .table-body td, td.table-body {

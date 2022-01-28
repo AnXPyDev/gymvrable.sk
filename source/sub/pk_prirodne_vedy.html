@@ -1,0 +1,370 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/selector.css')
+
+pushs(`Page-Title',`PK prírodných vied')
+
+pushs(`LeftContent', `
+<style>
+	.table-elm {
+		font-size: 14px;
+	}
+
+	.table-elm td {
+		padding: 10px;
+	}
+
+	.selector {
+		justify-content: center;
+	}
+
+	.selector-button-div {
+		padding: 0.5em;
+		flex-grow: 1;
+	}
+
+	.table-elm td {
+		padding: 2px;
+	}
+
+	.usp-h {
+		color: #0099CC;
+	}
+
+</style>
+
+<div class="full-width">
+    <h class="content-title">Predmetová komisia prírodných vied</h>
+</div>
+
+<div class="divider" style="height:20px;"></div>
+
+<div class="selector" id="selector">
+	<a><div selector-id="clenovia" class="selector-button-div selector-button">Členovia</div></a>
+	<a href="https://gymvrable.sk/predmetove_komisie/pk_prirodne_vedy/docs/ulohy_a_ciele.pdf"><div selector-id="ulohy" class="selector-button-div selector-button"><i class="fa fa-link"></i> Úlohy a ciele</div></a>
+	<a href="https://gymvrable.sk/predmetove_komisie/pk_cudzie_jazyky/inc/kriteria_hodnotenia_ziaka.pdf"><div selector-id="kriteria" class="selector-button-div selector-button"><i class="fa fa-link"></i> Kritériá hodnotenia</div></a>
+	<a><div selector-id="podujatia" class="selector-button-div selector-button">Podujatia</div></a>
+	<a><div selector-id="uspechy" class="selector-button-div selector-button">Úspechy študentov</div></a>
+	<a><div selector-id="linky" class="selector-button-div selector-button">Užitočné linky</div></a>
+</div>
+
+<script>
+	let selector = document.getElementById("selector");
+	selector.style.display = "flex";
+</script>
+
+<div class="divider" style="height:10px;"></div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Členovia</h>
+</div>
+
+<div class="divider" style="height:10px;"></div>
+
+<table class="table-elm">
+	<tr class="table-header">
+		<td>meno</td>
+		<td>funkcia</td>
+		<td>vyučuje</td>
+	</tr>
+	<tr>
+		<td>RNDr. Anna Uhríková</td>
+		<td>predseda</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Mária Bašistová</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Martina Ragasová</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+</div>
+
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+    
+<h>Podujatia a akcie realizované v školskom roku 2020/2021</h>
+
+<ul>
+
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/vediet_viac.php">Vedieť viac</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/lider_skoly.php">Programátor Jozef Komáromy - líder vrábeľského gymnázia v školskom roku 2020/2021</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/zdolavame_fyziku.php">Zdolávame fyziku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/uspech_astronoma.php">Ďalší úspech mladého astronóma</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/sutaz_astronomia.php">Úspech mladého astronóma</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/bio_olympiada.php">Školské kolo biologickej olympiády</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/darovanie_krvi.php">Darovanie krvi</a></li>
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2019/2020</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/astronomovia_sutazili_aj_pocas_pandemie.php">Astronómovia súťažili aj počas pandémie</a></li>
+	<li><a href="docs/tyzden_vedy_a_techniky_prezentacia.pdf" target="_blank">Interaktívna výstava - TVaT</a></li>
+
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/valentinska_kvapka_krvi.php">Valentínska kvapka krvi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/beseda_onkologia.php">Beseda o onkológii</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/ekotopfilm.php">Ekotopfilm v Energolande</a></li>
+
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/it_v_nitre.php">Získali sme 3. miesto na súťaži v rýchlom programovaní</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/dq.php">Bezpečnosť vo virtuálnom svete - sme najlepší v nitrianskom kraji</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/ibobor.php">Informatická súťaž iBobor 2019</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/vystava_tvat.php">Týždeň vedy a techniky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/darovanie_krvi.php">Darovanie krvi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/edj_2019.php">Európsky deň jazykov v réžii vrábeľských gymnazistov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/velky_uspech_nasho_astronoma.php">Veľký úspech nášho astronóma</a></li>
+
+</ul>
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2018/2019</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/co_vies_o_hviezdach_ck.php">Celoslovenské finále súťaže Čo vieš o hviezdach</a></li>
+
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/sciens_talks.php">Sciens Talks</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/energoland.php">Energoland 2019</a></li>
+
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/sutaz_druzstiev_prvej_pomoci.php">Súťaž družstiev prvej pomoci mladých</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/hviezdy_mu_priali.php">Hviezdy mu opäť priali</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/co_vies_o_hviezdach.php">Čo vieš o hviezdach?</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/fiit_stu_ba.php">Prezentácia štúdia Informatiky na FIIT STU</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/dq.php">Notebooky, Expl0ited a Yablko nám ušli len o vlások!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/ibobor2018.php">Informatická súťaž iBobor 2018</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/codeweek_objav_v_sebe_programatora_na_vrabelskom_gymnaziu_review.php">CodeWeek - Objav v sebe programátora na vrábeľskom gympli</a></li>
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2017/2018</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/itakademia_pr.php">Sme partnerom Národného projektu IT Akadémia - vzdelávanie pre 21. storočie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/uspechy_mladeho_prirodovedca.php">Ďalšie úspechy mladého prírodovedca</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/uspesni_hvezdari.php">Úspešní hvezdári</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/bio_olympiada_sk_kolo.php">Školské kolo Biologickej olympiády</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/preco_studovat_matematiku.php">Prečo študovať matematiku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/valentinska_kvapka_krvi.php">Valentínska kvapka krvi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/bezpecny_internet_prednaska.php">Prednáška o bezpečnosti na Internete</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/mo_skolske_kolo.php">Školské kolo Matematickej olympiády</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/prednasky_upjs_kosice.php">ZAOSTRENÉ na Nobelove ceny 2017 - Popularizačné prednášky v rámci projektu IT Akadémia</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/int_ol_astronomia.php">Mladý astronóm v Thajsku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/ibobor2017.php">Informatická sútaž iBobor 2017</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/tvat.php">Týždeň vedy a techniky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/beseda_fiit_stu.php">Prezentácia štúdia Informatiky na FIIT STU</a></li>
+</ul>
+
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2016/2017</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/vyhodnotenie_krajskych_kol_mo_fo.php">Úspešní riešitelia krajských kôl MO a FO</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/sutaz_druzstiev_prvej_pomoci.php">Súťaž družstiev prvej pomoci mladých</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/darovanie_krvi.php">Darovanie krvi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/uspech_astronomia_2.php">Ďalší úspech astronómov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/uspech_astronomia.php">Vynikajúci úspech nášho mladého astronóma</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/hvezdari.php">Úspešní hvezdári</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/oi_kraj_kolo.php">Úspešná reprezentácia školy na Olympiáde v Informatike</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/matematicka_olympiada.php">Matematická olympiáda v školskom roku 2016/2017</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/biologicka_olympiada.php">Školské kolo Biologickej olympiády</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/matematicky_naboj.php">Matematický Náboj</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/tyzden_vedy_a_techniky.php">Týždeň vedy a techniky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/den_vody.php">Svetový deň vody</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/den_jablk.php">Deň jabĺk</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/arboretum.php">Jesenná krása arboréta</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/cosmos.php">Druháci v kozme</a></li>
+</ul>
+
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2015/2016</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/exkurzia_je_mochovce.php">Exkurzia v jadrovej elektrárni Mochovce</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/vedecke_dielne.php">VI.ročník Vedeckých dielní onkológia: "My môžeme, ja môžem."</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/3m_oi_kraj_kolo.php">Bronz z Olympiády v Informatike</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/ibobor_2015.php">Samuela Mikleho delil v súťaži iBobor jediný bod od celkového triumfu</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/tyzden_vedy_a_techniky_2015.php">Týždeň vedy a techniky 2015</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/den_mlieka.php">Deň mlieka alebo preteky po schodoch a jogurty zadarmo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/den_jablk.php">Deň jabĺk</a></li>
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2014/2015</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/klokan_2015.php">11. miesto v súťaži Matematický Klokan v rámci Slovenska patrí nášmu študentovi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/girlsday_2015.php">GirlsDay 2015</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/exkurzia_el_mochovce.php">Exkurzia v jadrovej elektrárni v Mochovciach</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/tyzden_vedy_a_techniky.php">Týždeň vedy a techniky 2014</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/ibobor_2014.php">Šieste miesto Filipa Vargu (4.C) v celoslovenskej informatickej súťaži iBobor</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/videoprednaska_upjs.php">Video-prednáška na tému "Čo obnáša práca informatika?"</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/den_mlieka_2014.php">Deň mlieka</a></li>
+</ul>
+
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2013/2014</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/viac_ako_peniaze.php">Viac ako peniaze</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/matematicka_olympiada.php">Úspešná cesta Lindy Valkovicovej Matematickou olympiádou v školskom roku 2013/2014</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/sutaz_dppm.php">2. miesto na súťaži „Družstvá prvej pomoci mladých“</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/fit_den.php">Mali sme FIT DEŇ</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/zber_papiera_2014.php">Výsledky zberu papiera v školskom roku 2013/2014</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/matematicka_olympiada_skol_kolo.php">Matematická olympiáda - školské kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/ibobor_2013.php">Obrovský úspech v celoslovenskej informatickej súťaži iBobor 2013</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/interaktivna_prirodovedna_vystava.php">Interaktívna výstava počas Týždňa vedy a techniky 2013</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/kvapka_krvi.php">Kvapka krvi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/den_jablk.php">Deň jabĺk</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/den_mlieka.php">Deň mlieka</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2012/2013</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/zber_papiera.php">Výsledky zberu papiera v školskom roku 2012/2013</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/beseda_so_zdravotnikmi.php">Beseda so zdravotníkmi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_zeme.php">Deň Zeme</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/matematicky_klokan.php">Matematický klokan</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_vody.php">In aqua sanitas = Vo vode je zdravie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/transfuzna_stanica.php">Transfúzna stanica</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/vianoce_v_marci.php">Vianoce v marci</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/beh_proti_rakovine.php">Beh proti rakovine</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/darovanie_krvi_2013_02.php">Živí a zdraví</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/exkurzia_mochovce.php">Exkurzia do jadrovej elektrárne v Mochovciach</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/darovanie_krvi_2013.php">O 500 ml ľahší</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/ibobor_2012.php">Celoslovenská informatická súťaž iBobor 2012</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/dod_2012_november.php">Vydarený Deň otvorených dverí</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/sutaz_gv_2012_premierova_obhajoba_prvenstva.php">Premiérová obhajoba prvenstva</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/interaktivna_vystava_pocas_tyzdna_vedy_a_techniky_2012.php">Interaktívna výstava počas Týždňa vedy a techniky 2012</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/prirodovedna_vedomostna_sutaz_2012_preview.php">Prírodovedný vedomostný kvíz pre študentov nášho gymnázia - pozvánka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_jablk.php">Svetový deň jabĺk</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_mlieka.php">Deň mlieka</a></li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<h class="usp-h">Úspechy študentov v prírodovedných súťažiach v školskom roku 2019/2020</h>
+
+<p><strong>Jozef Komáromy</strong></p>
+<ul>
+  <li>1. miesto v krajskom kole v Olympiáde v INFORMATIKE - kategória B</li>
+  <li>3. miesto v súťaži v rýchlom programovaní v rámci podujatia IT v Nitre</li>
+</ul>
+
+<p><strong>Samuel Buranský</strong></p>
+<ul>
+  <li>4. miesto v celoslovenskom kole astronomickej olympiády</li>
+  <li>5. miesto v národnom kole „Čo vieš o hviezdach“</li>
+  <li>úspešný riešiteľ súťaže iBobor</li>
+</ul>
+
+<div class="divider" style="height: 1em"></div>
+
+<h class="usp-h">Úspechy študentov v prírodovedných súťažiach v školskom roku 2018/2019</h>
+
+<p><strong>Samuel Buranský</strong></p>
+<ul>
+  <li>čestné uznanie v medzinárodnom kole astronomickej olympiády</li>
+  <li>4. miesto v národnom kole „Čo vieš o hviezdach“</li>
+  <li>úspešný riešiteľ súťaže iBobor</li>
+</ul>
+
+<p><strong>Jozef Komáromy</strong> - 3. miesto v krajskom kole olympiády z informatiky - kategória B</p>
+
+<p><strong>Michaela Očovayová, Nina Vargová, Ema Bologová, Ema Vozafová, Simona Bratová, Martina Walaská, Jakub Horňák</strong> - 3. miesto v krajskom kole Súťaže družstiev prvej pomoci mladých</p> 
+
+<div class="divider" style="height: 1em"></div>
+
+<h class="usp-h">Úspechy študentov v prírodovedných súťažiach v školskom roku 2017/2018</h>
+
+<p><strong>Samuel Buranský</strong></p>
+<ul>
+  <li>čestné uznanie v medzinárodnom kole astronomickej olympiády</li>
+  <li>7. miesto v národnom kole astronomickej olympiády</li>
+  <li>3. miesto v národnom kole „Čo vieš o hviezdach“</li>
+  <li>2. miesto v krajskom kole fyzikálnej olympiády</li>
+  <li>úspešný riešiteľ Matematického Klokana</li>  
+  <li>úspešný riešiteľ súťaže iBobor</li>
+</ul>
+
+<p><strong>Lukáš Minár</strong> - 6. miesto v krajskom kole olympiády z informatiky</p>
+<p><strong>Martin Max</strong> - 2. miesto v krajskom kole súťaže Čo vieš o hviezdach</p>
+<p><strong>Michaela Očovayová, Hana Baťalíková, Daniela Matušková, Linda Drozdáková, Andrea Pintešová, Natália Fernézová, Martina Miklóšová</strong> - 3. miesto v krajskom kole Súťaže družstiev prvej pomoci mladých</p>
+
+<div class="divider" style="height: 1em"></div>
+
+<h class="usp-h">Úspechy študentov v prírodovedných súťažiach v školskom roku 2016/2017</h>
+
+<p><strong>Samuel Buranský</strong>
+<ul style="margin:-37px 0 0 145px;">
+  <li>5. miesto v národnom kole astronomickej olympiády</li>
+  <li>5. miesto v národnom kole "Čo vieš o hviezdach"</li>
+  <li>9. miesto v krajskom kole matematickej olympiády</li>
+</ul>  
+</p>
+
+<p><strong>Lukáš Minár</strong> - 3 a 4. miesto v krajskom kole olympiády z informatiky - kategória A</p>
+<p><strong>Michal Lüley</strong> - 4. miesto v krajskom kole olympiády z informatiky - kategória B</p>
+<p><strong>Jakub Ganádik</strong> - 6. miesto v krajskom kole fyzikálnej olympiády</p>
+<p><strong>Martin Max</strong> - 3. miesto v krajskom kole súťaže Čo vieš o hviezdach</p>
+<p><strong>Adam Laščiak</strong> - 14. miesto v okresnom kole matematickej olympiády
+
+</div>
+
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Užitočné linky</h>
+</div>
+
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://www.iuventa.sk/olympiady/ziak/" target="_blank"><i class="fa fa-link"></i> Predmetové olympiády</a></li>
+	<li><a href="http://eaktovka.sk" target="_blank"><i class="fa fa-link"></i> eAktovka - učebnice základných a stredných škôl v digitálnej forme</a></li>
+	<li><a href="https://ibobor.sk/" target="_blank"><i class="fa fa-link"></i> iBobor - stránka informatickej sútaže</a></li>
+	<li><a href="https://www.matematickyklokan.sk" target="_blank"><i class="fa fa-link"></i> Matematický klokan - stránka matematickej sútaže</a></li>
+	<li><a href="https://www.geogebra.org/" target="_blank"><i class="fa fa-link"></i> GeoGebra - voľne dostupný matematický softvér pre učenie sa a na vyučovanie</a></li>
+	<li><a href="https://www.suh.sk/organizujeme/sutaze/co-vies-o-hviezdach" target="_blank"><i class="fa fa-link"></i> Čo vieš o hviezdach</a></li>
+</ul>
+
+</div>
+
+<script src="/scripts/selector.js"></script>
+')
+
+include(`include/notices.html')
+include(`include/base.html')

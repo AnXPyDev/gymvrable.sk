@@ -1,0 +1,429 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/selector.css')
+
+pushs(`Page-Title',`PK cudzích jazykov')
+
+pushs(`LeftContent', `
+<style>
+	.table-elm {
+		font-size: 14px;
+	}
+
+	.table-elm td {
+		padding: 10px;
+	}
+
+	.selector {
+		justify-content: center;
+	}
+
+	.selector-button-div {
+		padding: 0.5em;
+		flex-grow: 1;
+	}
+
+	.table-elm td {
+		padding: 2px;
+	}
+
+</style>
+
+<div class="full-width">
+    <h class="content-title">Predmetová komisia cudzích jazykov</h>
+</div>
+
+<div class="divider" style="height:20px;"></div>
+
+<div class="selector" id="selector">
+	<a><div selector-id="clenovia" class="selector-button-div selector-button">Členovia</div></a>
+	<a><div selector-id="ulohy" class="selector-button-div selector-button">Úlohy</div></a>
+	<a><div selector-id="plan" class="selector-button-div selector-button">Plán</div></a>
+	<a><div selector-id="podujatia" class="selector-button-div selector-button">Podujatia</div></a>
+	<a><div selector-id="etwinning" class="selector-button-div selector-button">eTwinning</div></a>
+	<a><div selector-id="projekty" class="selector-button-div selector-button">Medzinárodné projekty</div></a>
+	<a><div selector-id="sutaze" class="selector-button-div selector-button">Súťaže a olympiády</div></a>
+	<a href="https://gymvrable.sk/predmetove_komisie/pk_cudzie_jazyky/inc/kriteria_hodnotenia_ziaka.pdf"><div selector-id="kriteria" class="selector-button-div selector-button"><i class="fa fa-link"></i> Kritériá hodnotenia žiaka</div></a>
+	<a><div selector-id="aktivity" class="selector-button-div selector-button">Doplňujúce aktivity</div></a>
+	<a><div selector-id="linky" class="selector-button-div selector-button">Užitočné linky</div></a>
+</div>
+
+<script>
+	let selector = document.getElementById("selector");
+	selector.style.display = "flex";
+</script>
+
+<div class="divider" style="height:10px;"></div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Členovia</h>
+</div>
+
+<div class="divider" style="height:10px;"></div>
+
+<table class="table-elm">
+	<tr class="table-header">
+		<td>meno</td>
+		<td>funkcia</td>
+		<td>vyučuje</td>
+	</tr>
+	<tr>
+		<td>PaedDr. Denisa Očovayová</td>
+		<td>predseda</td>
+		<td>NEJ, RUJ</td>
+	</tr>
+	<tr>
+		<td>PhDr. Alla Pakhritsina</td>
+		<td>lektor ruského jazyka</td>
+		<td>RUJ</td>
+	</tr>
+	<tr>
+		<td>PaedDr. Beáta Havettová</td>
+		<td></td>
+		<td>ANJ, RUJ</td>
+	</tr>
+	<tr>
+		<td>Mgr. Eva Hudecová</td>
+		<td></td>
+		<td>ANJ</td>
+	</tr>
+	<tr>
+		<td>PaedDr. Eliška Matušková</td>
+		<td></td>
+		<td>ANJ, RUJ</td>
+	</tr>
+	<tr>
+		<td>Mgr. Anna Semenová</td>
+		<td></td>
+		<td>RUJ</td>
+	</tr>
+
+</table>
+
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Hlavné úlohy a ciele PK</h>
+</div>
+
+<ul class="ul-para">
+<li>Naďalej skvalitňovať výchovno-vzdelávací proces efektívnym  rozvíjaním komunikatívnych kompetencií žiakov a využiť priestor na použitie svojho vlastného prístupu a schopností  v procese výučby, využívať inovatívne metódy a formy výučby (tvorba myšlienkových máp, projektové vyučovanie, tvorivé zážitkové metódy, personalizované učenie, inscenačné metódy, rolové úlohy vyplývajúce zo zážitkových možností žiakov, riadenú a voľnú diskusiu, riešenie problémových úloh a audio-/video-prezentácie riešenia úloh</li>
+<li>Eliminovať memorovanie a sústrediť sa na  vyučovanie založené na tréningu a rozvoji jazykových kompetencií s ohľadom na rôzne štýly učenia sa žiaka a jeho schopnosti a druh inteligencie</li>
+<li>Používať dostupné učebné pomôcky, didaktickú techniku, vytvárať si vlastné pracovné listy a iné dvojrozmerné a trojrozmerné pomôcky na zvýšenie efektivity práce</li>
+<li>Sledovať nielen úroveň osvojených vedomostí a zručností, ale vedieť používať logické, kritické, abstraktné myslenie a tak uplatňovať vyššie kognitívne procesy v rôznych fázach vyučovacieho procesu</li>
+<li>Pri hodnotení žiakov naďalej využívať viaceré formy získavania spätnej väzby o kvalite ich výstupov, najmä priebežné, tzv. formatívne hodnotenie a sebahodnotenie žiakov vedúce k zvyšovaniu ich motivácie k vzdelávaniu sa a k uvedomeniu si zodpovednosti za vlastné
+výkony a výsledky</li>
+<li>Aspoň dvakrát ročne zisťovať spokojnosť žiakov s použitím rôznych foriem práce na hodinách CJ napríklad anketou, ktorú bude treba následne vyhodnotiť a o výsledkoch sa oboznámiť navzájom na zasadnutí PKCJ</li>
+<li>Vzdelávať a vychovávať žiaka najmä prostredníctvom prierezovej témy multikultúrna výchova a osobnostný a sociálny rozvoj, ktorý má správne postoje v oblasti ľudských práv, vie rešpektovať a tolerovať individuálne, etnické, národné, náboženské a kultúrne špecifiká a odlišnosti, je schopný žiť v multikultúrnom prostredí, je ochotný pochopiť a pomôcť tým, ktorí jeho pomoc potrebujú, má rozvinuté sociálne cítene a odsudzuje všetky prejavy násilia, intolerancie, xenofóbie a rasizmu. </li>
+<li>Zapájať žiakov do rôznych tvorivých aktivít v rámci Európskeho dňa jazykov a podporovať a zdôrazňovať význam výučby cudzích jazykov, čo umožňuje lepšie poznávanie reálií a kultúrnej rozmanitosti Európy.</li>
+<li>Naučiť žiakov získavať poznatky o spôsobe života v iných krajinách ( zahraničné exkurzie, jazykové pobyty, internet, práca so zahraničnou literatúrou, stretnutia so zahraničnými hosťami). Snažiť sa o rovnomerné zacielenie daných aktivít na všetky vyučované CJ.</li>
+<li>Cielene rozvíjať čitateľskú gramotnosť a kultúru čítania, rozširovať fond školskej knižnice aj o tituly z cudzojazyčnej literatúry, podporovať také krúžkové aktivity, ktoré sú zamerané na prácu s textami a literatúrou. Zúčastňovať sa recitačných a literárnych súťaží. Aktivovať žiakov k práci v školskom časopise „Ťahák“. K tomuto časopisu vytvoriť literárne okienko, ktoré bude slúžiť ako prehliadka najlepších žiackych prác v ANJ, NEJ a RUJ.</li>
+<li>Zriadiť knižnicu s titulmi v ruskom jazyku, vzhľadom na zavedenie predmetu Ruská literatúra v bilingválnej forme štúdia. Tu sa zároveň zamerať na zdokonalenie vystupovania a prezentácie žiakov  najmä v umeleckých textoch a zároveň sa zúčastniť recitačných súťaží.</li>
+<li>Naďalej organizovať ŠK OL CJ a zúčastňovať sa vyšších kôl týchto súťaží.</li>
+<li>Pokračovať v realizovaní regionálnej problematiky - poznávanie národnej kultúry, historických pamiatok, zemepisných zvláštností v jednotlivých témach najmä prostredníctvom rôznych projektov a vzdelávacieho obsahu, ktoré poskytujú učebnice pre cudzie jazyky a učebnice pre prípravu na maturitu. </li>
+<li>Každoročne organizovať dni ruskej kultúry pre žiakov našej školy, ale aj pre záujemcov o bilingválnu formu štúdia na našom gymnáziu.</li>
+<li>Naďalej spolupracovať s RCVK v Bratislave, Veľvyslanectvom RF v Bratislave  a zúčastniť sa odborných seminárov, ale aj kultúrnych podujatí, ktoré organizujú pre širokú verejnosť. </li>
+<li>Aktívne sa podieľať na zviditeľňovaní nášho gymnázia a propagácii obidvoch foriem vydelávania.</li>
+<li>Zvyšovať kariérový rast a profesijný rozvoj členov PK účasťou na takých odborných vzdelávaniach, ktoré obohatia nielen teoretickými poznatkami, ale hlavne budú aplikovateľné v každodennej praxi, vzhľadom na zavedenie bilingválnej formy štúdia v ruskom jazyku, ale aj posilnenú výučbu anglického jazyka.</li>
+<li>Vypracovať harmonogram hospitácií pre jednotlivé jazyky, aby sa zlepšila kontrolná činnosť PKCJ a tiež zorganizovať otvorené hodiny pre každý jazyk aspoň raz ročne so zameraním na metodické a didaktické javy, výsledky ktorých budú neskôr zanalizované na zasadnutí PKCJ.</li>
+</ul>
+
+<p><b>zodpovedné:</b> všetky vyučujúce cudzích jazykov</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Plán aktivít PK CJ</h>
+</div>
+
+<ol class="ul-para">
+<li><strong>Objednávanie učebníc a časopisov z cudzích jazykov</strong><br/>
+z: všetky vyučujúce CJ</li>
+<li><strong>Európsky deň cudzích jazykov (26.9.2018)- prezentácia kultúry a jazyka Anglicka, Nemecka, Ruska a Slovenska na Čerešňovom námestí vo Vrábľoch</strong><br/>
+z: Hegedúšová, Očovayová, Pahkritsina</li>
+<li><strong>Exkurzia Brodzany- Oponice</strong><br/>
+z: Očovayová, Pakhritsina</li>
+<li><strong>Beseda so spolupracovníkom z Holandska</strong><br/>
+z:  Očovayová</li>
+<li><strong>Exkurzia Bibliotheka v Bratislave</strong><br/>
+z: Očovayová</li>
+<li><strong>Divadelné predstavenie Tom Sawyer v AJ v Bratislave</strong><br/>                                                                    
+z: Hegedúšová</li>
+<li><strong>Súťaž Mladý prekladateľ v AJ , NJ a RJ</strong><br/>
+z:  Hegedúšová, Očovayová, Martišková, Pakhritsina</li>
+<li><strong>Školské kolo olympiády v anglickom, nemeckom a ruskom jazyku – november</strong><br/>
+z: všetky vyučujúce</li>
+<li><strong>Deň otvorených dverí- prezentácia aktivít v anglickom, nemeckom a ruskom jazyku</strong></li> 
+<li><strong>Festival ruských filmov (6.12.2019)</strong><br/>
+z: Alla Pakhritsina</li>
+<li><strong>Súťaž Juvenes Translatores - súťaž v AJ</strong><br/>
+z:  Hegedúšová</li>
+<li><strong>Návšteva Ruského centra vedy a kultúry v Bratislave</strong> </li>
+<li><strong>Ruskij diktant- on-line súťaž v písaní diktátov</strong></li>
+<li><strong>On line súťaž v AJ- Best in English</strong><br/>
+z: Hegedúšová</li>
+<li><strong>„Ruské slovo“ recitačná súťaž v prednese ruskej poézie a prózy</strong><br/>
+z: Matušková</li>
+<li><strong>Okresné a krajské kolo olympiády v anglickom, nemeckom, ruskom jazyku - január, február</strong></li>
+<li><strong>Deň ruskej kultúry- kultúrne podujatie pre záujemcov o bilingválne štúdium</strong> <br/> 
+z: Očovayová, Bielaková, Matušková, Havettová</li>
+<li><strong>Vypracovanie zadaní ÚFMS z RJ na úroveň C1</strong><br/>
+z: všetky vyučujúce RUJ</li>
+<li><strong>Návšteva divadelného predstavenia Idiot v divadle Astorka v Bratislave</strong></li>
+<li><strong>Zahraničná exkurzia Petrohrad</strong></li> 
+<li><strong>Prehliadka v speve anglickej, ruskej,  nemeckej piesne – jún</strong></li> 
+<li><strong>Zborník prác v cudzích jazykoch ako príloha školského časopisu „Ťahák“- jún</strong><br/>
+z: všetky vyučujúce</li> 
+
+</ol>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+    
+<h>Podujatia a akcie realizované v školskom roku 2020/2021</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/st_patrics_day.php">St. Patrick\'s Day - výsledky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/oanj_okr_kolo.php">Okresné kolo Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/pearson_bbc_online.php">Big live classes</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/alexander_blok.php">Pred 140 rokmi sa narodil významný ruský básnik Alexander Blok</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olymp_ruj_skolske_kolo.php">Školské kolo olympiády v RUJ</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/europsky_den_jazykov.php">Európsky deň jazykov trochu inak</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/halloween.php">Halloween</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olympiada_anj_skolske_kolo.php">Olympiáda v anglickom jazyku</a></li>
+</ul>
+
+<div class="divider" style="height: 1em;"></div>
+
+<h>Podujatia a akcie realizované v školskom roku 2019/2020</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/bie.php">Best in English</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/anj_divadlo.php">Divadelné predstavenie TOM SAWYER</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/oaj_skol_kolo_2019_2020.php">Olympiáda v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/edj_2019.php">Európsky deň jazykov na Čerešňovom námestí!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/beseda_nej.php">Beseda v nemeckom a anglickom jazyku</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2018/2019</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/popularizacia_ruj.php">Popularizácia ruského jazyka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/tahak_obhajil_prvenstvo.php">ŤAHÁK získal 1. miesto na Slovensku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olympiada_ruj_krajske_kolo.php">Víťazstvá na krajskom kole olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olympiada_anj_2_miesto_krajske_kolo.php">2. miesto v kraji v Olympiáde v anglickom jazyku patrí nášmu študentovi</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/vitazstvo_olympiada_anj_okresne_kolo.php">Zisk 1. miesta v okresnom kole Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olympiada_anj_skolske_kolo.php">Školské kolo Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/best_in_english.php">Online jazyková súťaž - Angličtinár roka (Best In English)</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/london_2018.php">Zájazd Bruggy – Londýn – Windsor</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/europsky_den_jazykov.php">Európsky deň jazykov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/voronez_letny_tabor_2018.php">Letný tábor vo Voroneži 15. 7. – 7. 8. 2018</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2017/2018</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/uspech_v_celoslovenskom_kole_olympiady_ruj.php">Získali sme 2. a 3. miesto v celoslovenskom kole Olympiády v ruskom jazyku!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olymp_ruj_kraj_kolo.php">Postup do celoštátneho kola Olympiády v ruskom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/spolocne_dejiny_rus_svk.php">Slávnostné ocenenie našich žiakov na Veľvyslanectve Ruskej Federácie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/okr_kolo_olym_anj_druhe_miesto.php">V okresnom kole Olympiády v anglickom jazyku – zisk krásneho druhého miesta</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/best_in_english_vysledky.php">Výsledky súťaže Angličtinár roka - Best in English</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/voronez.php">Letný tábor 2017 vo Voroneži</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/videokonferencia_arm.php">Videokonferencia s Arménskom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/etwinning.php">Angličtina spája ľudí i prostredníctvom projektov e-twinning</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/anglictinar_roka.php">Angličtinár roka - Best in English</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/oanj.php">Olympiáda v anglickom jazyku – školské kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/euro_den_jazykov.php">Európsky deň jazykov na našej škole</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2016/2017</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/oaj_ok_2m.php">2. miesto v okresnom kole Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/ruske_divadelne_predstavenie.php">Ruské divadelné predstavenie v podaní II.A</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/anglictinar_roka.php">Angličtinár roka - Best in English</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/oaj_ok_1b.php">Okresné kolo Olympiády v anglickom jazyku - kategória 1B</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/oaj_skolske_kolo.php">Olympiáda v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/mlady_prekladatel.php">Naše nádejné mladé prekladateľky!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/eur_den_jazykov.php">Európsky deň jazykov na našej škole</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/cesta_za_poznanim.php">Naša cesta za poznaním</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2015/2016</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/anglictinar_roka.php">Angličtinár roka – z našej školy sa umiestnil najvyššie Filip Vojčík (III.A)</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/mlady_prekladatel.php">Viktória Mlynková získala 1. miesto v súťaži Mladý prekladateľ</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/olymp_anj_skol_kolo.php">Školské kolo Olympiády v anglickom jazyku</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/international_school_library_day.php">Kvíz v anglickom jazyku pri príležitosti Medzinárodného dňa školských knižníc</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/londyn_pariz.php">Poznávací zájazd Londýn - Paríž</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/exkurzia_brodzany.php">Exkurzia Brodzany - Oponice</a></li>    
+</ul>   
+
+<h>Podujatia a akcie realizované v školskom roku 2014/2015</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/videokonferencia_kena_2015-06.php">Videokonferencia s partnerskou školou Kajire Girls v Keni s názvom Ako poznáš krajinu našich priateľov?</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/golden_owl_final_stage.php">Golden Owl – krásne 2. a 3. miesto v medzinárodnej súťaži v anglickom jazyku</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/lets_sing.php">Let\'s Sing 2015</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/scifi_poviedky_v_anj_sutaz.php">Úspech Filipa Vargu v písaní sci-fi poviedok v anglickom jazyku</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/afrika_bez_mytov.php">Jediný príbeh</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/oaj_kk_2015.php">Krajské kolo Olympiády v anglickom jazyku</a></li>    
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/oaj_ok_review.php">Jakub Kováčik získal 1. miesto v OK OAJ</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/videokonferencia_kena.php">Telemost s partnerskou školou v Keni</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/what_do_you_know_about_books.php">What do you know about books?</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/exkurzia_vieden.php">Exkurzia do Viedne</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/navsteva_studentov_z_usa.php">Návšteva študentov z USA</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2013/2014</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/golden_owl_finale.php">Pekné 8. a 12. miesto vo finále Golden Owl</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/londyn_2014.php">Brusel – Londýn – Stonehenge - Windsor</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/divadelne_predstavenie_peter_pan.php">Návšteva divadelného predstavenia Peter Pan</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/golden_owl_2nd_stage.php">Do finále Golden Owl postúpili dve študentky – Martina Chudá a Kristína Vranová</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/lets_sing.php">Let\'s Sing 2014</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/golden_owl_skol_kolo.php">Golden Owl – školské kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/olymp_anj_kraj_kolo.php">Krajské kolo Olympiády v anglickom jazyku sa už tradicne konalo na pôde nášho gymnázia</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/oaj_okres_kolo.php">Dve 2.miesta v okresnom kole Olympiády v anglickom jazyku získali naši študenti</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/olymp_anj_skol_kolo.php">Školské kolo olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/mlady_prekladatel.php">1. a 3. miesto v krajskej súťaži „Mladý prekladateľ“ patrí našim dvom študentom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/brusel_calais_london_poznavaci_zajazd.php">Nezabudnuteľný poznávací zájazd Brusel – Calais – Londýn - Stonehenge</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/what_do_you_know_about_books.php">Medzitriedny kvíz v anglickom jazyku</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2012/2013</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/golden_owl_ocenovanie.php">Ceny z Polska sme odovzdali tým najlepším</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/navsteva_studentov_z_keuka_college.php">Návšteva študentov z americkej Keuka College</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/prednes_v_anj.php">Prednes poézie a prózy v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/lets_sing.php">Let\'s sing 2013</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/recitacia_nej.php">Prezentácia literárneho diela nemeckej autorky Gudrun Pausewang Die Wolke</a></li>
+	<li>Sviatok Veľkej noci - zvyky a tradície, porovnanie kultúr</li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/golden_owl_2nd_stage.php">Golden Owl - druhé kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olymp_anj_krajske_kolo.php">Krajské kolo Olympiády v anglickom jazyku sa konalo na našom gymnáziu</a></li>
+	<li>Návšteva divadelného predstavenia Oliver Twist - február</li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/golden_owl_skolske_kolo.php">Golden Owl – školské kolo</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/lucia_horvathova_3m_oaj.php">Lucia Horváthová – tretia v okrese Nitra</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olymp_anj_obvodne_kolo.php">Obvodné kolo Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/videokonferencia_fra_2012-12-06.php">Videokonferencia s francúzskymi študentmi</a></li>
+	<li>Čaro Vianoc - zvyky a tradície, porovnanie kultúr</li>
+	<li>Návšteva divadelného predstavenia Gulliver\'s Travels - december</li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olymp_anj_skolske_kolo.php">Školské kolo Olympiády v anglickom jazyku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_vdakyvzdania.php">Deň vďakyvzdania</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/partnerska_skola.php">Naša nová partnerská škola vo Francúzsku - Ensemble Scolaire Sainte Thecle</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/dod_2012_november.php">Vydarený Deň otvorených dverí</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/den_boja_za_slobodu_a_demokraciu.php">Deň boja za slobodu a solidaritu - rozhlasová relácia</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/halloween_party.php">Halloween Party</a></li>
+	<li>Medzinárodný deň školských knižníc - prezentácia literárneho diela a diskusia o prečítanej knihe</li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/videokonferencia_keuka_college_2012-10-18.php">Videokonferencia s americkou školou Keuka College</a></li>
+</ul>
+
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<h>Podujatia a akcie realizované v rámci projektu eTwinning</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/videokonferencia_arm.php">Videokonferencia s Arménskom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/etwinning.php">Angličtina spája ľudí i prostredníctvom projektov eTwinning</a></li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+
+<div class="full-width"><h>Medzinárodná korešpondenčná súťaž Golden Owl</h></div>
+
+<img src="https://gymvrable.sk/img/golden_owl.jpg" style="float:right; margin: 1em;"></img>
+
+<p><strong>Medzinárodná korešpondenčná súťaž Golden Owl</strong> je svojím obsahom podobná Olympiáde v anglickom jazyku. Jej zakladateľom je gymnázium v poľskom meste Nysa, ktoré <strong>distribuuje testy do všetkých participujúcich škôl z celej Európy</strong>. Počas existencie súťaže sa do nej zapojili študenti z Maďarska, Španielska, Francúzska, Litvy, Turecka, Rumunska, Slovenska a samozrejme Poľska.</p>
+
+<p>Súťaž prebieha podľa nasledovných pravidiel:<br/>
+Golden Owl pozostáva z troch kôl – školského kola, regionálneho kola a finále.
+Princípom súťaže je <strong>testovanie jazykových zručností</strong> - test obsahuje čítanie a počúvanie s porozumením, gramatiku, slovnú zásobu, výslovnostné cvičenia a základy reálií anglicky hovoriacich krajín. Výsledky testov posielame usporiadateľovi, ktorý na základe dosiahnutých bodov zostaví poradie súťažiacich v rámci všetkých zúčastnených krajín. Súťažiaci s najvyšším počtom bodov postupujú do 2. kola, ktoré je náročnejšie v tom, že test je rozšírený o <strong>cvičenia súvisiace s prečítanou beletriou</strong>, ktorú vopred určuje organizátor. Opäť prebehne všetko tak, ako v prvom kole a súťažiaci s najvyšším počtom bodov sa dostávajú do finále, kde ich okrem testu čaká aj ústna časť, v ktorej reagujú na <strong>vizuálny podnet (obrázky) a diskutujú na stanovené témy</strong>.</p>
+
+<p>Do Golden Owl sa zápajame už sedem rokov a mnohí naši študenti v nej obsadili popredné miesta a získali krásne a hodnotné ceny (beletria s CD nosičmi, výkladové slovníky). Napríklad v šk. roku 2006/2007 obsadil <strong>Juraj Čokyna 2. miesto</strong> a <strong>Martin Hlavačka 3. miesto</strong>, v školskom roku 2010/2011 <strong>Katarína Hlavačková získala krásne 2. miesto</strong> a <strong>Eva Frantová 5. miesto</strong> a v roku 2011/2012 <strong>Matej Martinkovič obsadil 4. miesto</strong> a <strong>Lucia Horváthová skončila na 7. mieste</strong>.</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Súťaže a olympiády</h>
+</div>
+
+<p>V tomto školskom roku sa žiaci môžu zapojiť do nasledujúcich súťaží:</p>
+
+<ul>
+  <li>Olympiáda v anglickom jazyku</li>
+  <li>Medzinárodná korešpondenčná súťaž v ANJ Golden Owl</li>
+  <li>Súťaž v speve anglickej piesne Let´s sing</li>
+  <li>Medzitriedny kvíz v anglickom jazyku What do you know about books?"</li>
+  <li>Súťaž v speve ruskej a nemeckej piesne</li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Doplňujúce aktivity pre študentov</h>
+</div>
+
+<ul class="ul-para">
+	<li><strong>Knižnica anglickej literatúry</strong> - možnosť vypožičania si beletrie na rôznych stupňoch jazykovej úrovne - slúži na podporu sebavzdelávania, najmä rozvíjania čítania s porozumením a čitateľskej gramotnosti</li>
+	<li><strong>Možnosť objednania časopisov v anglickom jazyku</strong>, napr. časopis Friendship - získavanie aktuálnych informácií o živote a kultúre anglofónnych krajín a informácií k ústnej maturitnej skúške</li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Užitočné linky</h>
+</div>
+
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://www.iuventa.sk/olympiady/ziak/olympiada-v-anglickom-jazyku/" target="_blank"><i class="fa fa-link"></i> Olympiáda v anglickom jazyku</a></li>
+	<li><a href="https://www.iuventa.sk/olympiady/ziak/olympiada-v-nemeckom-jazyku/" target="_blank"><i class="fa fa-link"></i> Olympiáda v nemeckom jazyku</a></li>
+	<li><a href="https://www.iuventa.sk" target="_blank"><i class="fa fa-link"></i> Iuventa</a></li>
+</ul>
+
+</div>
+
+<script src="/scripts/selector.js"></script>
+')
+
+include(`include/notices.html')
+include(`include/base.html')

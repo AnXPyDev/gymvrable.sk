@@ -1,0 +1,521 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+pushs(`RequiredCSS', `/styles/table.css')
+pushs(`RequiredCSS', `/styles/selector.css')
+
+pushs(`Page-Title',`PK spoločenských vied')
+
+pushs(`LeftContent', `
+<style>
+	.table-elm {
+		font-size: 14px;
+	}
+
+	.table-elm td {
+		padding: 10px;
+	}
+
+	.selector {
+		justify-content: center;
+	}
+
+	.selector-button-div {
+		padding: 0.5em;
+		flex-grow: 1;
+	}
+
+	.table-elm td {
+		padding: 2px;
+	}
+
+	.oly-year {
+		font-size: 18px;
+		color: #0099CC;
+	}
+
+</style>
+
+<div class="full-width">
+    <h class="content-title">Predmetová komisia spoločenských vied</h>
+</div>
+
+<div class="divider" style="height:20px;"></div>
+
+<div class="selector" id="selector">
+	<a><div selector-id="clenovia" class="selector-button-div selector-button">Členovia</div></a>
+	<a><div selector-id="ulohy" class="selector-button-div selector-button">Ciele a Úlohy</div></a>
+	<a><div selector-id="podujatia" class="selector-button-div selector-button">Podujatia</div></a>
+	<a><div selector-id="maturita" class="selector-button-div selector-button">Maturita</div></a>
+	<a><div selector-id="kniznica" class="selector-button-div selector-button">Plán činnosti školskej knižnice</div></a>
+	<a><div selector-id="sutaze" class="selector-button-div selector-button">Súťaže a olympiády</div></a>
+</div>
+
+<script>
+	let selector = document.getElementById("selector");
+	selector.style.display = "flex";
+</script>
+
+<div class="divider" style="height:10px;"></div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Členovia</h>
+</div>
+
+<div class="divider" style="height:10px;"></div>
+
+<table class="table-elm">
+	<tr class="table-header">
+		<td>meno</td>
+		<td>funkcia</td>
+		<td>vyučuje</td>
+	</tr>
+	<tr>
+		<td>PhDr. Ivana Hudaszek Semjanová</td>
+		<td>predseda</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PhDr. Monika Bogyóová</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Beáta Havettová</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Eliška Matušková</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Alla Pakhritsina, CSc.</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Boris Ragas</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>PaedDr. Martina Ragasová</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Hlavné úlohy a ciele PK</h>
+</div>
+
+<ul class="ul-para">
+	<li>zapájať sa do ďalšieho vzdelávania najmä v oblasti odbornej a metodickej (metodika výučby jednotlivých predmetov, problematika extrémizmu, ľudských práv , čitateľskej gramotnosti, finančnej gramotnosti)</li>
+	<li>spolupracovať s organizáciami – združeniami, mimovládnymi organizáciami, vysokými školami</li>
+	<li>spolupracovať so základnými školami – účasť učiteľov na vzdelávacom podujatí Aktuálne témy demokratického občianstva, ľudských práv, európskej dimenzie vo vzdelávaní. Kompetencie pre demokratickú kultúru/demokratické občianstvo. Zaostrené na predchádzanie všetkým formám diskriminácie, rasizmu, xenofóbie, antisemitizmu a ostatným prejavom intolerancie.</li>
+	<li>realizovať otvorené hodiny z predmetov SJL, OBN, DEJ, TSV</li>
+	<li>prezentovať školu navonok – v meste, regióne (vystúpenia žiakov na spoločenských , kultúrnych a športových podujatiach, pripravovať články do novín)</li>
+	<li>hlavnú pozornosť venovať príprave a priebehu maturitnej skúšky  SJL, DEJ, OBN</li>
+	<li>realizovať odborné exkurzie, besedy</li>
+	<li>zapájať talentovaných žiakov do rôznych súťaží – predmetové olympiády, recitačné, literárne a športové súťaže</li>
+	<li>vo vyučovacom procese efektívne používať a  pracovať s IKT </li>
+	<li>dôraz klásť na prácu s problémovými žiakmi, slaboprospievajúcimi žiakmi – individuálnym prístupom, doučovaniami, konzultáciami</li>
+	<li>využívať nové formy a metódy práce s cieľom podporovať tvorivosť a samostatnosť žiakov</li>
+	<li>venovať sa problematike ľudských práv, rozvíjať u študentov finančnú gramotnosť, čitateľskú gramotnosť</li>
+	<li>udržať záujem študentov o spoločenskovedné predmety, a to skvalitňovaním výchovno – vzdelávacieho procesu</li>
+	<li>vychovávať žiakov v duchu humanizmu a tolerancie</li>
+	<li>uplatniť vhodné komunikačné prostriedky k vyjadrovaniu vlastných myšlienok, citov, názorov a postojov, k obhajovaniu vlastných postojov a k primeranému obhajovaniu svojich práv,</li>
+	<li>nadobudnúť rešpekt ku kultúrnym, náboženským a iným odlišnostiam ľudía spoločenstiev</li>
+	<li>rešpektovať a uplatňovať mravné princípy a pravidlá spoločenského spolunažívania a prebratiu zodpovednosti za vlastné názory, správanie sa a dôsledky konania,</li>
+	<li>rozšíriť a najmä prehĺbiť systém jazykových a literárnych zručností, schopností a vedomostí žiakov.</li>
+	<li>utvrdiť u žiakov kultivované vyjadrovanie adekvátne komunikačnej situácii, aby sa formoval ich pozitívny vzťah k spisovnému jazyku ako základnému prostriedku dorozumievania medzi ľuďmi.</li>
+	<li>rozvíjať kreativitu žiakov pri tvorbe a úprave vlastných jazykových prejavov s dôrazom na jazykovú variabilitu a rozvoj kritického myslenia.</li>
+	<li>prakticky uplatňovať poznatky žiakov  z literárnej vedy pri interpretácii diel a rozvíjať aktívny záujem o literatúru, kultúru a umenie. </li>
+	<li>osvojiť si vedomosti a zručnosti, ktoré súvisia so starostlivosťou o svoje telo, s aktívnym pohybovým režimom, s osobným športovým výkonom, zdravým životným štýlom a zdravím;</li>
+</ul>
+
+</div>
+
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+    
+<h>Podujatia a akcie realizované v školskom roku 2020/2021</h>
+<ul>  		
+
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/tahak.php">Ťahák získal 3. miesto na Slovensku</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/cena_m_kuseho.php">Cena Miroslava Kusého a Cena európskeho občana za rok 2020</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/svatopluk.php">Krásna bodka na záver školského roka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/ivana_hudaszek_gm.php">Veľká medaila sv. Gorazda na našom gymnáziu</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/mlady_europan.php">Mladý Európan</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/zeny_z_transportov.php">Ženy z transportov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/rene.php">Spisovateľka Alenka Sabuchová na našom gymnáziu</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/iba_sme_sa_narodili.php">Iba sme sa narodili</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2020-2021/olympiada_sjl_olp_skolske_kolo.php">Školské kolá Olympiády zo slovenského jazyka a literatúry a Olympiády ľudských práv</a></li>
+
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2019/2020</h>
+<ul>  		
+
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/olp.php">Krajské kolo Olympiády ľudských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/rozhoduj_o_eu.php">Rozhoduj o Európe - modelové zasadnutie inštitúcií EÚ</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/budapest.php">Putovanie za krásami Budapešti</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/zalozka.php">Záložka do knihy spája slovenské školy</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/recitacna_sutaz_vz.php">Recitačná súťaž Viliama Záborského</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/rozhoduj_o_europe.php">Rozhoduj o Európe</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/nezna_zmena.php">„Nežná zmena“</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/rene.php">Aj Gymnázium vo Vrábľoch je RENÉ - beseda so spisovateľom Marekom Vadasom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/mlady_moderator.php">Mladý moderátor</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/edj_2019.php">Európsky deň jazykov v réžii vrábeľských gymnazistov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/obn.php">Vzdelávacie podujatie učiteľov a učiteliek</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2019-2020/mlady_moderator.php">Mladý moderátor</a></li>
+
+</ul>
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2018/2019</h>
+<ul>  		
+
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/obn.php">Vzdelávacie podujatie učiteľov a učiteliek</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/mlady_moderator.php">Mladý moderátor</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/ekonomicka_univerzita.php">Konferencia pre stredoškolákov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/lomnicka_ck.php">Vansovej Lomnička</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/mlady_europan.php">Mladý Európan</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/olp_celostatne_kolo.php">Celoštátne kolo Olympiády ľudských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/nasa_cesta_za_historiou.php">Naša cesta za históriou</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/esej_jana_johanidesa.php">Esej Jána Johanidesa</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/hviezdoslavov_kubin_region.php">Hviezdoslavov Kubín</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/dejepisna_sutaz.php">Dejepisná súťaž českých a slovenských gymnázií</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/den_narcisov.php">Deň narcisov 2019</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/plagat_roka.php">Plagát a príbeh roka 2019</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/hviezdoslavov_kubin.php">Hviezdoslavov Kubín</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/valentin.php">Valentínska srdiečková tombola</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/vianocna_akademia.php">Vianočná akadémia</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/vianocne_aranzovanie.php">Vianočné aranžovanie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/osjl_skolske_kolo.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/biblioteka.php">Bibliotéka – knižný veľtrh</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/burza_informacii.php">Burza informácií</a></li>	  	   
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/vzdelavacie_podujatie_olp.php">Vzdelávacie podujatie o ľudských právach</a></li>	  	   
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/demokraticka_ludsko_pravna_kultura.php">Demokratická a ľudskoprávna kultúra</a></li>   
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/biela_pastelka.php">Biela pastelka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/cena_rene.php">Cena René – Anasoft litera gymnazistov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2018-2019/zalozka_do_knihy.php">Záložka do knihy spája slovenské školy</a></li>		</ul>
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2017/2018</h>
+<ul>  		
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/opekacka_jun.php">Opekačka</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/pozicaj_si_knihu.php">Požičaj si knihu</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/nasa_kolegyna_na_stretnuti_s_prezidentom.php">Naša kolegyňa na stretnutí s prezidentom Slovenskej republiky</a></li>		   	  	   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/hviezdoslavov_kubin.php">Hviezdoslavov Kubín</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/putovna_vystava_snp.php">Putovná výstava SNP</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/zalozka_do_knih_spaja_skoly.php">Záložka do kníh spája slovenské stredné školy</a></li>   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olp_oslavovala.php">Olympiáda ľudských práv na Slovensku oslavovala</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olp_kraj_kolo.php">Krajské kolo Olympiády ľudských práv</a></li>	   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/vianocne_aranzovanie.php">Vianočné aranžovanie</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olp_oslavovala.php">Olympiáda ľudských práv na Slovensku oslavovala</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olp_kraj_kolo.php">Krajské kolo Olympiády ľudských práv</a></li>	   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/vianocne_aranzovanie.php">Vianočné aranžovanie</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/rene_anasoft_litera.php">Naša škola v projekte cena René - Anasoft litera gymnazistov</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/beseda_ondrej_stefanik.php">Beseda s víťazom ceny Anasoft Litera 2017</a></li>		  
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/mdsk.php">Medzinárodný deň školských knižníc</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/olp.php">Školské kolo Olympiády ľudských práv</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/osjl.php">Školské kolo Olympiády zo slovenského jazyka</a></li>		
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/navsteva_nrsr.php">Návšteva Národnej rady Slovenskej republiky</a></li>		   
+	<li><a href="https://gymvrable.sk/archiv/2017-2018/ludske_prava_edu.php">Vzdelávacie podujatie o ľudských právach</a></li>		   
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2016/2017</h>
+<ul>  
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/den_zeme.php">Deň Zeme</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/uspesnerecitatorky.php">Úspešné recitátorky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/olp.php">Moja cesta Olympiádou ludských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/plagatroka.php">Plagát roka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/heydrichiada.php">Výstava Heydrichiáda a návraty lidických detí</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/vystava.php">Obrazy a básne</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/mladi_podnikavci.php">Mladí podnikavci</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/kk_olp.php">Krajské kolo Olympiády ludských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/uspech_ziakov_gymnazia_vrable.php">Vítazstvo na krajskom kole Olympiády zo slovenského jazyka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/oslj.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/zaborsky.php">Recitačná súťaž Viliama Záborského</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/galeria_cesta_za_poznanim.php">Naša cesta za poznaním</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/dvetvare.php">Dve tváre jedného sveta</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/mdsk.php">Medzinárodný deň školských knižníc v znamení rovesníckeho vzdelávania</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/zalozka.php">Záložka do kníh spája slovenské školy</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/pomahame.php">Pomáhame aj my...</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2016-2017/annafrankova.php">Anna Franková – odkaz dejín dnešku</a></li>
+
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2015/2016</h>
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/vitazstvo_oslj.php">Študentka nášho gymnázia najlepšia na Slovensku na Olympiáde zo slovenského jazyka</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/dejepisna_sutaz.php">Medzinárodná dejepisná súťaž</a></li>	
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/knihy_ktore_citame.php">Knihy, ktoré čítame MY...</a></li>	
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/zbierka_usmev_ako_dar.php">Zbierka - Úsmev ako dar alebo aby každé dieťa malo rodinu...</a></li>	
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/zbierka_modry_gombik.php">Zbierka UNICEF - Modrý gombík</a></li>	
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/soc.php">Stredoškolská odborná činnosť</a></li>	
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/dejepisna_olympiada.php">Dejepisná olympiáda</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/beseda_kompanikova.php">Beseda so spisovateľkou</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/olp.php">Môj úspech v celoštátnom kole Olympiády ľudských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/laska_vs_logika.php">Láska vs. Logika</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/beseda_jana_sulkova.php">O 50 rokov možno budem ako Vasilková!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/1m_kk_osjl.php">Najlepšia v Nitrianskom kraji</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/beseda_kerata.php">Beseda so spisovateľom Lacom Keratom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/osjl_skolske_kolo.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/beseda_o_domacom_nasili.php">Tretiaci sa dozvedeli viac o domácom násilí</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/europska_dimenzia_vo_vzdelavani.php">Európska dimenzia vo vzdelávaní v rámci SR</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/vzdel_podujatie_ludsk_prava.php">Vzdelávacie podujate učiteľov ľudských práv a demokratického občianstva</a></li>	  
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/vyrocie_narodenie_ludovita_stura.php">Medzinárodný deň školských knižníc</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/recitacna_sutaz_v_zaborskeho.php">Recitačná súťaž Viliama Záborského</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/zalozka.php">Záložka do knihy</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/nevesta_hol.php">Neodolateľná Nevesta hôľ v SND</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2015-2016/o_sturovi_nielen_v_skole.php">O Ľudovítovi Štúrovi nielen v škole</a></li>
+</ul>
+
+
+<h>Podujatia a akcie realizované v školskom roku 2014/2015</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/sjl_aktivity_2014_2015.pdf" target="_blank">Slovenský jazyk a literatúra - Prehľad aktivít v školskom roku 2014/2015</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/sturovo_pero_2015.php">Bronz zo Štúrovho pera!</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/afrika_bez_mytov.php">Jediný príbeh</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/beseda_so_spisovatelom_silvester_lavrik.php">Beseda so spisovateľom Silvestrom Lavríkom</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/osjl_skolske_kolo.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/vzdelavanie_ludske_prava.php">Vzdelávacie podujatie stredoškolských učiteľov k XVII. ročníku OĽP</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/videokonferencia_kena.php">Telemost s partnerskou školou v Keni</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/divadelne_predstavenie.php">Divadelné predstavenie Parazit</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2014-2015/nasa_cesta_za_poznanim.php">Naša cesta za poznaním</a></li>
+</ul>
+
+
+
+<h>Podujatia a akcie realizované v školskom roku 2013/2014</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/striebro_za_literarnu_tvorbu.php">Striebro za literárnu tvorbu</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/exkurzia_taliansko.php">Exkurzia - Taliansko</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/majstrovstva_nitrianskeho_kraja_v_atletike.php">Na majstrovstvách Nitrianskeho kraja v atletike SŠ výborné 4. miesto</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/sturovo_pero_bronz_pre_tahak.php">Štúrovo pero 2013 – bronz pre Ťahák</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/esej_jana_johanidesa.php">Úspešní esejisti</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/beseda_gustav_murin.php">Gustáv Murín vo Vrábľoch</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/osjl_kk.php">Krajské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/olp_kraj_kolo.php">Prvenstvo v krajskom kole Olympiády ľudských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/olymp_sjl_skol_kolo.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li> 
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/bola_som_pysna.php">Bola som pyšná...</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/beseda_s_v_sikulovou.php">Netradičná  beseda so spisovateľkou Veronikou Šikulovou</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/budapestianska_euforia.php">Budapeštianska eufória</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/divadelne_predstavenie.php">Vianoce v predstihu alebo Spomienka na Štedrý večer už v polovici novembra</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/mdsk.php">Medzinárodný deň školských knižníc</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/recitacna_sutaz_vz.php">Recitačná súťaž Viliama Záborského</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/zalozka_do_knihy.php">Záložka do knihy spája slovenské školy</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/mlady_moderator.php">Mladý moderátor 2013</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2013-2014/vzdelavanie_k_olp.php">Vzdelávacie podujatie k XVI. Ročníku olympiády ľudských práv</a></li>
+</ul>
+
+<h>Podujatia a akcie realizované v školskom roku 2012/2013</h>
+
+<ul>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/ludske_pravo_za_ktore_chcem_bojovat.php">Víťazstvo študentky vrábeľského gymnázia</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/tahak_na_cele.php">ŤAHÁK stále na čele</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/oceneni_esejisti.php">Ocenení esejisti</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/preco_som_na_svete_rad.php">Prečo som na svete rád (rada)</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/hviezdoslavov_kubin.php">Hviezdoslavov Kubín</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/valentin_2013.php">Valentínske prekvapenie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olymp_sjl_krajske_kolo.php">Krajské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olp_kk.php">Krajské kolo Olympiády ľudských práv</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/artivizujem_sa.php">"ARTivizujem sa"</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/ziva_kniznica.php">Živá knižnica</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/vianocne_trhy.php">Vianočné trhy 2012</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/beseda_so_spisovatelkou_janou_juranovou.php">Beseda so spisovateľkou Janou Juráňovou – živá literatúra útočí na čítanky</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/vianocne_aranzovanie.php">Vianočné aranžovanie</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/olymp_sjl_skolske_kolo.php">Školské kolo Olympiády zo slovenského jazyka a literatúry</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/zbierka_slniecko.php">Zbierka SLNIEČKO</a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/medzinarodny_den_skolskych_kniznic.php">Medzinárodný deň školských knižníc </a></li>
+	<li><a href="https://gymvrable.sk/archiv/2012-2013/nasa_ucast_v_dobrovolnickych_zbierkach.php">Naša účasť v dobrovoľníckych zbierkach</a></li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+
+<h>Maturita</h>
+
+<ul class="ul-para ul-no-bullet">
+	<li><a href="https://gymvrable.sk/predmetove_komisie/pk_spolocenske_vedy/docs/slovensky-jazyk-a-literatura.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Cieľové požiadavky na vedomosti a zručnosti maturantov zo <strong>slovenského jazyka a literatúry</strong></a></li>
+  <li><a href="https://gymvrable.sk/predmetove_komisie/pk_spolocenske_vedy/docs/slovensky_jazyk_a_literatura_g_4_5_r_novy.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Vzdelávací štandard zo <strong>slovenského jazyka a literatúry</strong></a></li>
+  <li><a href="https://gymvrable.sk/predmetove_komisie/pk_spolocenske_vedy/docs/dejepis.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Cieľové požiadavky na <strong>vedomosti a zručnosti maturantov z dejepisu</strong></a></li>
+  <li><a href="https://gymvrable.sk/predmetove_komisie/pk_spolocenske_vedy/docs/dejepis_g_4_5_r.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Vzdelávací štandard z <strong>dejepisu</strong></a></li>
+  <li><a href="http://www.statpedu.sk/files/articles/nove_dokumenty/cielove-poziadavky-pre-mat-skusky/obcianska-nauka.pdf" target="_blank"><i class="fa fa-link"></i> Obcianska náuka - Cielové požiadavky k MS</a></li>
+</ul>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Plán činnosti školskej knižnice</h>
+</div>
+
+<div class="divider" style="height:10px;"></div>
+
+<table class="table-elm">
+
+	<tr class="table-header">
+		<td>Mesiac</td>
+		<td>Podujatie</td>
+		<td>Termín</td>
+	</tr>
+
+	<tr>
+		<td>September</td>
+		<td>Záložka do kníh spája stredné školy  (príprava)- partnerská škola - Gymnázium v Trebišove  </td>
+		<td>Priebežne - triedy: I. A, II. A, II. D</td>
+	</tr>
+	<tr>
+		<td>Október</td>
+		<td>
+			<ul>
+				<li>Medzinárodný mesiac školských knižníc - beseda so spisovateľom Marekom Vadasom</li>
+				<li>Záložka do kníh spája stredné školy (vyhodnotenie)</li>
+			</ul>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>November</td>
+		<td>ANASOFT LITERA  - vyhodnotenie projektu  </td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>December</td>
+		<td>...a prišli Vianoce... (čítanie a rozprávanie o vianočných zvykoch vo Vrábľoch )</td>
+		<td>Podľa dohody so žiakmi</td>
+	</tr>
+	<tr>
+		<td>Január</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Február</td>
+		<td>Láska vo veršoch...(čítanie poézie o láske)</td>
+		<td>Podľa dohody so žiakmi  </td>
+	</tr>
+	<tr>
+		<td>Marec</td>
+		<td>Mesiac knihy (súťaž o naj knihu školy, výstavka kníh)</td>
+		<td>Celý mesiac</td>
+	</tr>
+	<tr>
+		<td>Apríl</td>
+		<td>Daruj knihu...</td>
+		<td>Podľa dohody so žiakmi</td>
+	</tr>
+	<tr>
+		<td>Máj</td>
+		<td>Beseda s pánom Trubínim</td>
+		<td>Podľa dohody so spisovateľom</td>
+	</tr>
+	<tr>
+		<td>Jún</td>
+		<td>Popoludnie s poviedkami slovenských autorov</td>
+		<td>Podľa dohody so žiakmi</td>
+	</tr>
+
+</table>
+
+<p>Vypracovala: PhDr. Monika Bogyóová</p>
+
+</div>
+
+<div class="selector-content">
+<hr>
+<div class="divider" style="height:10px;"></div>
+<div class="full-width">
+    <h class="content-title">Súťaže a olympiády</h>
+</div>
+
+<div class="divider" style="height: 1.5em"></div>
+
+<h class="oly-year">Školský rok 2019/2020</h><br>
+<hr>
+<div class="divider" style="height: 0.5em"></div>
+
+<h>Krajské kolo Olympiády ľudských práv</h>
+<p>Samuel Sakáč - 1. miesto</p>
+
+<h>Krajské kolo Olympiády zo slovenského jazyka</h>
+<p>Simona Kišová - 8. miesto</p>
+
+<h>Rozhoduj o Európe - modelové zasadnutie inštitúcií EÚ</h>
+
+<h>Účasť v celoslovenskom kole – Viliam Péli</h>
+
+<h>Recitačná súťaž Viliama Záborského</h>
+<p>Umiestnenie v kategórii D bolo nasledovné:<br />
+Vargová Diana, II. A – 1. miesto<br />
+Baloghová Emma, II. A – 2. miesto<br />
+Latečková Barbora, II. D – 3. miesto<br />
+Mladá Viktória, IV. D – čestné uznanie<br />
+Kurtiniaková Lea Mária – čestné uznanie</p>
+
+<h>Plagát a príbeh roka 2020</h>
+<p>Jana Magdolenová – 2. miesto – literárne práce</p>
+
+<h>Mladý Európan – regionálne kolo</h>
+<p>Ivan Huszár, Max Demeš, Rastislav Pap – 3. miesto</p>
+
+
+<h class="oly-year">Školský rok 2018/2019</h><br>
+<hr>
+<div class="divider" style="height: 0.5em"></div>
+
+<h>Celoslovenské kolo novinárskej súťaže Štúrovo pero</h>
+<p>ŤAHÁK získal 1. miesto na Slovensku</p>
+
+<h>Súťaž v prednese poézie a prózy- Vansovej Lomnička</h>
+<p>Natália Fernézová – 1. miesto - krajské kolo<br />
+zlaté pásmo – celoslovenské kolo</p>
+
+<h>Mladý Európan – regionálne kolo</h>
+<p>Simona Matušíková, Viktória Mladá a Samuel Sakáč - 5. miesto</p>
+
+<h>Esej Jána Johanidesa – literárna súťaž</h>
+<p>Jessica Vulganová – čestné uznanie</p>
+
+<h>Hviezdoslavov Kubín – regionálne kolo</h>
+<p>Natália Fernézová – 2. miesto v prednese prózy</p>
+
+<h>Plagát a príbeh roka 2019</h>
+<p>Hana Bogyóová – 1. miesto – výtvarné práce<br />
+Natália Polyáková – 3. miesto – literárne práce</p>
+
+<h>Krajské kolo Olympiády ľudských práv</h>
+<p>Rastislav Pap – 6. miesto (postup do celoštátneho kola)</p>
+
+</div>
+
+<script src="/scripts/selector.js"></script>
+')
+
+include(`include/notices.html')
+include(`include/base.html')
