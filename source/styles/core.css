@@ -21,7 +21,6 @@
 }
 
 * {
-		color: var(--fg-clr);
 		font-family: var(--ff);
 }
 
