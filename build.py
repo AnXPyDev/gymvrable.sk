@@ -58,6 +58,7 @@ def get_deps(file_path):
         return deps_cache[file_path]
 
     f = open(file_path, "r")
+    
     includes = re.findall(r"include\(`?(.*?)'?\)", f.read())
     deps = []
     for i in includes:

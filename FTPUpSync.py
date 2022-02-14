@@ -183,40 +183,40 @@ class Request():
     def execute(self, ftp):
         result = True
         if self.command == "rm":
-            print(f"Removing remote file {self.target}", end="")
+            print(f"Removing remote file {self.target}", end="", flush=True)
             try:
                 ret = ftp.delete(self.target)
             except ftplib.error_perm as err:
                 raise Exception("Failed to execute request", self, err)
-            print(f" : {ret}")
+            print(f" : {ret}", flush=True)
         elif self.command == "rmdir":
-            print(f"Removing remote directory {self.target}", end="")
+            print(f"Removing remote directory {self.target}", end="", flush=True)
             try:
                 ret = ftp.rmd(self.target)
             except ftplib.error_perm as err:
                 raise Exception("Failed to execute request", self, err)
-            print(f" : {ret}")
+            print(f" : {ret}", flush=True)
         elif self.command == "mkdir":
-            print(f"Creating remote directory {self.target}", end="")
+            print(f"Creating remote directory {self.target}", end="", flush=True)
             try:
                 ret = ftp.mkd(self.target)
             except ftplib.error_perm as err:
-                raise Exception("Failed to execute request", self, err)
-            print(f" : {ret}")
+                raise Exception("Failed to execute request", self, flush=True)
+            print(f" : {ret}", flush=True)
         elif self.command == "send":
-            print(f"Sending local file {self.source} to remote", end="")
+            print(f"Sending local file {self.source} to remote", flush=True)
             ret = None
             try:
                 f = open(self.source, "rb")
                 ret = ftp.storbinary(f"STOR {self.target}", f)
                 f.close()
-                print(f" : {ret}")
+                print(f" : {ret}", flush=True)
             except OSError:
                 result = False
-                print(f"Failed to open local file {self.source}, continuing execution")
+                print(f"Failed to open local file {self.source}, continuing execution", flush=True)
             except ftplib.error_perm as err:
                 result = False
-                print(f"Failed to transfer file {self.source} to remote, error {err}, continuing execution")
+                print(f"Failed to transfer file {self.source} to remote, error {err}, continuing execution", flush=True)
 
 
         return result

@@ -1,0 +1,7 @@
+echo $1;
+cd $1;
+cp -rf max min;
+cd min;
+ls
+magick mogrify -resize 40% *;
+cd ../..

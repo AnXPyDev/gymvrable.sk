@@ -1,0 +1,23 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(`Page-Title',`Prezentácia školy')
+
+pushs(`LeftContent', `
+<div class="full-width">
+    <h class="content-title">Prezentácia školy</h>
+</div>
+
+<style>
+	#flipbook-canvas {
+		width: 100%;
+	}
+</style>
+
+<canvas id="flipbook-canvas" width="800" height="650"></canvas>
+
+<script src="/scripts/flipbook.js"></script>
+
+')
+
+include(`include/notices.html')
+include(`include/base.html')

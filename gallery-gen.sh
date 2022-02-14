@@ -8,6 +8,6 @@ GREP_INVERT=-v
 
 cd "img$2"
 
-ls -1 | grep $GREP_INVERT "^thumb" | while read -r file; do
+ls -1 | grep $GREP_INVERT "^thumb" | grep -v "^i" | while read -r file; do
     echo "$M4CMD(\`/img$2$file')"
 done

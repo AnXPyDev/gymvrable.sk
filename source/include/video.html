@@ -1,0 +1,14 @@
+mute()
+pushs(`RequiredCSS', `/styles/video.css')
+pushm(MAKE_VIDEO, `--title', `--thumb', `--link', `--class', `
+<div class="video --class">
+	<img class="video-thumb" src="--thumb"></img>
+	<div class="video-title">
+		<a href="--link" target="_blank">--title</a>
+	</div>
+	<div class="video-play-button">
+		<a href="--link" target="_blank"><i class="fa fa-youtube-play"></i></a>
+	</div>
+</div>
+')
+unmute()dnl
