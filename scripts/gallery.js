@@ -95,9 +95,9 @@ overlay.addEventListener("touchend", (event) => {
     let distY = touch.changedTouches[0].screenY - event.changedTouches[0].screenY;
     if (Math.abs(distX) > 50 && Math.abs(distY) < Math.abs(distX)) {
         if (distX < 0) {
-            nextImage();
-        } else if (distX > 0) {
             prevImage();
+        } else if (distX > 0) {
+            nextImage();
         }
     }
 })

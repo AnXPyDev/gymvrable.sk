@@ -13,6 +13,8 @@ current_year = int(datetime.now().strftime("%Y"))
 months_index = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 
 verbose = False
+lazy_dir = False
+ignore_extra = True
 
 def get_month(abbrev):
     abbrev = abbrev.lower()
@@ -293,11 +295,15 @@ def main():
     parser.add_argument("-e", "--encoding", help="specify ftp encoding")
     parser.add_argument("-c", "--confirm", action="store_false", help="require confirmation before executing requests")
     parser.add_argument("-v", "--verbose", action="store_true", help="print additional information")
+    parser.add_argument("--lazy-dir", action="store_true", help="do not recurse directory when newer on remote")
+    parser.add_argument("--no-ignore-extra", action="store_true", help="do not delete extra directories in remote")
 
     args = parser.parse_args()
 
-    global verbose
+    global verbose, lazy_dir, ignore_extra
     verbose = args.verbose
+    lazy_dir = args.lazy_dir
+    ignore_extra = not args.no_ignore_extra
 
     login = args.login
     password = args.password

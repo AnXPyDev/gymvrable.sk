@@ -13,7 +13,7 @@ if [ "$2" == "clean" ]; then
     exit
 fi
 
-ls -1 | while read -r file; do
+ls -1 | grep -v "^thumb" | while read -r file; do
     echo "$file -> thumb_$file (300x300)"
     magick "$file" -resize 300x300 "thumb_$file"
 done

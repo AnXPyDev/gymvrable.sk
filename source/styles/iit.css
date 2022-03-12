@@ -23,6 +23,11 @@
 .iit-img.full {
 	width: 100%;
 }
+
+.iit-img.small {
+	width: 20%;
+}
+
 .iit-img img {
 	object-fit: contain;
 	border: 3px solid white;
