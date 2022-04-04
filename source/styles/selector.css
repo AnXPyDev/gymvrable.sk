@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+.selector .a {
+	display: none;
+}
+
 .selector-button-div {
 	border-radius: 5px;
 	box-shadow: 0 0 10px var(--sh-clr);

@@ -1,0 +1,24 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(`Page-Title',`Pomoc Ukrajine')
+
+pushs(`LeftContent', `
+<style>
+	#uk-vyzva {
+		padding: 0;
+	}
+
+	#uk-vyzva img {
+		max-width:100%;
+		max-height:100%;
+		display: block;
+	}
+</style>
+
+<div id="uk-vyzva" class="hp-article">
+	<img src="/img/misc/ukrajina/1.jpg"></img>
+</div>
+')
+
+include(`include/notices.html')
+include(`include/base.html')
