@@ -1,0 +1,90 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, `Aj naša škola oslavuje Veľkú noc')
+
+set(Article-DisableGallery)
+
+pushs(Article-Content,`
+
+<style>
+	#vn-outer {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	
+	#vn-bg, #vn-text {
+		box-sizing: border;
+		width: 100%;
+		flex: none;
+	}
+
+	#vn-text {
+		margin-left: -100%;
+		z-index: 2;
+	}
+
+	#vn-bg {
+		z-index: 1;
+	}
+
+	#vn-bg-img {
+		max-width: 100%;
+		max-height: 100%;
+		opacity: 30%;
+	}
+
+	@font-face {
+		font-family: NexaRustScript;
+		src: url("/fonts/NexaRustScript.otf") format("opentype");
+	}
+
+	.article-title {
+		font-family: NexaRustScript;
+		font-size: 35px;
+	}
+
+	#vn-text p, #vn-text ul {
+		font-size: 18px;
+	}
+
+	#vn-text ul li {
+		margin-bottom: 12px;
+	}
+
+
+</style>
+
+
+<div id="vn-outer">
+
+<div id="vn-bg">
+	<img id="vn-bg-img" src="/img`'__WD/eggs.png"></img>
+</div>
+
+
+<div id="vn-text">
+
+<div style="text-align: center;">
+<h class="article-title">Aj naša škola oslavuje Veľkú noc</h>
+</div>
+
+<p>Tento rok sme sa rozhodli, že si uctíme Veľkú noc a zorganizujeme akciu pre celú školu, ktorá sa bude konať 13.04.2022. V rámci tejto akcie sa vyhodnotí výzdoba tried a tiež konkurz v maľovaní vajíčok. Výzdobu tried bude, tak ako naposledy, hodnotiť vybraná porota. Každá trieda si vyzdobí svoju triedu najkrajšie ako vie, pričom témou je, samozrejme, Veľká noc. Termín dokončenia je 12.04.2022 a po vyhodnotení bude triedam udelené prvé, druhé a tretie miesto. Do súťaže v maľovaní vajíčok / kraslíc sa môžu žiaci zapojiť individuálne. Podmienky súťaže sú:</p>
+
+<ul>
+	<li>Môže sa zapojiť ktokoľvek, individuálne aj v skupine (v prípade skupiny treba uviesť jej členov)</li>
+	<li>Súťaž trvá do 12.04.2022 (vyhodnotená bude 13.04.2022)</li>
+	<li>Hodnotiť budú ostatní žiaci počas celého dňa, t.j. 13.04.2022, vo vstupnej hale našej školy, kde budú vajíčka vystavené na stoloch</li>
+	<li>Hlasovania o najkrajšie vajíčko/vajíčka sa môžu zúčastniť všetci žiaci, prostredníctvom zadania hlasu jednému/jedným z vajíčok</li>
+	<li>Vajíčka treba priniesť do IV.D triedy do 12.04.2022 v ozdobenom tanieriku, košíku alebo obale na vajíčka, po prípade v inej nádobke, ktorá bude súčasťou hodnotenia.</li>
+	<li>Nezabudnite na menovky aby sme vedeli komu vajíčka patria</li>
+	<li>Na výzdobu vajíčok môžeš použiť akúkoľvek techniku (maľovanie voskom, dúhovanie, drôtovanie, oblepovanie slamou, perlovkou, močiarnou trávou, vyškrabávanie, leptanie, okovovanie…) a akýkoľvek materiál (vosk, bavlnka, látka, gombíky, špagát, papier, korálky, farby, výšivky, vreckovky…)</li>
+</ul>
+
+<p>Tešíme sa na Tvoju účasť a veríme, že zažiješ kopec zábavy pri kreatívnom tvorení a možno objavíš svoj skrytý talent :)</p>
+
+</div>
+</div>
+
+')
+
+include(`include/article.html')
