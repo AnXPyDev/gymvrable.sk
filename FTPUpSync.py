@@ -4,7 +4,7 @@ from ftplib import FTP
 import ftplib
 from argparse import ArgumentParser
 from getpass import getpass
-from datetime import datetime
+from datetime import datetime, timedelta
 from io import StringIO
 import re
 import os
@@ -15,6 +15,9 @@ months_index = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "
 verbose = False
 lazy_dir = False
 ignore_extra = True
+ignore_date_diff = False
+recent = False
+recent_date = None
 
 def get_month(abbrev):
     abbrev = abbrev.lower()
@@ -265,13 +268,20 @@ def fs_diff(lfs, rfs, request_list=[], cwd="."):
                     if verbose: print(f"!diff! {path} size {lf.size} != {rf.size}")
                     equal = False
                     request.reason = "Remote file differs in size"
-                if lf.date > rf.date:
+                if not (ignore_date_diff or recent) and lf.date > rf.date:
                     if verbose: print(f"!diff! {path} date {lf.date} > {rf.date}")
                     equal = False
                     if request.reason:
                         request.reason += " and is older"
                     else:
                         request.reason = "Remote file is older"
+                if recent and lf.date > recent_date:
+                    if verbose: print(f"!diff! {path} recent date {recent_date} > {lf.date}")
+                    equal = False
+                    if request.reason:
+                        request.reason += " and is recently updated"
+                    else:
+                        request.reason = "Local file is recently updated"
 
                 if not equal:
                     request_list.append(Request("rm", None, path, request.reason))
@@ -295,15 +305,19 @@ def main():
     parser.add_argument("-e", "--encoding", help="specify ftp encoding")
     parser.add_argument("-c", "--confirm", action="store_false", help="require confirmation before executing requests")
     parser.add_argument("-v", "--verbose", action="store_true", help="print additional information")
+    parser.add_argument("-i", "--ignore-date-diff", action="store_true", help="ignore date differences when comparing filesystems")
+    parser.add_argument("-r", "--recent", const="1", nargs="?", help="ignore date differences when comparing filesystems")
     parser.add_argument("--lazy-dir", action="store_true", help="do not recurse directory when newer on remote")
     parser.add_argument("--no-ignore-extra", action="store_true", help="do not delete extra directories in remote")
 
     args = parser.parse_args()
 
-    global verbose, lazy_dir, ignore_extra
+    global verbose, lazy_dir, ignore_extra, ignore_date_diff, recent, recent_date
     verbose = args.verbose
     lazy_dir = args.lazy_dir
     ignore_extra = not args.no_ignore_extra
+    ignore_date_diff = args.ignore_date_diff
+    
 
     login = args.login
     password = args.password
@@ -313,6 +327,10 @@ def main():
 
     if not password:
         password = getpass(f"password for {login}@{args.address}: ")
+
+    if args.recent:
+        recent = True
+        recent_date = datetime.now() - timedelta(hours=float(args.recent))
 
     ftp = FTP(args.address)
 

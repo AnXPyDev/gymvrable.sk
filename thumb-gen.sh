@@ -7,7 +7,7 @@ fi
 
 cd $1
 
-if [ "$2" == "clean" ]; then
+if [ "$2" = "clean" ]; then
     set -x
     rm thumb*
     exit
