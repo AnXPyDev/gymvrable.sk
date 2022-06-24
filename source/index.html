@@ -63,6 +63,7 @@ pushm(HOMEPAGE_MAKE_VIDEO, `--title', `--thumb', `--link', `
 
 pushs(LeftContent, `
 
+mute()
 <div class="alert">
     <div class="alert-content alert-narrow">
 		<h>Prijímacie skúšky v 2. kole - 21. 6. 2022</h>
@@ -92,6 +93,8 @@ pushs(LeftContent, `
     </div>
 </div>
 
+unmute()
+
 
 <div class="hp-video-container">
 	HOMEPAGE_MAKE_VIDEO(`Virtuálna prehliadka školy', `/img/misc/video1.jpg', `https://www.youtube.com/watch?v=D-uIKjFapBs')
@@ -99,11 +102,11 @@ pushs(LeftContent, `
 </div>
 
 HOMEPAGE_MAKE_ARTICLE(
-`Gymnazisti v ENERGOLANDE',
-`20.6.2022',
-`/articles/2022/energoland/',
-`/img/articles/2022/energoland/thumb_1.jpg',
-`Po dvojročnej prestávke sme opäť mohli žiakom vyučovanie prírodovedných predmetov  spestriť  návštevou ENERGOLANDU, vzdelávacieho  zariadenia EMO Mochovce. Stalo sa tak 8. júna 2022.<br><br>V ENERGOLANDE tretiaci a štvrtáci mohli vidieť viac ako 40 interaktívnych exponátov, ktoré im poskytli všetky potrebné informácie o rôznych energiách...'
+`Výnimočný úspech v olympiáde v ruskom jazyku',
+`24.6.2022',
+`/articles/2022/olympiada_ruj/',
+`/img/articles/2022/olympiada_ruj/thumb_1.jpg',
+`Ako už pravidelne aj v tomto školskom roku sme v januári (14.1.2022) v našom gymnáziu organizovali školské kolo olympiády v RUJ v kategórii B4 pre bilingválnu formu štúdia a v kategórii B1 pre začínajúcich bilingvistov z prvého ročníka...'
 )
 
 <style>
@@ -119,6 +122,14 @@ HOMEPAGE_MAKE_ARTICLE(
 <div id="aktuality-heading">Aktuality<hr></div>
 
 <div class="hp-sarticle-container">
+
+HOMEPAGE_MAKE_ARTICLE_SMALL(
+`Gymnazisti v ENERGOLANDE',
+`20.6.2022',
+`/articles/2022/energoland/',
+`/img/articles/2022/energoland/thumb_1.jpg',
+`Po dvojročnej prestávke sme opäť mohli žiakom vyučovanie prírodovedných predmetov  spestriť  návštevou ENERGOLANDU, vzdelávacieho  zariadenia EMO Mochovce. Stalo sa tak 8. júna 2022.<br><br>V ENERGOLANDE tretiaci a štvrtáci mohli vidieť viac ako 40 interaktívnych exponátov, ktoré im poskytli všetky potrebné informácie o rôznych energiách...'
+)
 
 HOMEPAGE_MAKE_ARTICLE_SMALL(
 `Keď sa triedy zmenili na kino a diskotéku...',

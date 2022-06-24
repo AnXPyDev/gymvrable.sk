@@ -19,6 +19,7 @@
 	align-items: center;
 	gap: 1em;
 	padding: 1em;
+	position: relative;
 }
 .iit-img.full {
 	width: 100%;
@@ -34,6 +35,7 @@
 	box-shadow: 0 0 10px var(--sh-clr);
 	max-height: 100%;
 	max-width: 100%;
+	position: relative;
 }
 
 .iit-img.right {
