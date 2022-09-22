@@ -38,6 +38,10 @@
 	text-align: left;
 }
 
+.alert-align-right {
+	text-align: right;
+}
+
 .alert-narrow {
 	padding-left: 2vw;
 	padding-right: 2vw;

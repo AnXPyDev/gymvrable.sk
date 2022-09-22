@@ -62,7 +62,6 @@ pushm(HOMEPAGE_MAKE_VIDEO, `--title', `--thumb', `--link', `
 ')
 
 pushs(LeftContent, `
-
 mute()
 <div class="alert">
     <div class="alert-content alert-narrow">
@@ -92,8 +91,88 @@ mute()
 		</div>
     </div>
 </div>
-
 unmute()
+
+
+<style>
+	@font-face {
+		font-family: MonotypeCorsiva;
+		src: url("/fonts/monotype-corsiva.ttf") format("truetype");
+	}
+
+	.cursive-font {
+		font-family: MonotypeCorsiva;
+	}
+
+	h.cursive-font {
+		font-size: 24px;
+	}
+
+	p.cursive-font {
+		font-size: 22px;
+	}
+
+	.special-alert {
+		display: flex;
+	}
+	
+	.special-alert .alert-content {
+		width: 58%;
+		margin: auto;
+		box-sizing: border-box;
+	}
+
+	.special-image {
+		width: 42%;
+		box-sizing: border-box;
+		padding-left: 1.5em;
+	}
+
+	.special-image img {
+		box-sizing: border-box;
+		width: 100%;
+		border: 3px solid var(--pm-clr);
+		border-radius: 5px;
+		box-shadow: 0px 3px 7px var(--sh-clr);
+	}
+	
+	@media only screen and (max-width: 1200px) {
+		.special-alert {
+			display: block;
+		}
+
+		.special-alert .alert-content {
+			width: 100%;
+		}
+
+		.special-image {
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+
+</style>
+
+<div class="alert special-alert">
+    <div class="alert-content alert-narrow">
+		<h class="cursive-font">Milí kolegovia a žiaci!</h>
+
+		<div class="divider" style="height: 15px;"></div>
+
+		<p class="cursive-font" style="line-height: 1.8; font-size: 22px;">Srdečne Vás pozývame na zaujímavé aktivity spojené s Európskym dňom cudzích jazykov, ktoré sa uskutočnia v utorok 27.9.2022 v našom gymnáziu od 10.00 do 14.00.</p>
+		
+		<div class="alert-align-right">
+			<p class="cursive-font">Vaši organizátori</p>
+		</div>
+    </div>
+	<div class="special-image">
+		<a href="/img/misc/den_jazykov.jpg">
+			<img src="/img/misc/den_jazykov.jpg"/>
+
+		</a>
+	</div>
+</div>
+
 
 
 <div class="hp-video-container">
