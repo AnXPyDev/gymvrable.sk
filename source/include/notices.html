@@ -18,6 +18,19 @@ pushm(MAKE_NOTICE_IMG, `--title', `--link', `--image', `
 </div>
 ')
 
+pushm(MAKE_NOTICE, `--title', `--link', `--content', `
+<div class="notice">
+    <div class="notice-header">
+        <div class="notice-title-wrapper">
+            <a class="notice-title" href="--link">--title</a>
+        </div>
+    </div>
+    <div class="notice-inner">
+		--content
+    </div>
+</div>
+')
+
 pushs(RightContent, `
 
 <div class="links">
@@ -30,6 +43,8 @@ pushs(RightContent, `
 mute()
 MAKE_NOTICE_IMG(`Deň otvorených dverí', `/docs/dod.pdf', `/img/misc/dod/1.png')
 unmute()
+
+MAKE_NOTICE(`Oznamy <i class="fa fa-bullhorn"></i>', `/sub/oznamy.html', `')
 
 MAKE_NOTICE_IMG(`Prezentácia školy', `/sub/prezentacia.html', `https://www.gymvrable.sk/img/2020/prezentacia_skoly.png')
 

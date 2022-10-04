@@ -209,7 +209,7 @@ class Request():
                 raise Exception("Failed to execute request", self, flush=True)
             print(f" : {ret}", flush=True)
         elif self.command == "send":
-            print(f"Sending local file {self.source} to remote", flush=True)
+            print(f"Sending local file {self.source} to remote", end="", flush=True)
             ret = None
             try:
                 f = open(self.source, "rb")
