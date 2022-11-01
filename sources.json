@@ -4,5 +4,6 @@
 
     {"type": "glob-dir", "src": "sub/"},
     {"type": "glob-dir", "src": "articles/2022/", "template": {"type": "article"}},
+    {"type": "glob-dir", "src": "articles/2023/", "template": {"type": "article"}},
     {"type": "glob-dir", "src": "styles/", "template": {"type": "css"}}
 ]
