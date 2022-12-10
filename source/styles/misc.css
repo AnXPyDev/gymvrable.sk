@@ -73,4 +73,9 @@
     .content-half {
         width: 100%;
     }
+
+	.mobile-100p {
+		width: 100% !important;
+	}
+	
 }

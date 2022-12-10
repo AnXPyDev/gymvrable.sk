@@ -1,0 +1,48 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, ``Recitačná súťaž Viliama Záborského'')
+
+pushs(Article-Content,`
+<h class="article-title">Recitačná súťaž Viliama Záborského</h>
+<p><i>ZŠ s MŠ Viliama Záborského vo Vrábľoch a Mesto Vráble vyhlásili v tomto školskom roku už 29.ročník recitačnej súťaže organizovanej na počesť vrábeľského rodáka - národného umelca, známeho slovenského herca a recitátora Viliama Záborského.</i></p>
+
+<p>Súťaže v prednese básne z pôvodnej slovenskej tvorby sa zúčastnili aj žiačky a žiaci z našej školy a za vzornú reprezentáciu im ďakujeme.</p>
+
+<h4>Recitačnej súťaže sa zúčastnili:</h4>
+
+pushm(TableResult, `--name', `--position', `<tr><td>--name</td><td style="text-align: right"><b>--position</b></td></tr>')
+
+<style>
+	td {
+		padding: 0;
+	}
+	tr {
+		line-height: 1.5;
+	}
+</style>
+
+<table style="width: 65%;" class="mobile-100p">
+TableResult(`Stanová Alžbeta, II. D', `získala 1. miesto')
+TableResult(`Maneková Bernadeta , III. D', `získala 2. miesto')
+TableResult(`Blahová Patrícia, III. D', `získala 3. miesto')
+TableResult(`Václavová Viktória, III. D',`')
+TableResult(`Nádašdy Gabriel, III. D', `čestné uznanie')
+TableResult(`Badinová Viktória, I. D', `čestné uznanie')
+TableResult(`Pappová Mária Anna, I. D', `')
+TableResult(`Gurvay Viktor, I. D', `')
+TableResult(`Janata Andrej, I. D', `')
+</table>
+
+
+<div class="article-author">
+<p>
+PhDr. Monika Bogyóová
+</p>
+</div>
+')
+
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/1.jpg)
+')
+
+include(`include/article.html')
