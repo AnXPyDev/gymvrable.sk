@@ -1,0 +1,42 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, ``Biologická olympiáda'')
+
+pushs(Article-Content,`
+<h class="article-title">Article-Title</h>
+
+<p><i>V dňoch 2.2. a 8.2.2023 sa na našej škole uskutočnilo školské kolo Biologickej olympiády.</i><p>
+
+<p>Súťažiaci sa potrápili nielen pri hľadaní odpovedí na teoretické otázky, ale aj pri riešení dvoch praktických úloh. Zadania neboli jednoduché. Vyžadovala sa schopnosť pracovať s odbornými pojmami, či prepájať vedomosti z viacerých predmetov.</p>
+
+
+pushm(TableResult, `--name', `--position', `<tr><td>--name</td><td style="text-align: right"><b>--position</b></td></tr>')
+
+<style>
+	td {
+		padding: 0;
+	}
+	tr {
+		line-height: 1.5;
+	}
+</style>
+
+<h4>Veľmi nás teší, že sa našli študenti, ktorí napriek tomu riešenie týchto úloh úspešne zvládli:</h4>
+
+<table style="width: 80%;" class="mobile-100p">
+TableResult(`kategória A', `Simona Kišová (IV.A) a Lucia Lüleiová (III.A)')
+TableResult(`kategória B', `Kevin Rigó (III.D) a Soňa Pastierová (II.D)')
+</table>
+
+<p>Blahoželáme im a držíme palce, aby sa im rovnako darilo aj v krajskom kole.</p>
+
+<div class="article-author">
+<p>PaedDr. Mária Bašistová</p>
+</div>
+')
+
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/1.jpg)
+')
+
+include(`include/article.html')

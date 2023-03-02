@@ -1,0 +1,62 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, ``RUSKÉ SLOVO'')
+
+pushs(Article-Content,`
+<h class="article-title">Article-Title</h>
+<p><i>Na našom gymnáziu sa 24.januára 2023 konala súťaž "Ruské slovo". V tomto roku sa niesla v znamení témy: “Svet prírody“. </i></p>
+
+<p>Zúčastnili sa jej žiaci  I.D, III.D, IV.A, V.D. Porota si vypočula nielen recitáciu poézie a prózy, ale aj hudobné vystúpenia súťažiacich, ktoré dodali súťaži osobitú atmosféru.</p>
+
+<p>Gratulujeme víťazom a prajeme im veľa úspechov  v krajskom kole, ktoré  sa uskutoční  3. februára 2023.</p>
+
+<h4>Výsledky súťaže:</h4>
+
+pushm(TableResult, `--name', `--position', `<tr><td>--name</td><td style="text-align: right"><b>--position</b></td></tr>')
+
+<style>
+	td {
+		padding: 0;
+	}
+	tr {
+		line-height: 1.5;
+	}
+</style>
+
+<h4>Poézia:</h4>
+
+<table style="width: 65%;" class="mobile-100p">
+TableResult(`Polyáková Natália', `získala 1. miesto')
+TableResult(`Maneková Bernadeta', `získala 2. miesto')
+TableResult(`Pappová Mária Anna', `získala 3. miesto')
+</table>
+
+<h4>Próza:</h4>
+
+<table style="width: 65%;" class="mobile-100p">
+TableResult(`Halásová Bibiana', `získala 1. miesto')
+TableResult(`Kolieneková Viktória', `získala 2. miesto')
+</table>
+
+<h4>Sólový spev:</h4>
+
+<table style="width: 65%;" class="mobile-100p">
+TableResult(`Magdolenová Jana', `získala 1. miesto')
+</table>
+
+<h4>Skupinový spev:</h4>
+
+<table style="width: 65%;" class="mobile-100p">
+TableResult(`Halásová Bibiana, Poveshchenko Denys', `získali 1. miesto')
+</table>
+
+<div class="article-author">
+<p>Alla Pakhritsina, CSc.</p>
+</div>
+')
+
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/5.jpg)
+')
+
+include(`include/article.html')

@@ -1,0 +1,41 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, ``Gymnázium Vráble opäť potvrdilo vysokú úroveň prípravy ruského jazyka našich žiakov!'')
+
+pushs(Article-Content,`
+<h class="article-title">Article-Title</h>
+
+<p><i>Dňa 17. 2. 2023 sa v Košiciach konalo celoslovenské finále 17. ročníka celoslovenskej súťaže Ruské slovo, kde sa vynikajúco umiestnili naši žiaci:</i></p>
+
+pushm(TableResult, `--name', `--position', `<tr><td>--name</td><td style="text-align: right"><b>--position</b></td></tr>')
+
+<style>
+	td {
+		padding: 0;
+	}
+	tr {
+		line-height: 1.5;
+	}
+</style>
+
+<table style="width: 80%;" class="mobile-100p">
+TableResult(`Bibiána Halásová', `próza - 1. miesto')
+TableResult(`Natália Polyáková', `poézia - 1. miesto')
+TableResult(`Jana Magdolenová', `sólový spev - 3. miesto')
+TableResult(`Kevin Rigó', `sólový spev – doprovod')
+</table>
+
+<p>Pre Bibiánu, Natáliu a Janu bolo toto víťazstvo v Ruskom slove krásnym záverom ich pôsobenia a reprezentácie vo farbách nášho gymnázia.</p>
+
+<p>Srdečné blahoželáme našim žiakom a želáme im veľa úspechov v rozvíjaní svojho talentu!</p>
+
+<div class="article-author">
+<p>Alla Pakhritsina, CSc.</p>
+</div>
+')
+
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/4.jpg)
+')
+
+include(`include/article.html')

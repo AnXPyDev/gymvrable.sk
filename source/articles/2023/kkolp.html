@@ -1,0 +1,45 @@
+pushs(`RequiredCSS', `/styles/misc.css')
+
+pushs(Article-Title, ``Krajské kolo Olympiády ľudských práv'')
+
+pushs(Article-Content,`
+<h class="article-title">Article-Title</h>
+
+<p><i>Ľudské práva sú také neodňateľné základné oprávnenia, ktoré prináležia všetkým ľudským bytostiam a zaručujú im rovnosť, bezpečnosť, dôstojnosť a slobodu.</i><p>
+
+<p>Krajské kolo Olympiády ľudských práv sa opäť konalo prezenčne a na našom gymnáziu. Vo štvrtok 9.2.  sa zišli študenti 34 stredných škôl , aby svojimi vedomosťami a názormi presvedčili odbornú porotu, že problematika ľudských práv  im je veľmi blízka. Súťaž prebiehala dvojkolovo. V prvej časti študenti písali text, v druhej časti sa najúspešnejší jednotlivci vyjadrovali k zadaným tézam.</p>
+
+<p>Medzi študentov a ich učiteľov zavítali milí hostia. Riaditeľ úradu NSK Peter Privalinec, poslankyňa NSK Martina Holečková, metodik odboru školstva NSK Ján Václavek, primátor mesta Viktor Németh, prednostka MÚ Soňa Červená.<br>Program študentom spestrila prednáška so sudcom Okresného súdu v Nitre Dušanom Špirekom.</p>
+
+
+pushm(TableResult, `--name', `--position', `<tr><td>--name</td><td style="text-align: right"><b>--position</b></td></tr>')
+
+<style>
+	td {
+		padding: 0;
+	}
+	tr {
+		line-height: 1.5;
+	}
+</style>
+
+<h4>A ktorí boli tí najlepší?</h4>
+
+<table style="width: 80%;" class="mobile-100p">
+TableResult(`Alex Mudrák - Gymnázium Vráble', `1. miesto') 
+TableResult(`Dominik Péli - Gymnázium Párovská Nitra', `2. miesto') 
+TableResult(`Natália Labovská – Gymnázium Golianova Nitra', `3. miesto') 
+</table>
+
+<p>Gratulujeme!</p>
+
+<div class="article-author">
+<p>PhDr. Ivana Hudaszek Semjanová</p>
+</div>
+')
+
+pushs(Article-ImageContent,`
+    Article-MakeImage(/img`'__WD/1.jpg)
+')
+
+include(`include/article.html')
